@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--The viewport meta tag is used to improve the presentation and behavior of the samples 
+      on iOS devices-->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no">
+    <title>Find Address</title>
+
+    <link rel="stylesheet" href="http://js.arcgis.com/3.7/js/dojo/dijit/themes/claro/claro.css">
+    <link rel="stylesheet" href="http://js.arcgis.com/3.7/js/esri/css/esri.css">
+    <style>
+      html, body { 
+        height: 100%; width: 100%;
+        margin: 0; padding: 0;
+      } 
+      #map{ 
+        padding:0;
+        border:solid 1px #343642;
+        margin:5px 5px 5px 0px;
+      }
+     </style>
+
+    <script src="http://js.arcgis.com/3.7/"></script>
+    <script>
+      var map, locator;
+
+      require([
+        "esri/map", "esri/tasks/locator", "esri/graphic",
+        "esri/InfoTemplate", "esri/symbols/SimpleMarkerSymbol", "esri/symbols/SimpleLineSymbol", 
+        "esri/symbols/Font", "esri/symbols/TextSymbol",
+        "dojo/_base/array", "dojo/_base/Color",
+        "dojo/number", "dojo/parser", "dojo/dom", "dijit/registry",
+
+        "dijit/form/Button", "dijit/form/Textarea",
+        "dijit/layout/BorderContainer", "dijit/layout/ContentPane", "dojo/domReady!"
+      ], function(
+        Map, Locator, Graphic,
+        InfoTemplate, SimpleMarkerSymbol, SimpleLineSymbol,
+        Font, TextSymbol,
+        arrayUtils, Color,
+        number, parser, dom, registry
+      ) {
+        parser.parse();
+
+        map = new Map("map", { 
+          basemap: "streets",
+          center: [-93.5, 41.431],
+          zoom: 5
+        });
+        
+        locator = new Locator("http://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer");
+        locator.on("address-to-locations-complete", showResults);
+
+        // listen for button click then geocode
+        registry.byId("locate").on("click", locate);
+        
+        map.infoWindow.resize(200,125);
+
+        function locate() {
+          map.graphics.clear();
+          var address = {
+            "SingleLine": dom.byId("address").value
+          };
+          locator.outSpatialReference = map.spatialReference;
+          var options = {
+            address: address,
+            outFields: ["Loc_name"]
+          }
+          locator.addressToLocations(options);
+        }
+
+        function showResults(evt) {
+          var candidate;
+          var symbol = new SimpleMarkerSymbol();
+          var infoTemplate = new InfoTemplate(
+            "Location", 
+            "Address: ${address}<br />Score: ${score}<br />Source locator: ${locatorName}"
+          );
+          symbol.setStyle(SimpleMarkerSymbol.STYLE_CIRCLE);
+          symbol.setColor(new Color([30,30,30,0.75]));
+          symbol.outline = new SimpleLineSymbol(SimpleLineSymbol.STYLE_SOLID, new Color([150,150,150, 0.5]), 4);
+
+          var geom;
+          arrayUtils.every(evt.addresses, function(candidate) {
+            console.log(candidate.score);
+            if (candidate.score > 80) {
+              console.log(candidate.location);
+              var attributes = { 
+                address: candidate.address, 
+                score: candidate.score, 
+                locatorName: candidate.attributes.Loc_name 
+              };   
+              geom = candidate.location;
+              var graphic = new Graphic(geom, symbol, attributes, infoTemplate);
+              //add a graphic to the map at the geocoded location
+              map.graphics.add(graphic);
+              //add a text symbol to the map listing the location of the matched address.
+              var displayText = candidate.address;
+              var font = new Font(
+                "1em",
+                Font.STYLE_NORMAL, 
+                Font.VARIANT_NORMAL,
+                Font.WEIGHT_BOLD,
+                "Helvetica"
+              );
+             
+              var textSymbol = new TextSymbol(
+                displayText,
+                font,
+                new Color("#2f3132")
+              );
+              textSymbol.setOffset(0,18);
+              map.graphics.add(new Graphic(geom, textSymbol));
+              return false; //break out of loop after one candidate with score greater  than 80 is found.
+            }
+          });
+          if ( geom !== undefined ) {
+            map.centerAndZoom(geom, 12);
+          }
+        }
+      });
+    </script>
+  </head>
+  <body class="claro">
+    <div style="width:100%; height:100%;">
+
+      <div>
+        <textarea type="text" id="address"/>Find a place</textArea>
+        <br>
+        <button id="locate" data-dojo-type="dijit/form/Button">Locate</button> 
+      </div>
+
+      <div id="map" 
+           data-dojo-type="dijit/layout/ContentPane" 
+           data-dojo-props="region:'center'">
+      </div>
+    </div>
+  </body>
+</html>

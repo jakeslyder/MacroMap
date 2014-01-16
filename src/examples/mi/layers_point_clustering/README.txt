@@ -1,0 +1,3 @@
+link to get the json data from arcgis.server with query options
+
+http://services2.arcgis.com/Hq6thdRH56GlK76e/arcgis/rest/services/MacroinvertebrateWaterMonitoring_Test/FeatureServer/0/query?where=OBJECTID+%3E+0&objectIds=&time=&geometry=&geometryType=esriGeometryPoint&inSR=&spatialRel=esriSpatialRelIntersects&outFields=SiteStatus%2COBJECTID%2COrgID%2CSiteID%2CSiteName%2CLat%2CLon&returnGeometry=true&maxAllowableOffset=&geometryPrecision=&outSR=&returnIdsOnly=false&returnCountOnly=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&f=html&token=
