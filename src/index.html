@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--The viewport meta tag is used to improve the presentation and behavior of the samples 
+      on iOS devices-->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no"/>
+    <title>Macroinvertebrates Collection Map</title>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=Titillium+Web:100,100italic,200,200italic,300,300italic,400,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+    <link rel="stylesheet" href="http://js.arcgis.com/3.7/js/dojo/dijit/themes/tundra/tundra.css">
+    <link rel="stylesheet" href="http://js.arcgis.com/3.7/js/esri/css/esri.css">
+    <link rel="stylesheet" type="text/css" href="mapStyles.css"/>
+
+    <script src="http://js.arcgis.com/3.7/"></script>
+    <script>
+      var legend;
+      var selected;
+      var map;
+      var voteOnIncident;
+      
+      require([
+        "esri/map", 
+        "esri/graphic",
+        "esri/tasks/RelationshipQuery",
+
+        "esri/layers/ArcGISTiledMapServiceLayer",
+        "esri/layers/FeatureLayer",
+
+        "esri/symbols/SimpleMarkerSymbol",
+
+        "esri/dijit/editing/Editor",
+        "esri/dijit/editing/TemplatePicker",
+
+        "esri/tasks/query", 
+        "esri/tasks/QueryTask",
+
+        "esri/dijit/HomeButton",
+        "esri/dijit/Geocoder",
+        "esri/dijit/LocateButton",
+        "esri/dijit/BasemapGallery",
+
+        "esri/dijit/Scalebar",
+        "esri/geometry/scaleUtils",
+        "esri/dijit/OverviewMap",
+
+        "esri/config",
+        "esri/request",
+
+        "dojo/_base/array", 
+        "dojo/parser", 
+        "dojo/dom",
+
+        "dojo/domReady!"
+      ], function(
+        Map, Graphic, RelationshipQuery,
+        ArcGISTiledMapServiceLayer, FeatureLayer,
+        SimpleMarkerSymbol,
+        Editor, TemplatePicker,
+        Query, QueryTask,
+        HomeButton, Geocoder, LocateButton, BasemapGallery,
+        Scalebar, scaleUtils, OverviewMap,
+        esriConfig, esriRequest,
+        arrayUtils, parser, dom
+      ) {
+        parser.parse();  
+
+        
+        var map = new Map("map", {
+          basemap:"topo",
+          center: [-77.5, 41],
+          zoom: 8,
+          logo: true,
+          slider: true,
+          sliderPosition: "top-left",
+          sliderStyle: 'large',
+          wrapAround180: true
+        });
+
+        map.on("layers-add-result", initEditing);
+        
+        var wells = new FeatureLayer("http://services2.arcgis.com/Hq6thdRH56GlK76e/ArcGIS/rest/services/MacroinvertebrateWaterMonitoring_Test/FeatureServer/0", {
+          mode: FeatureLayer.MODE_ONDEMAND,
+          outFields: ["*"],
+          id: "wells"
+        });
+
+        map.addLayers([wells]);
+
+        // search for location
+        var Geocoder = new esri.dijit.Geocoder({
+            autoComplete: true,
+            arcgisGeocoder:{
+                placeholder: "Find a place"
+                },
+            map: map
+        }, dojo.byId('search'));
+        Geocoder.startup();
+
+        //basemap gallery
+        var basemapGallery = new esri.dijit.BasemapGallery({
+            showArcGISBasemaps: true,
+            //layers: getLayers(),
+            map: map
+        }, "basemapGallery");
+        basemapGallery.startup();
+
+        // home back to initial map location
+        var home = new HomeButton({
+            map: map
+        }, "HomeButton");
+        home.startup();
+
+        // geo locate
+        var geoLocate = new LocateButton({
+            map: map,
+            highlightLocation: false
+        }, "LocateButton");
+        geoLocate.startup();
+
+        //scale bar            
+        var scalebar = new Scalebar({
+            map: map,
+        });
+
+        //coordinates
+        function showCoordinates(evt) {
+          //console.log("show");
+          //get mapPoint from event
+          //The map is in web mercator - modify the map point to display the results in geographic
+          var mp = esri.geometry.webMercatorToGeographic(evt.mapPoint);
+          var scale = scaleUtils.getScale(map);
+          //display mouse coordinates
+          dojo.byId("coordinates").innerHTML = "Scale: 1 : " + commaSeparateNumber(Math.round(scale)) + " | Lat: " + mp.y.toFixed(3) + "&deg; Lon: " + mp.x.toFixed(3) + "&deg;";
+        } 
+        // implement to show coordinates on startup
+
+        //overview map
+        var overviewMapDijit = new OverviewMap({
+            map: map,
+            attachTo: "bottom-left",
+            visible: false
+        });
+        overviewMapDijit.startup();
+
+        map.on("mouse-move", showCoordinates);
+        map.on("mouse-drag", showCoordinates);
+
+        function initEditing() {
+
+          map.infoWindow.resize(250,210);
+          var wells = map.getLayer("wells");
+          generateTemplatePicker(wells);
+
+          /* start related querie */
+          var title, content, graphicAttributes;
+          
+          var relatedQuery = new RelationshipQuery();
+          relatedQuery.outFields = ["*"];
+          relatedQuery.relationshipId = 0;
+
+          wells.on("click", function(evt) {
+            graphicAttributes = evt.graphic.attributes;
+            title = graphicAttributes.SiteName + " (" + graphicAttributes.OrgID + ")";
+            content = "";
+
+            relatedQuery.objectIds = [graphicAttributes.OBJECTID]; // set object id from selected site to make query
+            wells.queryRelatedFeatures(relatedQuery, function(relatedRecords) {
+
+              content = content + '<div><select id="dates" onchange="getDetailData();"><option id="dateSelector" value="Select a date"> Select a date </option>';
+              
+              for(var i=0; i<relatedRecords.undefined.features.length; i++){
+                var d = new Date(0); // The 0 there is the key, which sets the date to the epoch  
+                d = new Date(parseInt(JSON.stringify(relatedRecords.undefined.features[i].attributes.SurveyDate+14400000))); // added 4 hours in seconds to matach actual date
+                var month =  parseInt(d.getMonth())+parseInt(1);
+
+                var specimenObjectId = JSON.stringify(relatedRecords.undefined.features[0].attributes.OBJECTID);
+                content = content + "<option value="+ JSON.stringify(relatedRecords.undefined.features[i].attributes.DTI) +">" + d.getDate() + "/" + month + "/" + d.getFullYear() + " </option>";
+              }
+              
+              content = content + "</select></div><div id='specimen'><ul></ul></div>";
+            
+              map.infoWindow.setTitle(title);
+              map.infoWindow.setContent(content);
+              map.infoWindow.show(evt.screenPoint, map.getInfoWindowAnchor(evt.screenPoint));
+
+            });
+
+          });
+
+        } // end main function
+
+        /* executes queries based onchange events from dropdown by chosen date */
+        getDetailData = function(objectId) {
+
+          // remove all li from id specimen to dispolay new data set
+          $('#specimen ul > li').remove();
+          // remove select date statement
+          $('#dateSelector').remove();
+
+          var speciesname, tsn, tsnQueryString = "";
+          
+          var tsnQuery = new Query();
+          var tsnQueryTask = new QueryTask("http://services2.arcgis.com/Hq6thdRH56GlK76e/ArcGIS/rest/services/MacroinvertebrateWaterMonitoring_Test/FeatureServer/2");
+          
+          tsnQuery.where = "DTI = '" + document.getElementById("dates").value + "'"; //get entries by DTI from date selection
+          tsnQuery.outFields = ["TSN, SpecimenCount"];
+          tsnQuery.orderByFields = ["SpecimenCount"];
+
+          var nameQuery = new Query();
+          var nameQueryTask = new QueryTask("http://services2.arcgis.com/Hq6thdRH56GlK76e/ArcGIS/rest/services/MacroinvertebrateWaterMonitoring_Test/FeatureServer/4");
+
+          var tsns = new Array(); // save all tsns in array for output
+          var scounts = new Array(); // save all specimen counts in array for output
+
+          if(document.getElementById("dates").value.localeCompare("Select a date") != 0 ){
+          // get tsn by selected date
+            tsnQueryTask.execute(tsnQuery, function(tsnData){
+              for(var i=0; i < tsnData.features.length; i++){
+                tsn = JSON.stringify(tsnData.features[i].attributes.TSN);
+                scount = JSON.stringify(tsnData.features[i].attributes.SpecimenCount);
+                tsnQueryString = tsnQueryString  + "TSN = " + tsn + " or "; // build string with multiple values
+                tsns[i] = tsn;
+                scounts[i] = scount;
+              }
+              // get names for tsn numbers
+              tsnQueryString = tsnQueryString.slice(0, tsnQueryString.length-3); // drop last "or"
+              nameQuery.where = tsnQueryString;
+              nameQuery.outFields = ["SciName"];
+
+              if(nameQuery.where){
+                nameQueryTask.execute(nameQuery, function(speciesList){
+
+                  if(speciesList.features.length > 0){
+                    for(var j=speciesList.features.length-1; j >= 0; j--){
+                      speciesName = JSON.stringify(speciesList.features[j].attributes.SciName);
+                      speciesName = speciesName.replace(/\"/g,"");
+                      var speciesLink = speciesName.toLowerCase().replace(/ /g,"/");
+                      //link to macroinvertebrates
+                      $("#specimen ul").append('<li style="list-style:none; class="specList"><a href="http://macroinvertebrates.org/#/' + speciesLink + '" target="blank"> ' + speciesName + '</a>' + " " + scounts[j] + " " + '</li>');
+                      //link to ITIS with tsn
+                      //$("#specimen ul").append('<li style="list-style:none;"><a href="http://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=' + tsns[j] + '" target="blank"> ' + speciesName + '</a>' + " " + scounts[j] + " " + '</li>');
+                    }
+                  } else {
+                    $("#specimen ul").append('<li style="list-style:none;">There was no data collected</li>');
+                  }
+
+                });
+              } else {
+                  $("#specimen ul").append('<li style="list-style:none;">No specimens available</li>');
+              }
+            }, function(noResults){ // error callback
+              $("#specimen ul").append('<li style="list-style:none;">No Results</li>');
+            });
+          }
+        }
+
+        function generateTemplatePicker(layer) {
+          legend = new TemplatePicker({
+            featureLayers: [ layer ],
+            rows: layer.types.length,
+            columns: 1,
+            grouping: false
+          }, "legendDiv");
+
+          legend.startup();
+
+          legend.on("selection-change", function() {
+            selected = legend.getSelected();
+          });
+        }
+
+      });
+
+      // helper function - add commas to number
+      function commaSeparateNumber(val){
+          while (/(\d+)(\d{3})/.test(val.toString())){
+            val = val.toString().replace(/(\d+)(\d{3})/, '$1'+','+'$2');
+          }
+          return val;
+      }
+
+    </script>
+  </head>
+  <body class="tundra">
+
+      <div id="logo"><a href="http://www.carnegiemnh.org/" target="_blank"><img src="http://macroinvertebrates.org/img/CMNHLogo@2x.png" alt="Carnegie Museums of Natural History" height="95" width="95"></a></div>
+      <div id="header">
+        <p id="site-title">Macroinvertebrates Collection Map</p>
+        <p id="site-subtitle">Powdermill Nature Reserve &nbsp; - &nbsp; Research, Education, Preservation</p>
+        <div id="search"></div>
+        <div style="position:absolute; right:96px; top:25px; z-index:999;">
+                <div id="basemapButton" data-dojo-type="dijit/TitlePane" 
+                        data-dojo-props="title:'', closable:false,  open:false">
+                    <div data-dojo-type="dijit/layout/ContentPane" style="width:262px; height:210px; overflow:auto;">
+                        <div id="basemapGallery" ></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="BasemapToggle"></div>
+        <div id="LocateButton"></div>
+        <div id="HomeButton"></div>
+      </div> <!-- header -->
+
+      <div id="map" >
+        <span id="coordinatesContainer">
+            <span id="coordinates"></span>
+        </span>
+          <div id="legendDiv"></div>
+      </div>
+
+      <div id="copyright">&copy; 2013 Carnegie Institute</div>
+
+  </body>
+</html>
