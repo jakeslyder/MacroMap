@@ -126,6 +126,16 @@ html, body {
 .ui-body-c, .ui-overlay-c {text-shadow:none !important;}
 
 /* basemap */
+
+#BasemapToggleTitle {
+    color: #fff;
+    font-size: 7px;
+    position:absolute;
+    top:45px;
+    right: 115px;
+    z-index: 99;
+}
+
 .dijitTitlePaneTitle {
     width:25px;
     height:25px;
