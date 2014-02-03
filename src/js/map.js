@@ -1,5 +1,4 @@
-
-      var legend;
+var legend;
       var selected;
       var map;
       
@@ -96,6 +95,7 @@
         // symbol.setSize(15); symbol.setColor(new Color([230,211,1])); // yellow
         // // symbol.setSize(15); symbol.setColor(new Color([244,109,11])); // orange
         // var renderer = new esri.renderer.SimpleRenderer(symbol);
+            
 
         /* 
          * UniqueValueRenderer
@@ -131,7 +131,8 @@
 
         // add feature and graphics layer
         map.addLayers([wells, graphicsLayer]);
-        
+        //map.addLayer(graphicsLayer);
+
         //basemap gallery
         var basemapGallery = new esri.dijit.BasemapGallery({
             showArcGISBasemaps: true,
@@ -271,7 +272,7 @@
             wells.queryRelatedFeatures(relatedQuery, function(relatedRecords) {
 
               // if(JSON.stringify(relatedRecords.undefined.features.length) > 1){
-              content = content + '<div><select id="dates" onchange="getDetailData();"><option id="dateSelector" value="Select a date"> Select a date </option>';
+              content = content + '<div class="date-content"><select id="dates" onchange="getDetailData();"><option id="dateSelector" value="Select a date"> Select a date </option>';
 
               for(var i=0; i<relatedRecords.undefined.features.length; i++){
                 var d = new Date(0); // The 0 there is the key, which sets the date to the epoch  
@@ -286,17 +287,21 @@
                 content = content + "<option value="+ JSON.stringify(relatedRecords.undefined.features[i].attributes.DTI) +">" + day + "/" + month + "/" + d.getFullYear() + " </option>";
               }
               
-              content = content + "</select></div>";
+              content = content + "</select><div id='specimen'><ul></ul></div></div>";
 
               // } else if(JSON.stringify(relatedRecords.undefined.features.length) == 1){
              
               // }
 
-              content = content + "<div id='specimen'><ul></ul></div>";
+              //content = content + "<div id='specimen'><ul></ul></div>";
             
-              map.infoWindow.setTitle(title);
-              map.infoWindow.setContent(content);
-              map.infoWindow.show(evt.screenPoint, map.getInfoWindowAnchor(evt.screenPoint));
+               // map.infoWindow.setTitle(title);
+               // map.infoWindow.setContent(content);
+               // map.infoWindow.show(evt.screenPoint, map.getInfoWindowAnchor(evt.screenPoint));
+
+              // jquery custom pop up
+              showCustomPopUp(content);
+              
               //load detail data for inital view for dropdowns
               // if(JSON.stringify(relatedRecords.undefined.features.length) > 1){
                 // map.infoWindow.onShow( getDetailData() );
@@ -307,6 +312,27 @@
           });
           // end initEditing function
         } 
+
+        // custom jquery popup on click
+        function showCustomPopUp(c){
+          $( "#dialog" ).dialog();
+          $( "#dates" ).remove();
+          $( "#specimen" ).remove();
+          $( ".date-content").remove();
+          $( ".date" ).append(c);
+          $( "#accordion" ).accordion();
+
+          // custom close button for info dialog (- )customPopup) workaround
+          $(".ui-dialog-titlebar-close").css('background-image', 'url(img/close.png)');
+          $(".ui-dialog-titlebar-close").css('border', 'none');
+          $(".ui-dialog-titlebar-close").css('width','20');
+          $(".ui-dialog-titlebar-close").css('height','20');
+          $(".ui-dialog-titlebar-close").css('background-repeat','no-repeat');
+          $(".ui-dialog-titlebar-close").css('background-position','center center');
+          $('.ui-icon').css('display','none');
+
+
+        }
 
         /* executes queries based onchange events from dropdown by chosen date */
         getDetailData = function(objectId) {
@@ -364,7 +390,8 @@
                       $("#specimen ul").append('<li style="list-style:none; class="specList"><a href="http://macroinvertebrates.org/#/' + speciesLink + '" onmouseover="document.getElementById(\'place-holder-1\').src=\'http://macroinvertebrates.org/img/thumbnails/gigapans/viewer/131502@2x.jpg\';" onmouseout="document.getElementById(\'place-holder-1\').src=\'placeholder.png\';" target="blank" > ' + speciesName + '<img src="placeholder.png" id="place-holder-1" /></a>' + " " + scounts[j] + " " + '</li>');
                       */
                       //link to macroinvertebrates
-                      $("#specimen ul").append('<li style="list-style:none; class="specList"><a href="http://macroinvertebrates.org/#/' + speciesLink + '" target="blank" > ' + speciesName + '</a> ' + scounts[j] + '</li>');
+                      //$("#specimen ul").append('<li style="list-style:none; class="specList"><a href="http://macroinvertebrates.org/#/' + speciesLink + '" target="blank" > ' + speciesName + '</a>' + scounts[j] + '</li>');
+                      $("#specimen ul").append('<tr style="list-style:none; class="specList"><td><a href="http://macroinvertebrates.org/#/' + speciesLink + '" target="blank" > ' + speciesName + '</a></td><td>' + scounts[j] + '</td></tr>');
                       //link to ITIS with tsn
                       //$("#specimen ul").append('<li style="list-style:none;"><a href="http://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=' + tsns[j] + '" target="blank"> ' + speciesName + '</a>' + " " + scounts[j] + " " + '</li>');
                     }
@@ -404,6 +431,12 @@
            $('.LocateButton').click(function(){ // hide graphic with geo search result "reset"
               graphicsLayer.show();
            });
+
+
+           
+            $ (".date").css("height","200px");
+
+
         });
 
         /* all draggable divs */
