@@ -96,7 +96,7 @@
 	margin-bottom: 3px;
 	padding: .5em .5em .5em .7em;
 	min-height: 0; /* support: IE7 */
-		font-size: 0.6em;
+	font-size: 0.6em;
 
 }
 .ui-accordion .ui-accordion-icons {
@@ -115,11 +115,11 @@
 	margin-top: -8px;
 }
 .ui-accordion .ui-accordion-content {
-	padding: 1em 2.2em;
+	padding: 0.4em;
 	border-top: 0;
 	overflow: auto;
 	margin-right: 8px;
-	padding-left: 8px;
+	padding-left: 0em;
 }
 .ui-autocomplete {
 	position: absolute;
@@ -411,6 +411,11 @@ button.ui-button::-moz-focus-inner {
 	padding: .4em 1em;
 	position: relative;
 	font-size: 0.6em;
+	border-top: 1px solid #e3e3e3;
+	border-right: 1px solid #e3e3e3;
+	border-left: 1px solid #e3e3e3;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
 }
 .ui-dialog .ui-dialog-title {
 	float: left;
@@ -437,7 +442,10 @@ button.ui-button::-moz-focus-inner {
 	overflow: auto;
 	border-bottom-left-radius: 3px;
 	border-bottom-right-radius: 3px;
-	box-shadow: 1px 1px 5px #888888;
+	border-left: 1px solid #e3e3e3; 
+	border-right: 1px solid #e3e3e3;
+	border-bottom: 1px solid #e3e3e3;
+/*	box-shadow-right: 1px 1px 5px #888888;*/
 }
 .ui-dialog .ui-dialog-buttonpane {
 	text-align: left;
@@ -445,7 +453,7 @@ button.ui-button::-moz-focus-inner {
 	background-image: none;
 	margin-top: .5em;
 	padding: .3em 1em .5em .4em;
-	box-shadow: 1px 1px 5px #888888;
+/*	box-shadow: 1px 1px 5px #888888;*/
 }
 .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
 	float: right;
@@ -815,7 +823,7 @@ body .ui-tooltip {
 }
 .ui-widget-content {
 	/*border: 1px solid #aaaaaa;*/
-	background: #ffffff url(images/ui-bg_flat_75_ffffff_40x100.png) 50% 50% repeat-x;
+	background: #ffffff;
 	color: #ffffff;
 	background-color: #3a3a3a;
 	opacity: 0.94;
@@ -825,7 +833,7 @@ body .ui-tooltip {
 }
 .ui-widget-header {
 	border: none; /* 1px solid #aaaaaa; */
-	background: #3a3a3a url(images/ui-bg_highlight-soft_75_cccccc_1x100.png) 50% 50% repeat-x;
+	background: #3a3a3a;
 	color: #ffffff;
 	font-weight: normal;
 }
@@ -839,11 +847,12 @@ body .ui-tooltip {
 .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default {
 	border: 1px solid #aaaaaa;
-	background: #3a3a3a url(images/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x;
+	background: #3a3a3a;
 	font-weight: normal;
 	color: #ffffff;
-	border-bottom-left-radius: 3px;
-	border-bottom-right-radius: 3px;
+/*	border-bottom-left-radius: 1px;
+	border-bottom-right-radius: 1px;*/
+	border-radius: 2px;
 }
 .ui-state-default a,
 .ui-state-default a:link,
@@ -859,7 +868,7 @@ body .ui-tooltip {
 .ui-widget-content .ui-state-focus,
 .ui-widget-header .ui-state-focus {
 	border: 1px solid #999999;
-	background: #3a3a3a url(images/ui-bg_glass_75_dadada_1x400.png) 50% 50% repeat-x;
+	background: #3a3a3a;
 	font-weight: normal;
 	color: #ffffff;
 }
@@ -875,7 +884,7 @@ body .ui-tooltip {
 .ui-widget-content .ui-state-active,
 .ui-widget-header .ui-state-active {
 	border: 1px solid #aaaaaa;
-	background: #3a3a3a url(images/ui-bg_glass_65_ffffff_1x400.png) 50% 50% repeat-x;
+	background: #3a3a3a;
 	opacity: 1;
 	font-weight: normal;
 	color: #ffffff;
@@ -896,7 +905,7 @@ body .ui-tooltip {
 .ui-widget-content .ui-state-highlight,
 .ui-widget-header .ui-state-highlight {
 	border: 1px solid #fcefa1;
-	background: #fbf9ee url(images/ui-bg_glass_55_fbf9ee_1x400.png) 50% 50% repeat-x;
+	background: #fbf9ee;
 	color: #363636;
 }
 .ui-state-highlight a,
@@ -908,7 +917,7 @@ body .ui-tooltip {
 .ui-widget-content .ui-state-error,
 .ui-widget-header .ui-state-error {
 	border: 1px solid #cd0a0a;
-	background: #fef1ec url(images/ui-bg_glass_95_fef1ec_1x400.png) 50% 50% repeat-x;
+	background: #fef1ec;
 	color: #cd0a0a;
 }
 .ui-state-error a,
@@ -954,10 +963,10 @@ body .ui-tooltip {
 }
 .ui-icon,
 .ui-widget-content .ui-icon {
-	background-image: url(images/ui-icons_222222_256x240.png);
+
 }
 .ui-widget-header .ui-icon {
-	background-image: url(images/ui-icons_222222_256x240.png);
+
 }
 /*non active header icon*/
 .ui-state-default .ui-icon {
@@ -965,23 +974,21 @@ body .ui-tooltip {
 }
 /*button icon*/
 .ui-state-focus .ui-icon {
-	background-image: url(images/ui-icons_454545_256x240.png);
 	background: #3a3a3a url(../img/close.png) 50% 50% no-repeat;
 }
 .ui-state-hover .ui-icon{
-	background-image: url(images/ui-icons_454545_256x240.png);
 }
 /*active header icon*/
 .ui-state-active .ui-icon {
-	background-image: url(images/ui-icons_454545_256x240.png);
+
 }
 
 .ui-state-highlight .ui-icon {
-	background-image: url(images/ui-icons_2e83ff_256x240.png);
+
 }
 .ui-state-error .ui-icon,
 .ui-state-error-text .ui-icon {
-	background-image: url(images/ui-icons_cd0a0a_256x240.png);
+
 }
 
 /* positioning */
@@ -1171,14 +1178,14 @@ body .ui-tooltip {
 .ui-corner-top,
 .ui-corner-left,
 .ui-corner-tl {
-	border-top-left-radius: 3px;
+	border-top-left-radius: 1px;
 	border: none;
 }
 .ui-corner-all,
 .ui-corner-top,
 .ui-corner-right,
 .ui-corner-tr {
-	border-top-right-radius: 3px;
+	border-top-right-radius: 1px;
 }
 .ui-corner-all,
 .ui-corner-bottom,
@@ -1195,14 +1202,14 @@ body .ui-tooltip {
 
 /* Overlays */
 .ui-widget-overlay {
-	background: #aaaaaa url(images/ui-bg_flat_0_aaaaaa_40x100.png) 50% 50% repeat-x;
+	background: #aaaaaa;
 	opacity: .3;
 	filter: Alpha(Opacity=30);
 }
 .ui-widget-shadow {
 	margin: -8px 0 0 -8px;
 	padding: 8px;
-	background: #aaaaaa url(images/ui-bg_flat_0_aaaaaa_40x100.png) 50% 50% repeat-x;
+	background: #aaaaaa;
 	opacity: .3;
 	filter: Alpha(Opacity=30);
 	border-radius: 8px;

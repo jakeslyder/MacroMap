@@ -150,7 +150,7 @@ html, body {
     height:25px;
 }
 
-/* overriding */
+/* over writing */
 #dijit_TitlePane_0_titleBarNode                                 { width: 20px; height: 20px; background-color: #3a3a3a;}
 .dijitTitlePaneContentOuter                                     { width: 0px; height: 0px; border:none; background-color: red}
 .dijitTitlePaneContentInner                                     { background-color: #3a3a3a; opacity: 0.9; font-size: 12px; color: #eeeeee; margin-top: 70px; 
@@ -192,10 +192,10 @@ html, body {
     font-size: 7px;
     color: #fff;
 }
-/*overriding*/
+/*over writing*/
 .home   {background-color: #3a3a3a !important;}
 
-/* zoom overriding */
+/* zoom over writing */
 .esriLargeSliderTL          { top:95px; left:20px;}
 .dijitSliderIncrementIconV  { background: url(../img/zoomPlusW.png) no-repeat 0 0 !important; width:20px !important; height: 20px !important; margin-bottom: 3px; margin-left: 2px;}
 .dijitSliderDecrementIconV  { background: url(../img/zoomMinusW.png) no-repeat 0 0 !important; width:20px !important; height: 20px !important; margin-top: 3px; margin-left: 1px;}
@@ -250,6 +250,10 @@ html, body {
 
 /* DETAIL INFO - CUSTOM POPUP - info pane and feature layer styles info pane styles */
 
+#dialog {
+    color:#f9f9f9;
+}
+
 #specimen {
     margin-bottom: 0.5em;
     color: #fff;
@@ -278,42 +282,57 @@ html, body {
 }
 
 .date-content {
-    height: 200px;
+    font-size: 0.6em;
+    padding-left: 1em;
+}
+
+.date ul{
+    list-style: none;
+    color: #fff;
+}
+
+.date-content, .cluster-content {
     font-size: 0.6em;
 }
 
-#place-holder-1{
-    z-index: 9999; 
-    position: absolute; 
-    background-size:10px 10px !important;
+.cluster-content ul{
+    list-style: none;
+    color: #fff;
+    padding-left: 2.2em;
+    margin-top: 0;
 }
 
-/* info window theme 
-.esriPopup.myTheme .titlePane,
-      .dj_ie7 .esriPopup.myTheme .titlePane .title {
-        background-color: #424242;
-        color: #eeeeee;
-        font-weight: bold;
-       }
-.esriPopup.myTheme .titlePane {
-        border: none;
-        opacity: 0.9;
-        margin-left: 1px;
-        font-weight: normal;
-      }
-.esriPopup.myTheme a {
-        color: #0098bf;
-        text-decoration: none;
-      }
-.esriPopup.myTheme .pointer,
-.esriPopup.myTheme .contentPane,
-.esriPopup.myTheme .actionsPane {
-        background-color: #424242;
-        color:#ffffff;
-        opacity: 0.9;
-     }
+#accordion p {
+    padding-left: 0.9em;
 
-*/
+}
+
+.cluster-content ul a{
+    list-style: none;
+    color: #fff;
+}
+
+.cluster-content ul a:hover{
+    list-style: none;
+    color: #0099c1;
+}
+
+.ui-accordion-content{
+    height: 190px;
+}
+
+#placeholder-accordion{
+    height:5px;
+}
+
+#selectedSite{
+    position:absolute;
+    z-index: 0;
+    border-radius: 9px;
+    width:5px;
+    height:5px;
+    opacity: 0.5;
+}
 
 html, body {
     height: 100%;
@@ -562,29 +581,8 @@ html, body {
     background-size:10px 10px !important;
 }
 
-/* info window theme 
-.esriPopup.myTheme .titlePane,
-      .dj_ie7 .esriPopup.myTheme .titlePane .title {
-        background-color: #424242;
-        color: #eeeeee;
-        font-weight: bold;
-       }
-.esriPopup.myTheme .titlePane {
-        border: none;
-        opacity: 0.9;
-        margin-left: 1px;
-        font-weight: normal;
-      }
-.esriPopup.myTheme a {
-        color: #0098bf;
-        text-decoration: none;
-      }
-.esriPopup.myTheme .pointer,
-.esriPopup.myTheme .contentPane,
-.esriPopup.myTheme .actionsPane {
-        background-color: #424242;
-        color:#ffffff;
-        opacity: 0.9;
-     }
-
-*/
+/*style for each cluster marker*/
+#clusters_layer text{
+    font-family: arial;
+    /*fill: #000;*/
+}
