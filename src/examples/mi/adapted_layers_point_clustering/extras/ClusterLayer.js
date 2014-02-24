@@ -201,7 +201,7 @@ define([
           $("#selectedSite").css('left', parseInt(e.x-4)+'px');
           $("#selectedSite").css('top', parseInt(e.y-4)+'px');
           //change focus in accordion container
-          $( "#accordion" ).accordion({ active: 1});
+          $( "#accordion" ).accordion({ active: 2});
         }
         if(this._detailInfo) this._detailInfo.showDetailInfoDialog(singles, obID);
         

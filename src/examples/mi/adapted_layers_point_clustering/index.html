@@ -180,11 +180,13 @@
             var smallest = new PictureMarkerSymbol(picBaseUrl + "light-blue-wr.png", 35, 35).setOffset(0, 15);
             var middle = new PictureMarkerSymbol(picBaseUrl + "blue-wr.png", 40, 40).setOffset(0, 15);
             var big = new PictureMarkerSymbol(picBaseUrl + "dark-blue-wr.png", 50, 50).setOffset(0, 15);
+            var bigger = new PictureMarkerSymbol(picBaseUrl + "green-wr.png", 50, 50).setOffset(0, 15);
             var biggest = new PictureMarkerSymbol(picBaseUrl + "gray.png", 50, 50).setOffset(0, 15);
             renderer.addBreak(0, 2, one);
             renderer.addBreak(2, 20, smallest);
-            renderer.addBreak(20, 201, middle);
-            renderer.addBreak(201, 1000, big);
+            renderer.addBreak(20, 120, middle);
+            renderer.addBreak(120, 320, big);
+            renderer.addBreak(320, 1001, bigger);
             renderer.addBreak(1001, 7000, biggest);
 
             clusterLayer.setRenderer(renderer);
@@ -257,8 +259,8 @@
       <div id="dialog" title="Collection Sites">
           <div id="accordion" class="addContent">
             <p>Sites in Cluster</p><div class="cluster-info"></div>
-            <p>Macroinvertebrates</p><div class="date"></div>
             <p>Site Info</p><div class="site-info"></div>
+            <p>Macroinvertebrates</p><div class="date"></div>
           </div>
       </div>
 
