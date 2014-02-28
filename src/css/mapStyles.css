@@ -73,14 +73,6 @@ html, body {
     border-radius: 5px;
 }
 
-
-#search {
-    position: absolute;
-    top: 14px;
-    right: 240px;
-    z-index: 50;
-}
-
 #legendButton {
     position: absolute;
     top: 17px;
@@ -254,10 +246,16 @@ html, body {
     color:#f9f9f9;
 }
 
+#specimen .specListHeading td{
+    padding-bottom: .8em;
+    color: #0099c1;
+    font-weight: bold;
+}
+
 #specimen {
     margin-bottom: 0.5em;
     color: #fff;
-/*    background-color: #3a3a3a;
+/*  background-color: #3a3a3a;
     opacity: 0.9;*/
 }
 
@@ -281,6 +279,23 @@ html, body {
     font-weight: normal;
 }
 
+/*place holder for hover images in species list*/
+#place-holder-1{
+    z-index: 0; 
+    position: absolute; 
+    background-size:0px 0px !important;
+    opacity: 1;
+    background-color: #000;
+}
+
+.thumbsImage{
+    background-color: #fff;
+    position: absolute;
+    border: 3px solid #0099c1 !important;
+    z-index: 999;
+}
+
+
 .date-content {
     font-size: 0.6em;
     padding-left: 1em;
@@ -302,6 +317,20 @@ html, body {
     margin-top: 0;
 }
 
+#siteInfo-content {
+    font-size: .6em;
+    padding-left: 1.5em;
+}
+
+#siteInfo-content td{
+    padding-right: 1.5em;
+    text-align: top;
+}
+
+#siteInfo-content tr{
+    text-align: top;
+}
+
 #accordion p {
     padding-left: 0.9em;
 
@@ -321,7 +350,7 @@ html, body {
     height: 190px;
 }
 
-#placeholder-accordion{
+#holder-accordion{
     height:5px;
 }
 
@@ -413,7 +442,7 @@ html, body {
 #search {
     position: absolute;
     top: 14px;
-    right: 240px;
+    right: 200px;
     z-index: 50;
 }
 
@@ -573,12 +602,6 @@ html, body {
     border-radius: 3px;
     background-color: #fafafa;
     opacity: 0.8;
-}
-
-#place-holder-1{
-    z-index: 9999; 
-    position: absolute; 
-    background-size:10px 10px !important;
 }
 
 /*style for each cluster marker*/

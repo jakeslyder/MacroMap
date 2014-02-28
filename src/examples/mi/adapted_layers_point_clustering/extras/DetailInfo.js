@@ -27,17 +27,16 @@ define([
               //this._getThumbnails(jsonData);
           });
       });
-      
+
     },
 
-    showDetailInfoDialog: function(c, obID){
-                  
+    showDetailInfoDialog: function(cluster, status, obID, orgID, siteID, siteName, coordinates, siteNotes, elevation, siteLocDesc, ch93){       
       // set up dialog and accordion 
       //$( "#dialog" ).dialog({ height: 570 });
       $( "#dialog" ).dialog({
         //height: 570,
         resize: function( event, ui ) {
-          $(".ui-accordion-content").css("height", ui.size.height-135 +"px");
+          $(".ui-accordion-content").css("height", ui.size.height-140 +"px");
         }
         //position: { my: "top", at: "bottom", of: "#header" }
       });
@@ -54,8 +53,10 @@ define([
       $(".ui-dialog-titlebar-close").css('background-position','center center');
       $('.ui-icon').css('display','none');
 
-      this._showClusterInfo(c);
-      this._showMacroinvertebrates(obID);
+      this._showClusterInfo(cluster);
+      //populates tabs when site selected from map
+      if(siteID != null) this._showSiteInfo(status, obID, orgID, siteID, coordinates, siteNotes, elevation, siteLocDesc, ch93);
+      if(siteName != null) this._showMacroinvertebrates(obID, siteName);
 
       // $( "#macro-helper" ).remove();
       // $( ".date" ).append("<div id='macro-helper'>Select a site from the map or in the tab titled: Select a Site</div>");
@@ -65,9 +66,11 @@ define([
 
       var data = JSON.parse(JSON.stringify(c));
 
+      //TODO
       //Select a site from this list
       
       //list all sites (objectid)
+      var selectedSite = "";
       var content = '<div class="cluster-content"><ul>';
       for ( var i = 0, il = c.length; i < il; i++) {
         content = content + '<li><a href="" class="site-selected" id="'+ i +'">'+ data[i].attributes.Name +'</a></li>';
@@ -88,14 +91,22 @@ define([
 
       $( ".site-selected" ).click(function(event) {
         $( "#accordion" ).accordion({ active: 2});
-        _this._showMacroinvertebrates(obID);
+          var site = c[this.id].attributes;
+          $( "#siteInfo-content" ).remove();
+          _this._showSiteInfo(site.Status, site.ObjectID, site.Caption, site.SiteID, site.Coordinates, site.SiteNotes, site.Elevation, site.SiteLocDesc, site.Ch93);
+          _this._showMacroinvertebrates(obID, site.Name);
         $("#selectedSite").remove();
       });
 
     },
 
-    _showMacroinvertebrates: function(obID){
+    _showMacroinvertebrates: function(obID, siteName){
 
+      //change heading of Site info when new site is selected
+      document.getElementById("siteInfo").innerHTML="Site Info: " + siteName;
+
+      //var info = '<div id="sampleInfo" ></div>';
+      //TODO
       //SurveyType
       //SurveyOther
 
@@ -104,27 +115,32 @@ define([
 
       //MI_SampleComments -> might be null
 
+      // add heading
       // Specimen     Count
       
-      var content = '<div class="date-content"><select id="dates" onchange="getDetailData();"><option id="dateSelector"> Select a date </option></select><div id="specimen"><ul></ul></div></div>';
+      var dates = '<div class="date-content"><select id="dates" onchange="getDetailData();"><option id="dateSelector"> Select a date </option></select><div id="specimen"><ul></ul></div></div>';
       
       this._query.where = "OBJECTID =" + obID;
-      this._query.outFields = ["SurveyDate,DTI"];
-      this._queryTask.execute(this._query, this._addDate); // adds dates from collections site to a select drop down stored in the content variable
+      //console.log(obID);
+      this._query.outFields = ["SurveyDate,DTI"];//,SurveyType,SurveyOther,MI_SamplingMethod,MI_OtherMethods,MI_SampleComments"];
+      this._queryTask.execute(this._query, this._addSampleInfo); // adds dates from collections site to a select drop down stored in the content variable
 
+      //$( "#sampleInfo" ).remove();
       $( "#dates" ).remove();
       $( "#specimen" ).remove();
       $( ".date-content").remove();
-      $( ".date" ).append(content);
+      //$( ".date" ).append(info);
+      $( ".date" ).append(dates);
       //$( "#macro-helper" ).remove();
     },
 
-    _addDate: function(results) {
+    _addSampleInfo: function(results) {
       var s = "";
       var d = new Date(0); // The 0 there is the key, which sets the date to the epoch
       var day = "";
       var month = "";
       var opt = "";
+      //console.log(results);
       for (var i=0, il=results.features.length; i<il; i++) {
         var featureAttributes = results.features[i].attributes;
           //console.log(results.features[i].attributes.SurveyDate);
@@ -134,27 +150,26 @@ define([
           day = d.getDate();
           if (day <= 9) day = "0"+day;
           $("#dates").append("<option id='date-values' value='"+results.features[i].attributes.DTI+"'>"  + day + "/" + month + "/" + d.getFullYear() + " </option>");
+          //console.log("count: "+i);
       }
 
       $("#dateSelector").remove();
+      //show default sample info without having to select from the drop down
       this.getDetailData();
     },
 
-    _siteDetails: function(){
+    _showSiteInfo: function(status, obID, orgID, siteID, coordinates, siteNotes, elevation, siteLocDesc, ch93){
 
+      var siteStatus = "Inactive";
+      if (status == 2) siteStatus = "Active";
 
-      //Site Info: *add Site name* //SiteName
-
-      // 0 from json
+      if (siteLocDesc == null) siteLocDesc = "-";
+      if (siteNotes == null) siteNotes = "-";
+      //0 from json
       //OrgID -> fields[1].name
       //orgid name -> fields[1].domain.codedValues[0].name
-
-      //SiteLocDesc
-      //SiteStatus
-      //SiteNotes
-      //Lat / Lon / Elevation(in meters) (show as coordinates)
-      // Ch93Use: (Ch. 93 Designated Use)
-
+      
+      $( ".siteInfo" ).append('<div id="siteInfo-content"><table><tr><td>Organization</td><td>'+orgID+'</td></tr><tr><td>Coordinates</td><td>'+coordinates+'</td></tr><tr><td>Elevation</td><td>'+elevation.toFixed(2)+'m</td></tr><tr><td>Notes</td><td>'+siteNotes+'</td></tr><tr><td>Site Status</td><td>'+siteStatus+'</td></tr><tr><td>Description</td><td>'+siteLocDesc+'</td></tr><tr><td>Ch93 Use</td><td>'+ch93+'</td></tr></table></div>');
     },
 
     getDetailData: function(){
@@ -183,8 +198,10 @@ define([
       var tsns = new Array(); // save all tsns in array for output
       var scounts = new Array(); // save all specimen counts in array for output
 
+      // check if list is not empty
       if(document.getElementById("dates").value.localeCompare("Select a date") != 0 ){
 
+      $("#specimen ul").append('<tr style="list-style:none;" class="specListHeading"><td>Specimen</td><td>Count</td></tr>'); 
       // get tsn by selected date
         tsnQueryTask.execute(tsnQuery, function(tsnData){
           for(var i=0; i < tsnData.features.length; i++){
@@ -215,7 +232,6 @@ define([
                   var onMacroOrg = false;
                   var thumbs = "";
                   var imageLink = "";
-                  //console.log(speciesName);
                   for (var t=0; t<thumbnails.length; t++) {
                     //console.log(tsns[j] + "==" + thumbnails[t].url + "?");
                      //if (tsns[j] == thumbnails[t].url) { 
@@ -228,13 +244,19 @@ define([
                   }
                     if (onMacroOrg == true) {
                       // link to macroinvertebrates.org
-                      $("#specimen ul").append('<tr style="list-style:none"; class="specList"><td><a href="' + externalLink+ '" onmouseover="document.getElementById(\'place-holder-1\').src=\' ' + imageLink+ ' \';" onmouseout="document.getElementById(\'place-holder-1\').src=\'../../../img/placeholder.png\';" target="blank" > ' + speciesName + '<img src="../../../img/placeholder.png" id="place-holder-1" /></a></td><td>' + scounts[j] + '</td></tr>');
-                      //console.log("building link to macroinvertebrates");
+                      $("#specimen ul").append('<tr style="list-style:none"; class="specList"><td><a href="' + externalLink+ '" onmouseover="document.getElementById(\'place-holder-1\').src=\' ' + imageLink+ ' \';" onmouseout="document.getElementById(\'place-holder-1\').src=\'../../../img/placeholder.png\';" target="blank" > ' + speciesName + '<img class="thumbsImage" src="../../../img/placeholder.png" id="place-holder-1" /></a></td><td>' + scounts[j] + '</td></tr>');
+                      // var currentMousePos = { x: -1, y: -1 };
+                      // $(document).mousemove(function(event) {
+                      //     currentMousePos.x = event.pageX;
+                      //     currentMousePos.y = event.pageY;
+                      //     console.log(event.pageX+"/"+event.pageX);    
+                      // }); 
+                      $( ".thumbsImage" ).css('top', '0px');
+                      $( ".thumbsImage" ).css('right', '15px');                
                     } else {
                       // link to ITIS with tsn
                       $("#specimen ul").append('<tr style="list-style:none;" class="specList"><td><a href="http://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=' + tsns[j] + '" target="blank"> ' + speciesName + '</a></td><td>' + " " + scounts[j] + " " + '</td></tr>'); 
                     }
-                  
                   // backup link to macroinvertebrates 
                   // $("#specimen ul").append('<tr style="list-style:none;" class="specList"><td><a href="http://macroinvertebrates.org/#/' + speciesLink + '" target="blank" > ' + speciesName + '</a></td><td>' + scounts[j] + '</td></tr>');
                                   
@@ -248,7 +270,7 @@ define([
               $("#specimen ul").append('<li style="list-style:none;">No specimens available</li>');
           }
         }, function(noResults){ // error callback
-          $("#specimen ul").append('<li style="list-style:none;">No Results</li>');
+          $("#specimen ul").append('<li style="list-style:none;">No Results</li>');   
         });
       }
     },
@@ -256,7 +278,7 @@ define([
     _getThumbnails: function() {
       $(document).ready(function(){
           $.getJSON('data/imageThumbnails.json', function(json) {
-              console.log(json);
+              //console.log(json);
           });
       });
       //console.log(JSON.stringify(data));
@@ -267,6 +289,8 @@ define([
       $( "#specimen" ).remove();
       $( "#dates" ).remove();
       $( ".cluster-content").remove();
+      $( "#siteInfo-content" ).remove();
+      document.getElementById("siteInfo").innerHTML="Site Info";
     },
 
     debug: function(){

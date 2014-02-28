@@ -120,6 +120,7 @@
 	overflow: auto;
 	margin-right: 8px;
 	padding-left: 0em;
+	margin-bottom: .5em;
 }
 .ui-autocomplete {
 	position: absolute;
@@ -447,6 +448,7 @@ button.ui-button::-moz-focus-inner {
 	border-bottom: 1px solid #e3e3e3;
 /*	box-shadow-right: 1px 1px 5px #888888;*/
 }
+
 .ui-dialog .ui-dialog-buttonpane {
 	text-align: left;
 	border-width: 1px 0 0 0;
@@ -828,6 +830,7 @@ body .ui-tooltip {
 	background-color: #3a3a3a;
 	opacity: 0.94;
 }
+
 .ui-widget-content a {
 	color: #222222;
 }

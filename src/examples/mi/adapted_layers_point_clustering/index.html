@@ -60,6 +60,16 @@
         "esri/tasks/query", 
         "esri/tasks/QueryTask",
 
+        "esri/dijit/HomeButton",
+        "esri/dijit/Geocoder",
+        "esri/dijit/LocateButton",
+        "esri/InfoTemplate",
+        "esri/dijit/BasemapGallery",
+
+        "esri/dijit/Scalebar",
+        "esri/geometry/scaleUtils",
+        "esri/dijit/OverviewMap",
+
         "dijit/layout/BorderContainer", 
         "dijit/layout/ContentPane", 
         "dojo/domReady!"
@@ -68,7 +78,9 @@
         Map, esriRequest, Graphic, Extent,
         SimpleMarkerSymbol, SimpleFillSymbol, PictureMarkerSymbol, ClassBreaksRenderer,
         GraphicsLayer, SpatialReference, Point, webMercatorUtils,
-        PopupTemplate, DetailInfo, ClusterLayer, Query, QueryTask
+        PopupTemplate, DetailInfo, ClusterLayer, Query, QueryTask,
+        HomeButton, Geocoder, LocateButton, InfoTemplate, BasemapGallery,
+        Scalebar, scaleUtils, OverviewMap
       ) {
         ready(function() {
           parser.parse();
@@ -80,14 +92,135 @@
             "marginLeft": "20",
             "marginTop": "20"
           };
-          map = new Map("map", {
-            basemap: "national-geographic",
+
+          var map = new Map("map", {
+            basemap:"national-geographic",
             center: [-77.5, 41],
             zoom: 8,
+            logo: true,
             slider: true,
             sliderPosition: "top-left",
-            sliderStyle: 'large'
+            sliderStyle: 'large',
+            wrapAround180: true
           });
+
+          map.on("mouse-move", showCoordinates);
+          map.on("load", function(){
+            showCoordinates(map.extent.getCenter())
+          });
+
+          // add a graphics layer for geocoding results
+          var graphicsLayer = new esri.layers.GraphicsLayer({id: "results"});
+
+          // add feature and graphics layer
+          map.addLayer(graphicsLayer);
+
+          //basemap gallery
+          var basemapGallery = new esri.dijit.BasemapGallery({
+            showArcGISBasemaps: true,
+            //layers: getLayers(),
+            map: map
+          }, "basemapGallery");
+          basemapGallery.startup();
+
+          // home back to initial map location
+          var home = new HomeButton({
+              map: map
+          }, "HomeButton");
+          home.startup();
+
+          /* geo locate search with grpahic
+           * TO DO style info template
+           */
+          geocoder = new Geocoder({
+            //autoComplete: true, // interferes with displaying a graphic and info window
+            map: map,
+            arcgisGeocoder: {
+              placeholder: "Find a place"
+            }
+          }, "search");
+          geocoder.startup();
+          geocoder.focus();
+          var searchResult = new PictureMarkerSymbol({
+            "angle":0,
+            "xoffset":0,
+            "yoffset":10,
+            "type":"esriPMS",
+            "url":"http://static.arcgis.com/images/Symbols/Basic/RedStickpin.png",
+            "contentType":"image/png",
+            "width":24,
+            "height":24
+          });
+
+          var searchTemplate = new esri.InfoTemplate("Search location:", "${name}");
+          dojo.connect(geocoder, "onFindResults", function(response) {
+            var l = map.getLayer("results");
+            l.clear();
+            map.infoWindow.hide();
+            dojo.forEach(response.results, function(r) {
+              r.feature.attributes.name = r.name;
+              r.feature.setSymbol(searchResult);
+              r.feature.setInfoTemplate(searchTemplate);
+              l.add(r.feature);
+            });
+            graphicsLayer.show();
+          });
+
+        /* locate button
+         * TO DO style info template
+         */
+        var location = new PictureMarkerSymbol({
+          "angle":0,
+          "xoffset":0,
+          "yoffset":10,
+          "type":"esriPMS",
+          "url":"http://static.arcgis.com/images/Symbols/Basic/RedStickpin.png",//http://static.arcgis.com/images/Symbols/Basic/RedShinyPin.png", //http://static.arcgis.com/images/Symbols/Shapes/CopperBrownPin1LargeB.png",
+          "contentType":"image/png",
+          "width":24,
+          "height":24
+        });
+        var locateTemplate = new InfoTemplate("Your location:", "${name}");
+        var geoLocate = new LocateButton({
+          map: map,
+          infoTemplate: locateTemplate,
+          symbol: location
+          //highlightLocation: false,
+          //showPointer: true,
+          //pointerGraphic: new Graphic(null, new PictureMarkerSymbol('img/locate.png', 21, 21))
+        }, "LocateButton");
+        geoLocate.startup();
+
+        //scale bar            
+        var scalebar = new Scalebar({
+            map: map,
+            scalebarUnit:"metric",
+            scalebarStyle: "ruler"
+        });
+
+        //overview map
+        var overviewMap = new OverviewMap({
+            map: map,
+            attachTo: "bottom-left",
+            visible: false
+        });
+        overviewMap.startup();
+
+        //scale and coordinates
+        function showCoordinates(evt) {
+          var id=dojo.byId("coordinates");
+          if(id===null||id===undefined){
+            console.error("coords div not defined");
+            return;
+          }
+          var mp = esri.geometry.webMercatorToGeographic(evt.mapPoint||evt);
+          var scale = scaleUtils.getScale(map);
+          //display mouse coordinates
+          if(mp===null||mp===undefined)return;
+          id.innerHTML = "Scale: 1 : " + commaSeparateNumber(Math.round(scale)) + " | Lat: " + mp.y.toFixed(6) + "&deg; Lon: " + mp.x.toFixed(6) + "&deg;";
+        } 
+
+
+
 
           map.on("load", function() {
             // hide the popup's ZoomTo link as it doesn't make sense for cluster features
@@ -110,9 +243,16 @@
               var latlng = new  Point(parseFloat(p.attributes.Lon), parseFloat(p.attributes.Lat), wgs);
               var webMercator = webMercatorUtils.geographicToWebMercator(latlng);
               var attributes = {
+                "Status": p.attributes.SiteStatus,
+                "ObjectID": p.attributes.OBJECTID,
                 "Caption": p.attributes.OrgID,
+                "SiteID": p.attributes.SiteID,
                 "Name": p.attributes.SiteName,
-                "ObjectID": p.attributes.OBJECTID
+                "Coordinates":  p.attributes.Lon.toFixed(3)+" "+p.attributes.Lat.toFixed(3)+" (Lon/Lat)",
+                "SiteNotes": p.attributes.SiteNotes,
+                "Elevation": p.attributes.Elevation,
+                "SiteLocDesc": p.attributes.SiteLocDesc,
+                "Ch93": p.attributes.Ch93Use
               };
               return {
                 "x": webMercator.x,
@@ -132,32 +272,6 @@
               "queryTask": queryTask,
               "query": query
             });
-
-            // popupTemplate to work with attributes specific to this dataset
-            // var popupTemplate = PopupTemplate({
-            //   "title": "",
-            //   "fieldInfos": [{
-            //     "fieldName": "Caption",
-            //     visible: true
-            //   }, {
-            //     "fieldName": "Name",
-            //     "label": "By",
-            //     visible: true
-            //   }, {
-            //     "fieldName": "Link",
-            //     "label": "On Instagram",
-            //     visible: true
-            //   }],
-            //   "mediaInfos": [{
-            //     "title": "",
-            //     "caption": "",
-            //     "type": "image",
-            //     "value": {
-            //       "sourceURL": "{Image}",
-            //       "linkURL": "{Link}"
-            //     }
-            //   }]
-            // });
 
             // cluster layer that uses OpenLayers style clustering
             clusterLayer = new ClusterLayer({
@@ -179,9 +293,9 @@
             var one = new PictureMarkerSymbol(picBaseUrl + "neon-yellow-wr.png", 15, 15).setOffset(0, 15);
             var smallest = new PictureMarkerSymbol(picBaseUrl + "light-blue-wr.png", 35, 35).setOffset(0, 15);
             var middle = new PictureMarkerSymbol(picBaseUrl + "blue-wr.png", 40, 40).setOffset(0, 15);
-            var big = new PictureMarkerSymbol(picBaseUrl + "dark-blue-wr.png", 50, 50).setOffset(0, 15);
-            var bigger = new PictureMarkerSymbol(picBaseUrl + "green-wr.png", 50, 50).setOffset(0, 15);
-            var biggest = new PictureMarkerSymbol(picBaseUrl + "gray.png", 50, 50).setOffset(0, 15);
+            var big = new PictureMarkerSymbol(picBaseUrl + "dark-blue-wr.png", 45, 45).setOffset(0, 15);
+            var bigger = new PictureMarkerSymbol(picBaseUrl + "dark-blue-wr.png", 50, 50).setOffset(0, 15);
+            var biggest = new PictureMarkerSymbol(picBaseUrl + "light-gray-wr.png", 55, 55).setOffset(0, 15);
             renderer.addBreak(0, 2, one);
             renderer.addBreak(2, 20, smallest);
             renderer.addBreak(20, 120, middle);
@@ -234,7 +348,27 @@
           }
         });
 
+        /* jequery stuff */
+        $(document).ready(function(){
+           $('.HomeButton').click(function(){ // hide graphic with geo search result "reset"
+              graphicsLayer.hide();
+           });
+           $('.esriGeocoderReset').click(function(){ // hide graphic with geo search result "reset"
+              graphicsLayer.hide();
+           });
+           $('.LocateButton').click(function(){ // hide graphic with geo search result "reset"
+              graphicsLayer.show();
+           });
+        }); 
+
       });
+
+      function commaSeparateNumber(val){
+          while (/(\d+)(\d{3})/.test(val.toString())){
+            val = val.toString().replace(/(\d+)(\d{3})/, '$1'+','+'$2');
+          }
+          return val;
+      }
 
     </script>
   </head>
@@ -250,16 +384,37 @@
       <div id="header">
         <p id="site-title">Macroinvertebrate Water Monitoring Map</p>
         <p id="site-subtitle">Exploring the biological health of streams</p>
+
+         <div id="search" ></div> <!--class="test"-->
+
+        
+        <div style="position:absolute; right:96px; top:25px; z-index:999;">
+          <div id="basemapButton" data-dojo-type="dijit/TitlePane" 
+                  data-dojo-props="title:'', closable:false,  open:false">
+              <div data-dojo-type="dijit/layout/ContentPane" style="width:262px; height:210px; overflow:auto;">
+                <div id="basemapGallery" ></div>
+              </div>
+          </div>
+        </div>
+        
+        <div id="BasemapToggle"></div><div id="BasemapToggleTitle">MAP</div>
+        
+        <div id="LocateButton"></div><div id="LocateButtonTitle" title="locate">LOCATE</div>
+        <div id="HomeButton"></div><div id="HomeButtonTitle" title="home">HOME</div>
       </div> <!-- header -->
 
-      <div id="map" ></div>
+      <div id="map" >
+        <span id="coordinatesContainer">
+            <span id="coordinates"></span>
+        </span>
+      </div>
 
       <div id="copyright">&copy; 2013 Carnegie Institute</div>
 
       <div id="dialog" title="Collection Sites">
           <div id="accordion" class="addContent">
             <p>Sites in Cluster</p><div class="cluster-info"></div>
-            <p>Site Info</p><div class="site-info"></div>
+            <p id="siteInfo">Site Info</p><div class="siteInfo"></div>
             <p>Macroinvertebrates</p><div class="date"></div>
           </div>
       </div>
