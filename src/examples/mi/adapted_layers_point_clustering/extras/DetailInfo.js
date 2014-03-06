@@ -105,7 +105,10 @@ define([
       //change heading of Site info when new site is selected
       document.getElementById("siteInfo").innerHTML="Site Info: " + siteName;
 
-      //var info = '<div id="sampleInfo" ></div>';
+      
+
+      var dates = '<div class="date-content"><select id="dates" onchange="getDetailData();"><option id="dateSelector"> Select a date </option></select><div id="specimen"><ul></ul></div></div>';
+      var info = '<div id="sampleInfo"></div>';
       //TODO
       //SurveyType
       //SurveyOther
@@ -117,45 +120,46 @@ define([
 
       // add heading
       // Specimen     Count
-      
-      var dates = '<div class="date-content"><select id="dates" onchange="getDetailData();"><option id="dateSelector"> Select a date </option></select><div id="specimen"><ul></ul></div></div>';
-      
-      this._query.where = "OBJECTID =" + obID;
-      //console.log(obID);
-      this._query.outFields = ["SurveyDate,DTI"];//,SurveyType,SurveyOther,MI_SamplingMethod,MI_OtherMethods,MI_SampleComments"];
-      this._queryTask.execute(this._query, this._addSampleInfo); // adds dates from collections site to a select drop down stored in the content variable
 
-      //$( "#sampleInfo" ).remove();
+      var url='http://gis.carnegiemnh.org/arcgis/rest/services/Macroinvertebrates/MacroinvertebrateWaterMonitoring/MapServer/0/queryRelatedRecords?objectIds='+obID+'&relationshipId=0&outFields=DTI%2CSurveyDate%2CSurveyType%2CSurveyOther%2CMI_SamplingMethod%2CMI_OtherMethod%2CMI_SampleComments&definitionExpression=&returnGeometry=false&maxAllowableOffset=&geometryPrecision=&outSR=&returnZ=false&returnM=false&gdbVersion=&f=pjson&callback=addSampleInfo';
+      var s = document.createElement('script');
+      s.src= url;
+      document.getElementsByTagName('head')[0].appendChild(s);
+      
       $( "#dates" ).remove();
       $( "#specimen" ).remove();
       $( ".date-content").remove();
-      //$( ".date" ).append(info);
+      $( "#sampleInfo" ).remove();
       $( ".date" ).append(dates);
-      //$( "#macro-helper" ).remove();
+      $( ".date" ).append(info);
     },
 
-    _addSampleInfo: function(results) {
+    addSampleInfo: function(results) {
       var s = "";
       var d = new Date(0); // The 0 there is the key, which sets the date to the epoch
       var day = "";
       var month = "";
       var opt = "";
-      //console.log(results);
-      for (var i=0, il=results.features.length; i<il; i++) {
-        var featureAttributes = results.features[i].attributes;
-          //console.log(results.features[i].attributes.SurveyDate);
-          d = new Date(parseInt(results.features[i].attributes.SurveyDate+14400000));
+
+      for (var i=0, il= results.relatedRecordGroups[0].relatedRecords.length; i<il; i++) {
+
+          var attributes = results.relatedRecordGroups[0].relatedRecords[i].attributes;
+        
+          // date values
+          d = new Date(parseInt(attributes.SurveyDate+14400000));
           month =  parseInt(d.getMonth())+parseInt(1);
           if (month<=9) month = "0"+month;
           day = d.getDate();
           if (day <= 9) day = "0"+day;
-          $("#dates").append("<option id='date-values' value='"+results.features[i].attributes.DTI+"'>"  + day + "/" + month + "/" + d.getFullYear() + " </option>");
-          //console.log("count: "+i);
+          $("#dates").append("<option id='date-values' value='"+attributes.DTI+"'>"  + day + "/" + month + "/" + d.getFullYear() + " </option>");
+
+          //sample info
+          //$("#sampleInfo").append('<table> <tr><td>SurveyType</td><td></td></tr> <tr><td>MI_SamplingMethod</td><td></td></tr> <tr><td>MI_SampleComments</td><td></td></tr> </table>');
       }
 
       $("#dateSelector").remove();
       //show default sample info without having to select from the drop down
-      this.getDetailData();
+      getDetailData();
     },
 
     _showSiteInfo: function(status, obID, orgID, siteID, coordinates, siteNotes, elevation, siteLocDesc, ch93){
@@ -177,7 +181,7 @@ define([
       var thumbnails = this._thumbnails;
       
       // remove all li from id specimen to dispolay new data set
-      $('#specimen ul > li').remove();
+      $('#specimen tr').remove();
       // remove select date statement
       $('#dateSelector').remove();
 

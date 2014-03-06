@@ -291,6 +291,10 @@
             detailInfo.getDetailData();
           }
 
+          addSampleInfo = function(results) {
+            detailInfo.addSampleInfo(results);
+          }
+
           function cleanUp() {
             map.infoWindow.hide();
             clusterLayer.clearSingles();
