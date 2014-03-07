@@ -61,6 +61,11 @@
             "marginLeft": "20",
             "marginTop": "20"
           };
+          var orgNames;
+          $.getJSON("data/organizations.json", function(data) {
+              // console.log(data);
+              orgNames = data;
+          });
 
           var map = new Map("map", {
             basemap:"national-geographic",
@@ -231,16 +236,17 @@
               };
             });
 
-            // Query fields for secondary query for dates
-            var queryTask = new QueryTask("http://services2.arcgis.com/Hq6thdRH56GlK76e/ArcGIS/rest/services/MacroinvertebrateWaterMonitoring_Test/FeatureServer/3");
+            // // Query fields for secondary query for dates
+            // var queryTask = new QueryTask("http://services2.arcgis.com/Hq6thdRH56GlK76e/ArcGIS/rest/services/MacroinvertebrateWaterMonitoring_Test/FeatureServer/3");
 
-            var query = new Query();
-            //query.outFields = ["SurveyDate"];//SiteStatus","OBJECTID","OrgID","SiteID","SiteName","Lat","Lon"];
-            query.returnGeometry = false;
+            // var query = new Query();
+            // //query.outFields = ["SurveyDate"];//SiteStatus","OBJECTID","OrgID","SiteID","SiteName","Lat","Lon"];
+            // query.returnGeometry = false;
 
             detailInfo = new DetailInfo({
-              "queryTask": queryTask,
-              "query": query
+              // "queryTask": queryTask,
+              // "query": query
+              "organizations": orgNames
             });
 
             // cluster layer that uses OpenLayers style clustering

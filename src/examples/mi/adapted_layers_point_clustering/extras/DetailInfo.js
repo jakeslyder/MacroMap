@@ -10,12 +10,13 @@ define([
   return declare( [GraphicsLayer], {
     constructor: function(options) {
       
-      this._queryTask = options.queryTask || console.log("Error: the query link seems to be missing, please add a queryTask to the option when creating a ClusterLayer");
+      // this._queryTask = options.queryTask || console.log("Error: the query link seems to be missing, please add a queryTask to the option when creating a ClusterLayer");
         
-      this._query = options.query || new Query();
-      this._query.returnGeometry = false;
+      // this._query = options.query || new Query();
+      // this._query.returnGeometry = false;
 
-      //this._gisServer = "http://gis.carnegiemnh.org/arcgis/rest/services/Macroinvertebrates/MacroinvertebrateWaterMonitoring/MapServer/";
+      this._organizations = options.organizations;
+
       this._gisServer = options.server || "http://services2.arcgis.com/Hq6thdRH56GlK76e/ArcGIS/rest/services/MacroinvertebrateWaterMonitoring_Test/FeatureServer/";
     
       this._thumbnails = '';
@@ -168,11 +169,15 @@ define([
 
       if (siteLocDesc == null) siteLocDesc = "-";
       if (siteNotes == null) siteNotes = "-";
-      //0 from json
-      //OrgID -> fields[1].name
-      //orgid name -> fields[1].domain.codedValues[0].name
+
+      var orgIDname;
+      for(var i = 0; i < this._organizations.length; i++){
+          if( this._organizations[i].code.toLowerCase() == orgID.toLowerCase() ){
+            orgIDname = this._organizations[i].name;
+          }
+      }
       
-      $( ".siteInfo" ).append('<div id="siteInfo-content"><table><tr><td>Organization</td><td>'+orgID+'</td></tr><tr><td>Coordinates</td><td>'+coordinates+'</td></tr><tr><td>Elevation</td><td>'+elevation.toFixed(2)+'m</td></tr><tr><td>Notes</td><td>'+siteNotes+'</td></tr><tr><td>Site Status</td><td>'+siteStatus+'</td></tr><tr><td>Description</td><td>'+siteLocDesc+'</td></tr><tr><td>Ch93 Use</td><td>'+ch93+'</td></tr></table></div>');
+      $( ".siteInfo" ).append('<div id="siteInfo-content"><table><tr><td>Organization</td><td>'+orgIDname+'</td></tr><tr><td>Coordinates</td><td>'+coordinates+'</td></tr><tr><td>Elevation</td><td>'+elevation.toFixed(2)+'m</td></tr><tr><td>Notes</td><td>'+siteNotes+'</td></tr><tr><td>Site Status</td><td>'+siteStatus+'</td></tr><tr><td>Description</td><td>'+siteLocDesc+'</td></tr><tr><td>Ch93 Use</td><td>'+ch93+'</td></tr></table></div>');
     },
 
     getDetailData: function(){
