@@ -609,3 +609,12 @@ html, body {
     font-family: arial;
     /*fill: #000;*/
 }
+
+#popuplocation { 
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 65px;
+    height: 65px;
+    z-index: 999;
+}

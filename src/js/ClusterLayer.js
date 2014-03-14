@@ -84,7 +84,7 @@ define([
 
       //show custom popup DetailInfo
       this._detailInfo = options.detailInfo;// || console.log("Error: If using the DetailInfo option to show data you have to create a query and query task in the DetailInfo constructor to pass it along with the ClusterLayer");
-
+      this._firstTime = 0;
     },
 
     // override esri/layers/GraphicsLayer methods 
@@ -215,6 +215,23 @@ define([
 
         this._addSingles(singles);
       }
+
+      if(this._firstTime == 0){
+        $( "#dialog" ).dialog({
+          resize: function( event, ui ) {
+            $(".ui-accordion-content").css("height", ui.size.height-140 +"px");
+          },
+          position: { my: "top", at: "bottom", of: "#popuplocation" } 
+        });
+        $(".ui-dialog-titlebar-close").css('background-image', 'url(img/close.png)');
+        $(".ui-dialog-titlebar-close").css('border', 'none');
+        $(".ui-dialog-titlebar-close").css('width','20');
+        $(".ui-dialog-titlebar-close").css('height','20');
+        $(".ui-dialog-titlebar-close").css('background-repeat','no-repeat');
+        $(".ui-dialog-titlebar-close").css('background-position','center center');
+        $('.ui-icon').css('display','none');
+      }  
+      this._firstTime = 1;
     },
 
     // internal methods 

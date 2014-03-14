@@ -26,35 +26,23 @@ define([
       $(document).ready(function(){
           $.getJSON('data/imageThumbnails.json', function(jsonData) {
               _this._thumbnails = jsonData;
-              //console.log(JSON.stringify(this._thumbnails));
-              //this._getThumbnails(jsonData);
           });
       });
 
     },
 
     showDetailInfoDialog: function(cluster, status, obID, orgID, siteID, siteName, coordinates, siteNotes, elevation, siteLocDesc, ch93){       
-      // set up dialog and accordion 
-      //$( "#dialog" ).dialog({ height: 570 });
+      // show up dialog and accordion 
+      $( ".ui-dialog" ).show();
       $( "#dialog" ).dialog({
-        //height: 570,
         resize: function( event, ui ) {
           $(".ui-accordion-content").css("height", ui.size.height-140 +"px");
         }
-        //position: { my: "top", at: "bottom", of: "#header" }
       });
-      $('.ui-dialog :button').blur();
+
+      $( ".ui-dialog :button" ).blur();
 
       $( "#accordion" ).accordion();
-
-      // custom close button for info dialog (- )customPopup) workaround
-      $(".ui-dialog-titlebar-close").css('background-image', 'url(../../../img/close.png)');
-      $(".ui-dialog-titlebar-close").css('border', 'none');
-      $(".ui-dialog-titlebar-close").css('width','20');
-      $(".ui-dialog-titlebar-close").css('height','20');
-      $(".ui-dialog-titlebar-close").css('background-repeat','no-repeat');
-      $(".ui-dialog-titlebar-close").css('background-position','center center');
-      $('.ui-icon').css('display','none');
 
       this._showClusterInfo(cluster);
       //populates tabs when site selected from map
@@ -267,7 +255,7 @@ define([
                   }
                     if (onMacroOrg == true) {
                       // link to macroinvertebrates.org
-                      $("#specimen ul").append('<tr style="list-style:none"; class="specList"><td><a href="' + externalLink+ '" onmouseover="document.getElementById(\'place-holder-1\').src=\' ' + imageLink+ ' \';" onmouseout="document.getElementById(\'place-holder-1\').src=\'../../../img/placeholder.png\';" target="blank" > ' + speciesName + '<img class="thumbsImage" src="../../../img/placeholder.png" id="place-holder-1" /></a></td><td>' + scounts[j] + '</td></tr>');
+                      $("#specimen ul").append('<tr style="list-style:none"; class="specList"><td><a href="' + externalLink+ '" onmouseover="document.getElementById(\'place-holder-1\').src=\' ' + imageLink+ ' \';" onmouseout="document.getElementById(\'place-holder-1\').src=\'img/placeholder.png\';" target="blank" > ' + speciesName + '<img class="thumbsImage" src="img/placeholder.png" id="place-holder-1" /></a></td><td>' + scounts[j] + '</td></tr>');
                       // var currentMousePos = { x: -1, y: -1 };
                       // $(document).mousemove(function(event) {
                       //     currentMousePos.x = event.pageX;
