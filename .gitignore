@@ -1,2 +1,5 @@
 #OSX
 .DS_Store
+
+#Visual Studio Web.config file
+Web.config
