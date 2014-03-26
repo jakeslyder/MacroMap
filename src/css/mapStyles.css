@@ -153,6 +153,13 @@ html, body {
 .dijitTitlePane .dijitArrowNode, .tundra .dijitFieldset .dijitArrowNode {background-image: none !important}
 
 
+#search {
+    position: absolute;
+    top: 14px;
+    right: 200px;
+    z-index: 50;
+}
+
 #LocateButton {
     position: absolute;
     top: 10px;
@@ -173,7 +180,7 @@ html, body {
     position: absolute;
     top: 10px;
     right: 21px;
-    z-index: 53;
+    z-index: 50;
 }
 
 #HomeButtonTitle {
@@ -363,247 +370,6 @@ html, body {
     opacity: 0.5;
 }
 
-html, body {
-    height: 100%;
-    width: 100%;
-    padding: 0px;
-    margin: 0px;
-    font-family: "Franklin Gothic", Arial;
-}
-
-#header{
-    height: 61px;
-    background-color: #3a3a3a;
-    z-index: 51;
-    border-bottom: 1px solid #eee;
-    box-shadow: 0px 2px 2px #aaa;
-    position:absolute;
-    width:100%;
-}
-
-#logo{
-    position: absolute;
-    top:0px;
-    left:18px;
-    z-index: 52;
-    width: 90px;
-    height: 90px;
-    background-size: 75px 75px !important; 
-}
-
-#site-title{    
-    font-family: "Titillium Web", sans-serif;
-    position: absolute;
-    left:110px;
-    top:5px;
-    z-index: 55;
-    font-weight: 200;
-    color: #fff;
-    font-size: 1.5em;
-    text-shadow: 1px 1px 2px #000;
-    margin: 0px;
-    line-height: 1.4em;
-}
-
-#site-subtitle{
-    font-family: "Titillium Web", sans-serif;
-    position: absolute;
-    left:110px;
-    top:35px;
-    z-index: 55;
-    font-weight: 400;
-    color: #cacaca;
-    font-size: .78em;
-    text-shadow: 1px 1px 2px #000;
-    margin: 0 0 7px 0;
-    line-height: 20px;
-}
-
-#map {
-    position: absolute;
-    z-index: 0;
-    margin: 0px;
-    z-index: 0;
-    height: 100%;
-    width:100%;
-}
-
-.paneStyle{
-    font-size: 11px;
-    color: #eeeeee;
-    background-color: #3a3a3a;
-    opacity: 0.9;
-    border: 1px solid #888888;
-    box-shadow: 1px 1px 5px #888888;
-    border-radius: 5px;
-}
-
-
-#search {
-    position: absolute;
-    top: 14px;
-    right: 200px;
-    z-index: 50;
-}
-
-#legendButton {
-    position: absolute;
-    top: 17px;
-    right: 153px;
-    z-index: 55;
-    width:25px;
-    height:25px;
-    background: url(../img/legendButton.png) no-repeat;
-    border: none;
-}
-
-#legendButton p{
-    font-size: 7px;
-    color: #fff;
-    padding-top: 21px;
-    margin-left: -3px;
-}
-
-#legendContainer{
-    position: absolute;
-    right:30px;
-    top:80px;
-    z-index: 53;    
-    width:115px;
-
-}
-
-#legendCloseButton a{
-    float:right;
-    padding-right: 5px;
-    font-size: 14px;
-    color: #fff;
-    font-weight: normal;
-    text-decoration: none;
-}
-
-#legendDiv  { 
-    float: left;
-    padding-top: 2px;
-    min-width:100px;
-}
-/* overriding */
-.esriLegendServiceLabel{ margin-left: 5px; margin-top: 10px; padding-top: 10px; text-shadow:none !important; font-weight: normal !important;}
-.ui-body-c, .ui-overlay-c {text-shadow:none !important;}
-
-/* basemap */
-.dijitTitlePaneTitle {
-    width:25px;
-    height:25px;
-    background: url("../img/basemapButton.png") no-repeat !important;
-    background-size: 25px 25px !important;
-    border:none !important;
-    position: absolute;
-    top: -10px;
-    right: 7px;
-    z-index: 55;
-    width:25px;
-    height:25px;
-}
-
-/* overriding */
-#dijit_TitlePane_0_titleBarNode                                 { width: 20px; height: 20px; background-color: #3a3a3a;}
-.dijitTitlePaneContentOuter                                     { width: 0px; height: 0px; border:none; background-color: red}
-.dijitTitlePaneContentInner                                     { background-color: #3a3a3a; opacity: 0.9; font-size: 12px; color: #eeeeee; margin-top: 70px; 
-                                                                  position: absolute; top:3px; right:-90px; border: 1px solid #888888; box-shadow: 1px 1px 5px #888888; }
-.dijitInline, .dijitTitlePaneTextNode                           { float: right; color: #3a3a3a !important;}
-.esriBasemapGalleryThumbnail                                    { border: none;}
-.esriBasemapGallerySelectedNode .esriBasemapGalleryThumbnail    { border: 1px solid #eeeeee;}
-.dijitTitlePane .dijitArrowNode, .tundra .dijitFieldset .dijitArrowNode {background-image: none !important}
-
-
-#LocateButton {
-    position: absolute;
-    top: 10px;
-    right: 62px;
-    z-index: 50;
-}
-
-#LocateButtonTitle{
-    position: absolute;
-    top: 44px;
-    right: 65px;
-    z-index: 50;
-    font-size: 7px;
-    color: #fff;
-}
-
-#HomeButton {
-    position: absolute;
-    top: 10px;
-    right: 21px;
-    z-index: 53;
-}
-
-#HomeButtonTitle {
-    position: absolute;
-    top: 44px;
-    right: 27px;
-    z-index: 53;
-    font-size: 7px;
-    color: #fff;
-}
-/*overriding*/
-.home   {background-color: #3a3a3a !important;}
-
-/* zoom overriding */
-.esriLargeSliderTL          { top:95px; left:20px;}
-.dijitSliderIncrementIconV  { background: url(../img/zoomPlusW.png) no-repeat 0 0 !important; width:20px !important; height: 20px !important; margin-bottom: 3px; margin-left: 2px;}
-.dijitSliderDecrementIconV  { background: url(../img/zoomMinusW.png) no-repeat 0 0 !important; width:20px !important; height: 20px !important; margin-top: 3px; margin-left: 1px;}
-.dijitSliderImageHandleV    {  background-size: 15px 8px !important; }
-.zoomLocateButton {background-color: #3a3a3a !important;}
-
-/* overview panel */
-.esriOverviewMap.ovwBL .ovwContainer {
-    border: 1px solid #000000;
-    bottom: 60px;
-    padding-bottom: 2px;
-    padding-left: 2px;
-    width:265px !important;
-    margin-left:25px;
-}
-
-#coordinatesContainer{
-    position:absolute; 
-    left:25px; 
-    bottom:0px; 
-    color:#000; 
-    z-index:50;
-    background-color: #eeeeee;
-    border-radius: 5px 5px 0px 0px;
-    box-shadow: 5px 1px 5px #888888;
-}
-
-#coordinates {
-    margin: 5px;
-    font-size: 12px;
-}
-
-#copyright {
-    position: absolute;
-    right:75px;
-    bottom: 23px;
-    color:#3a3a3a;
-    background-color: #fafafa;
-    width: 150px;
-    height:12px;
-    opacity: 0.8;
-    padding: 2px;
-    border-radius: 3px;
-    font-size: 13px;
-}
-
-.esriAttribution {
-    border-radius: 3px;
-    background-color: #fafafa;
-    opacity: 0.8;
-}
-
 /*style for each cluster marker*/
 #clusters_layer text{
     font-family: arial;
@@ -616,5 +382,5 @@ html, body {
     right: 0px;
     width: 65px;
     height: 65px;
-    z-index: 999;
+    z-index: 0;
 }

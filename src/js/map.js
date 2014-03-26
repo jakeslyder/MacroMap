@@ -51,7 +51,7 @@
         HomeButton, Geocoder, LocateButton, InfoTemplate, BasemapGallery,
         Scalebar, scaleUtils, OverviewMap
       ) {
-        ready(function() {
+        //ready(function() {
           parser.parse();
 
           var clusterLayer;
@@ -80,7 +80,20 @@
           });
 
           map.on("mouse-move", showCoordinates);
-          map.on("load", function(){
+          // map.on("load", function(){
+          //   showCoordinates(map.extent.getCenter())
+          // });
+          map.on("load", function() {
+            // hide the popup's ZoomTo link as it doesn't make sense for cluster features
+            domStyle.set(query("a.action.zoomTo")[0], "display", "none");
+
+            // get the latest sites from http://services2.arcgis.com/Hq6thdRH56GlK76e/ArcGIS/rest/services/MacroinvertebrateWaterMonitoring_Test/FeatureServer/0
+            var sites = esriRequest({
+              "url": "data/sites.json",
+              "handleAs": "json"
+            });
+            sites.then(addClusters, error);
+            
             showCoordinates(map.extent.getCenter())
           });
 
@@ -100,7 +113,8 @@
 
           // home back to initial map location
           var home = new HomeButton({
-              map: map
+              map: map,
+              extent: null,
           }, "HomeButton");
           home.startup();
 
@@ -116,6 +130,7 @@
           }, "search");
           geocoder.startup();
           geocoder.focus();
+
           var searchResult = new PictureMarkerSymbol({
             "angle":0,
             "xoffset":0,
@@ -141,80 +156,65 @@
             graphicsLayer.show();
           });
 
-        /* locate button
-         * TO DO style info template
-         */
-        var location = new PictureMarkerSymbol({
-          "angle":0,
-          "xoffset":0,
-          "yoffset":10,
-          "type":"esriPMS",
-          "url":"http://static.arcgis.com/images/Symbols/Basic/RedStickpin.png",//http://static.arcgis.com/images/Symbols/Basic/RedShinyPin.png", //http://static.arcgis.com/images/Symbols/Shapes/CopperBrownPin1LargeB.png",
-          "contentType":"image/png",
-          "width":24,
-          "height":24
-        });
-        var locateTemplate = new InfoTemplate("Your location:", "${name}");
-        var geoLocate = new LocateButton({
-          map: map,
-          infoTemplate: locateTemplate,
-          symbol: location
-          //highlightLocation: false,
-          //showPointer: true,
-          //pointerGraphic: new Graphic(null, new PictureMarkerSymbol('img/locate.png', 21, 21))
-        }, "LocateButton");
-        geoLocate.startup();
-
-        //scale bar            
-        var scalebar = new Scalebar({
+          /* locate button
+           * TO DO style info template
+           */
+          var location = new PictureMarkerSymbol({
+            "angle":0,
+            "xoffset":0,
+            "yoffset":10,
+            "type":"esriPMS",
+            "url":"http://static.arcgis.com/images/Symbols/Basic/RedStickpin.png",//http://static.arcgis.com/images/Symbols/Basic/RedShinyPin.png", //http://static.arcgis.com/images/Symbols/Shapes/CopperBrownPin1LargeB.png",
+            "contentType":"image/png",
+            "width":24,
+            "height":24
+          });
+          var locateTemplate = new InfoTemplate("Your location:", "${name}");
+          var geoLocate = new LocateButton({
             map: map,
-            scalebarUnit:"metric",
-            scalebarStyle: "ruler"
-        });
+            infoTemplate: locateTemplate,
+            symbol: location
+            //highlightLocation: false,
+            //showPointer: true,
+            //pointerGraphic: new Graphic(null, new PictureMarkerSymbol('img/locate.png', 21, 21))
+          }, "LocateButton");
+          geoLocate.startup();
 
-        //overview map
-        var overviewMap = new OverviewMap({
-            map: map,
-            attachTo: "bottom-left",
-            visible: false
-        });
-        overviewMap.startup();
-
-        //scale and coordinates
-        function showCoordinates(evt) {
-          var id=dojo.byId("coordinates");
-          if(id===null||id===undefined){
-            console.error("coords div not defined");
-            return;
-          }
-          var mp = esri.geometry.webMercatorToGeographic(evt.mapPoint||evt);
-          var scale = scaleUtils.getScale(map);
-          //display mouse coordinates
-          if(mp===null||mp===undefined)return;
-          id.innerHTML = "Scale: 1 : " + commaSeparateNumber(Math.round(scale)) + " | Lat: " + mp.y.toFixed(6) + "&deg; Lon: " + mp.x.toFixed(6) + "&deg;";
-        } 
-
-
-
-
-          map.on("load", function() {
-            // hide the popup's ZoomTo link as it doesn't make sense for cluster features
-            domStyle.set(query("a.action.zoomTo")[0], "display", "none");
-
-            // get the latest sites from http://services2.arcgis.com/Hq6thdRH56GlK76e/ArcGIS/rest/services/MacroinvertebrateWaterMonitoring_Test/FeatureServer/0
-            var sites = esriRequest({
-              "url": "data/sites.json",
-              "handleAs": "json"
-            });
-            sites.then(addClusters, error);
+          //scale bar            
+          var scalebar = new Scalebar({
+              map: map,
+              scalebarUnit:"metric",
+              scalebarStyle: "ruler"
           });
 
+          //overview map
+          var overviewMap = new OverviewMap({
+              map: map,
+              attachTo: "bottom-left",
+              visible: false
+          });
+          overviewMap.startup();
+
+          //scale and coordinates
+          function showCoordinates(evt) {
+            var id=dojo.byId("coordinates");
+            if(id===null||id===undefined){
+              console.error("coords div not defined");
+              return;
+            }
+            var mp = esri.geometry.webMercatorToGeographic(evt.mapPoint||evt);
+            var scale = scaleUtils.getScale(map);
+            //display mouse coordinates
+            if(mp===null||mp===undefined)return;
+            id.innerHTML = "Scale: 1 : " + commaSeparateNumber(Math.round(scale)) + " | Lat: " + mp.y.toFixed(6) + "&deg; Lon: " + mp.x.toFixed(6) + "&deg;";
+          } 
 
           function addClusters(resp) {
             var siteInfo = {};
             var wgs = new SpatialReference({
               "wkid": 3857
             });
+
             siteInfo.data = arrayUtils.map(resp, function(p) {
               var latlng = new  Point(parseFloat(p.attributes.Lon), parseFloat(p.attributes.Lat), wgs);
               var webMercator = webMercatorUtils.geographicToWebMercator(latlng);
@@ -292,7 +292,7 @@
                 cleanUp();
               }
             });
-          }
+          } // end addClusters
 
           getDetailData = function() {
             detailInfo.getDetailData();
@@ -327,6 +327,7 @@
             }, this);
             map.addLayer(extents, 0);
           }
+
         });
 
         /* jequery stuff */
@@ -342,7 +343,7 @@
            });
         }); 
 
-      });
+      //}); // end ready function from line 54
 
       function commaSeparateNumber(val){
           while (/(\d+)(\d{3})/.test(val.toString())){
