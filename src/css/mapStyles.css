@@ -308,6 +308,10 @@ html, body {
     padding-left: 1em;
 }
 
+#single-date{
+    padding-left: 1em;
+}
+
 .date ul{
     list-style: none;
     color: #fff;

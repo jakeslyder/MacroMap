@@ -29,6 +29,8 @@ define([
           });
       });
 
+      this._DTI = null;
+
     },
 
     showDetailInfoDialog: function(cluster, status, obID, orgID, siteID, siteName, coordinates, siteNotes, elevation, siteLocDesc, ch93){       
@@ -113,7 +115,8 @@ define([
       //change heading of Site info when new site is selected
       document.getElementById("siteInfo").innerHTML="Site Info: " + siteName;
 
-      var dates = '<div class="date-content"><select id="dates" onchange="getDetailData();"><option id="dateSelector"> Select a date </option></select><div id="specimen"><ul></ul></div></div>';
+      var dates = '<div class="date-content"></div>';
+      //var dates = '<div class="date-content"><select id="dates" onchange="getDetailData();"><option id="dateSelector"> Select a date </option></select><div id="specimen"><ul></ul></div></div>';
       var info = '<div id="sampleInfo"></div>';
 
       var url = this._gisServer+'0/queryRelatedRecords?objectIds='+obID+'&relationshipId=0&outFields=DTI%2CSurveyDate%2CSurveyType%2CSurveyOther%2CMI_SamplingMethod%2CMI_OtherMethod%2CMI_SampleComments&definitionExpression=&returnGeometry=false&maxAllowableOffset=&geometryPrecision=&outSR=&returnZ=false&returnM=false&gdbVersion=&f=pjson&callback=addSampleInfo';
@@ -136,33 +139,53 @@ define([
       var month = "";
       var opt = "";
 
+      this._DTI = null;
+
       var sampleInfo = new Array();
       var dateSpecificSampleInfo = new Object();
 
-      for (var i=0, il= results.relatedRecordGroups[0].relatedRecords.length; i<il; i++) {
+      if(results.relatedRecordGroups[0].relatedRecords.length > 1){
 
-          var attributes = results.relatedRecordGroups[0].relatedRecords[i].attributes;
-        
+        $(".date-content").append('<select id="dates" onchange="getDetailData();"><option id="dateSelector"> Select a date </option></select><div id="specimen"><ul></ul></div>');
+
+        for (var i=0, il= results.relatedRecordGroups[0].relatedRecords.length; i<il; i++) {
+
+            var attributes = results.relatedRecordGroups[0].relatedRecords[i].attributes;
+          
+            // date values
+            d = new Date(parseInt(attributes.SurveyDate+14400000));
+            month =  parseInt(d.getMonth())+parseInt(1);
+            if (month<=9) month = "0"+month;
+            day = d.getDate();
+            if (day <= 9) day = "0"+day;
+            $("#dates").append("<option id='date-values' value='"+attributes.DTI+"'>"  + day + "/" + month + "/" + d.getFullYear() + " </option>");
+
+            // dateSpecificSampleInfo.SurveyType = attributes.SurveyType;
+            // dateSpecificSampleInfo.MI_SamplingMethod = attributes.MI_SamplingMethod;
+            // dateSpecificSampleInfo.MI_SampleComments = attributes.MI_SampleComments;
+            // sampleInfo[i] = dateSpecificSampleInfo;
+        }
+
+        $("#dateSelector").remove();
+
+      } else {
+
+          var attributes = results.relatedRecordGroups[0].relatedRecords[0].attributes;
+          
           // date values
           d = new Date(parseInt(attributes.SurveyDate+14400000));
           month =  parseInt(d.getMonth())+parseInt(1);
           if (month<=9) month = "0"+month;
           day = d.getDate();
           if (day <= 9) day = "0"+day;
-          $("#dates").append("<option id='date-values' value='"+attributes.DTI+"'>"  + day + "/" + month + "/" + d.getFullYear() + " </option>");
 
-          dateSpecificSampleInfo.SurveyType = attributes.SurveyType;
-          dateSpecificSampleInfo.MI_SamplingMethod = attributes.MI_SamplingMethod;
-          dateSpecificSampleInfo.MI_SampleComments = attributes.MI_SampleComments;
-          sampleInfo[i] = dateSpecificSampleInfo;
+          $(".date-content").append( "<div id='single-date'>" + day + "/" + month + "/" + d.getFullYear() + '</div><div id="specimen"><ul></ul></div>');
+          this._DTI = attributes.DTI; 
       }
-
-      $("#dateSelector").remove();
-
       //generate and set sample specific site info so it can be displayed when dates are selected
       //this._setDateSpecificSampleInfo(sampleInfo);
       // console.log(sampleInfo);
-      this._sampleInfo = sampleInfo;
+      //this._sampleInfo = sampleInfo;
       //show default sample info without having to select from the drop down
       getDetailData();
     },
@@ -192,7 +215,11 @@ define([
       var tsnQuery = new Query();
       var tsnQueryTask = new QueryTask(this._gisServer + "2"); //http://services2.arcgis.com/Hq6thdRH56GlK76e/ArcGIS/rest/services/MacroinvertebrateWaterMonitoring_Test/FeatureServer/2");
       
-      tsnQuery.where = "DTI = '" + document.getElementById("dates").value + "'"; //get entries by DTI from date selection
+      if(this._DTI != null) {
+        tsnQuery.where = "DTI = '" + this._DTI + "'";
+      } else {
+        tsnQuery.where = "DTI = '" + document.getElementById("dates").value + "'"; //get entries by DTI from date selection
+      }
       //console.log(document.getElementById("dates").value);
       //console.log(tsnQuery.where);
       tsnQuery.outFields = ["TSN, SpecimenCount"];
@@ -204,12 +231,14 @@ define([
       var tsns = new Array(); // save all tsns in array for output
       var scounts = new Array(); // save all specimen counts in array for output
 
-      // check if list is not empty
-      if(document.getElementById("dates").value.localeCompare("Select a date") != 0 ){
+      // check if a date is selected
+      //if(document.getElementById("dates").value.localeCompare("Select a date") != 0 ){
 
       $("#specimen ul").append('<tr style="list-style:none;" class="specListHeading"><td>Specimen</td><td>Count</td></tr>'); 
+      
       // get tsn by selected date
-        tsnQueryTask.execute(tsnQuery, function(tsnData){
+      tsnQueryTask.execute(tsnQuery, function(tsnData){
+        //console.log('just in query');
           for(var i=0; i < tsnData.features.length; i++){
             tsn = JSON.stringify(tsnData.features[i].attributes.TSN);
             scount = JSON.stringify(tsnData.features[i].attributes.SpecimenCount);
@@ -228,7 +257,7 @@ define([
               if(speciesList.features.length > 0){
 
                 //sample info
-                console.log(this._sampleInfo);
+                //console.log(this._sampleInfo);
                 //$("#sampleInfo").append('<table><tr><td>SurveyType</td><td></td></tr> <tr><td>MI_SamplingMethod</td><td></td></tr> <tr><td>MI_SampleComments</td><td></td></tr> </table>');
 
                 for(var j=speciesList.features.length-1; j >= 0; j--){
@@ -280,10 +309,10 @@ define([
           } else {
               $("#specimen ul").append('<li style="list-style:none;">No specimens available</li>');
           }
-        }, function(noResults){ // error callback
+        }, function(noResults){ // error callback for tsnQueryTask.execute()
           $("#specimen ul").append('<li style="list-style:none;">No Results</li>');   
         });
-      }
+      //}
     },
 
     _getThumbnails: function() {
