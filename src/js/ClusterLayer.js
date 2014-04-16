@@ -15,8 +15,8 @@ define([
   "esri/layers/GraphicsLayer",
 
   "esri/tasks/query", 
-  "esri/tasks/QueryTask",
-  "extras/DetailInfo"
+  "esri/tasks/QueryTask"
+  // "extras/DetailInfo"
 ], function (
   declare, arrayUtils, Color, connect,
   SpatialReference, Point, Graphic, SimpleMarkerSymbol, SimpleLineSymbol, TextSymbol, 

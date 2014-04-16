@@ -143,13 +143,12 @@ html, body {
 }
 
 /* over writing */
-#dijit_TitlePane_0_titleBarNode                                 { width: 20px; height: 20px; background-color: #3a3a3a;}
-.dijitTitlePaneContentOuter                                     { width: 0px; height: 0px; border:none; background-color: red}
-.dijitTitlePaneContentInner                                     { background-color: #3a3a3a; opacity: 0.9; font-size: 12px; color: #eeeeee; margin-top: 70px; 
-                                                                  position: absolute; top:3px; right:-90px; border: 1px solid #888888; box-shadow: 1px 1px 5px #888888; }
-.dijitInline, .dijitTitlePaneTextNode                           { float: right; color: #3a3a3a !important;}
-.esriBasemapGalleryThumbnail                                    { border: none;}
-.esriBasemapGallerySelectedNode .esriBasemapGalleryThumbnail    { border: 1px solid #eeeeee;}
+#dijit_TitlePane_0_titleBarNode  { width: 20px; height: 20px; background-color: #3a3a3a;}
+.tundra .dijitTitlePaneContentOuter {border-color: -moz-use-text-color #BFBFBF #BFBFBF; border-image: none; border-style: none; border-width: 0 1px 1px; }
+.tundra .dijitTitlePaneContentInner { background-color: #3a3a3a; opacity: 0.9; font-size: 12px; color: #eeeeee; margin-top: 50px; position: absolute; top:0; right:-80px; box-shadow: 1px 1px 5px #888888; border-radius: 5px; z-index: 999;}
+.dijitInline, .dijitTitlePaneTextNode { float: right; color: #3a3a3a !important;}
+.esriBasemapGalleryThumbnail { border: none;}
+.esriBasemapGallerySelectedNode .esriBasemapGalleryThumbnail { border: 1px solid #eeeeee;}
 .dijitTitlePane .dijitArrowNode, .tundra .dijitFieldset .dijitArrowNode {background-image: none !important}
 
 
@@ -200,6 +199,7 @@ html, body {
 .dijitSliderDecrementIconV  { background: url(../img/zoomMinusW.png) no-repeat 0 0 !important; width:20px !important; height: 20px !important; margin-top: 3px; margin-left: 1px;}
 .dijitSliderImageHandleV    {  background-size: 15px 8px !important; }
 .zoomLocateButton {background-color: #3a3a3a !important;}
+
 
 /* overview panel */
 .esriOverviewMap.ovwBL .ovwContainer {
@@ -309,6 +309,10 @@ html, body {
 }
 
 #single-date{
+    padding-left: 1em;
+}
+
+#sampleInfo{
     padding-left: 1em;
 }
 

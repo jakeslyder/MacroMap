@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=7,IE=9" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no" />
+    <title>Get ArcGIS Server Map Service Layer Field Names</title>
+    <script type="text/javascript">
+      var dojoConfig = {
+        isDebug: true
+      };
+    </script>
+    <script src="http://js.arcgis.com/3.8/"></script>
+    <script type="text/javascript">
+    var cv = {};
+      require([
+        "dojo/ready",
+        "dojo/dom",
+        "dojo/_base/connect",
+        "dojo/dom-class",
+        "dojo/_base/json"
+      ], function(
+        ready, dom, connect, domClass, json
+      ) {
+
+      ready(function () {
+      //dom.byId("url").value = "http://gis.carnegiemnh.org/arcgis/rest/services/Macroinvertebrates/MacroinvertebrateWaterMonitoring/MapServer/3";
+      //   dom.byId("content").value = "";
+      //   connect.connect(dom.byId("go"), "onclick", getContent);
+        //var cv = {};
+        getCodedValues("MI_SamplingMethod", "http://gis.carnegiemnh.org/arcgis/rest/services/Macroinvertebrates/MacroinvertebrateWaterMonitoring/MapServer/3");
+
+        // console.log(cv);
+        // var info = "";
+        // // save out domain info
+        // for ( field in cv ) {
+        //   if ( cv[field].codedValues ) {
+        //       //info += field + " has a CV domain, codes/values: \n";
+        //       dojo.forEach(cv[field].codedValues, function(cv) {
+        //         info += "\t" + pad(cv.code + ":  ", 4, " ", true) + " " + cv.name + "\n";
+        //       });
+        //   }
+        // }
+        //console.log(info);
+        //console.log(cv);
+       });
+
+      function getCodedValues(fieldName, url) {
+        //var url;
+        //dom.byId("content").value = "";
+        //dojo.removeClass(dom.byId("content"), "failure");
+        //dom.byId("status").innerHTML = "Downloading...";
+        //var url = "http://gis.carnegiemnh.org/arcgis/rest/services/Macroinvertebrates/MacroinvertebrateWaterMonitoring/MapServer/3";
+        // if (url.length == 0) {
+        //   alert("Please enter a URL.");
+        //   return;
+        // }
+        var requestHandle = esri.request({
+          "url": url,
+          "content": {
+            "f": "json"
+          },
+          "callbackParamName": "callback",
+        });
+        requestHandle.then(requestSucceeded, requestFailed);
+      }
+
+      function requestSucceeded(response, io) {
+        var fieldInfo, pad;
+        pad = dojo.string.pad;
+        //console.log("Succeeded: ", response);
+        var fieldsWithDomains = {};
+        // loop throught the fields
+        dojo.forEach(response.fields, function(field) {
+          if ( field.domain ) {
+            // use the field name as a key
+            fieldsWithDomains["MI_SamplingMethod"] = field.domain; //"SurveyType" // field.name returns cv for fields that have cv
+          }
+        });
+        // var info = "";
+        // // save out domain info
+        // for ( field in fieldsWithDomains ) {
+        //   if ( fieldsWithDomains[field].codedValues ) {
+        //       //info += field + " has a CV domain, codes/values: \n";
+        //       dojo.forEach(fieldsWithDomains[field].codedValues, function(cv) {
+        //         info += "\t" + pad(cv.code + ":  ", 4, " ", true) + " " + cv.name + "\n";
+        //       });
+        //   }
+        // }
+        // console.log(info);
+        //dojo.byId("content").value = info;
+        console.log(fieldsWithDomains.MI_SamplingMethod.codedValues[0].name);
+        
+      }              
+      function requestFailed(error, io) {         
+        console.log("CV Failed: ", error);         
+        //domClass.add(dom.byId("content"), "failure");         
+        //dojo.toJsonIndentStr = "  ";
+        //dom.byId("content").value = dojo.toJson(error, true);
+      }
+    });
+    </script>
+  </head>
+  
+ <!--  <body style="font-family: Arial Unicode MS,Arial,sans-serif;">
+    <p>Use esri.request to download info coded value domains.</p>
+    <p>Enter the URL for a layer with fields that have coded values domains:<br>
+      <input type="text" id="url" size="75" />
+      <input id="go" type="button" value="GO" />
+      <br />Check the console for the full response.
+      <span id="status"></span>
+    </p>
+    <p>
+      <p>Fields with coded value domains:</p>
+      <textarea id="content"></textarea>
+    </p>
+  </body> -->
+
+</html>

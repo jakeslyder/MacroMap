@@ -6,8 +6,8 @@
     <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no" />
     <title>Macroinvertebrates Collection Map</title>
 
-    <link rel="stylesheet" href="http://js.arcgis.com/3.8/js/dojo/dijit/themes/tundra/tundra.css" />
-    <link rel="stylesheet" href="http://js.arcgis.com/3.8/js/esri/css/esri.css" />
+    <link rel="stylesheet" href="http://js.arcgis.com/3.7/js/dojo/dijit/themes/tundra/tundra.css" />
+    <link rel="stylesheet" href="http://js.arcgis.com/3.7/js/esri/css/esri.css" />
 
     <!-- font -->
     <link href="http://fonts.googleapis.com/css?family=Titillium+Web:100,100italic,200,200italic,300,300italic,400,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css" />
@@ -27,12 +27,13 @@
       // http://www.sitepen.com/blog/2013/06/20/dojo-faq-what-is-the-difference-packages-vs-paths-vs-aliases/
       var dojoConfig = { 
         paths: {
-          extras: location.pathname.replace(/\/[^/]+$/, "") + "/js"
+          extras: location.pathname.replace(/\/[^/]+$/, "") + "js"
         }
       };
     </script>
-    <script src="http://js.arcgis.com/3.8/"></script>
+    <script src="http://js.arcgis.com/3.7/"></script>
     <script type="text/javascript" src="js/map.js"></script>
+
   </head>
 
   <body class="tundra">
@@ -66,7 +67,7 @@
       </div> <!-- header -->
       <div id="popuplocation"></div>
 
-      <div id="map" >
+      <div id="map">
         <span id="coordinatesContainer">
             <span id="coordinates"></span>
         </span>
@@ -83,6 +84,6 @@
       </div>
 
   </body>
-
+    
 </html>
 

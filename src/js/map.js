@@ -25,6 +25,7 @@
 
         "esri/dijit/PopupTemplate",
         "extras/DetailInfo",
+        "extras/CodedValues",
         "extras/ClusterLayer",
         "esri/tasks/query", 
         "esri/tasks/QueryTask",
@@ -40,22 +41,28 @@
         "esri/dijit/OverviewMap",
 
         "dijit/layout/BorderContainer", 
-        "dijit/layout/ContentPane", 
+        "dijit/layout/ContentPane",
+
+        "dojo/Stateful",
+        "dojo/_base/declare",
+
         "dojo/domReady!"
       ], function(
         parser, ready, arrayUtils, Color, domStyle, query,
         Map, esriRequest, Graphic, Extent,
         SimpleMarkerSymbol, SimpleFillSymbol, PictureMarkerSymbol, ClassBreaksRenderer,
         GraphicsLayer, SpatialReference, Point, webMercatorUtils,
-        PopupTemplate, DetailInfo, ClusterLayer, Query, QueryTask,
+        PopupTemplate, DetailInfo, CodedValues, ClusterLayer, Query, QueryTask,
         HomeButton, Geocoder, LocateButton, InfoTemplate, BasemapGallery,
-        Scalebar, scaleUtils, OverviewMap
+        Scalebar, scaleUtils, OverviewMap,
+        Stateful, declare
       ) {
         //ready(function() {
           parser.parse();
 
           var clusterLayer;
           var detailInfo;
+          var sampleInfo;
           var popupOptions = {
             "markerSymbol": new SimpleMarkerSymbol("circle", 20, null, new Color([0, 0, 0, 0.25])),
             "marginLeft": "20",
@@ -65,7 +72,7 @@
           $.getJSON("data/organizations.json", function(data) {
               // console.log(data);
               orgNames = data;
-              console.log(JSON.stringify(orgNames));
+              //console.log(JSON.stringify(orgNames));
           });
 
           var map = new Map("map", {
@@ -237,18 +244,44 @@
               };
             });
 
-            // // Query fields for secondary query for dates
-            // var queryTask = new QueryTask("http://services2.arcgis.com/Hq6thdRH56GlK76e/ArcGIS/rest/services/MacroinvertebrateWaterMonitoring_Test/FeatureServer/3");
 
-            // var query = new Query();
-            // //query.outFields = ["SurveyDate"];//SiteStatus","OBJECTID","OrgID","SiteID","SiteName","Lat","Lon"];
-            // query.returnGeometry = false;
 
-            detailInfo = new DetailInfo({
-              // "queryTask": queryTask,
-              // "query": query
-              "organizations": orgNames
-            });
+
+            // var requestHandle = esri.request({
+            //   "url": "http://gis.carnegiemnh.org/arcgis/rest/services/Macroinvertebrates/MacroinvertebrateWaterMonitoring/MapServer/3",
+            //   "content": {
+            //     "f": "json"
+            //   },
+            //   "callbackParamName": "callback",
+            // });
+
+            // requestHandle.then(function(response, io) {
+            //   var fieldInfo, pad;
+            //   pad = dojo.string.pad;
+            //   //console.log("Succeeded: ", response);
+            //   var fieldsWithDomains = {};
+            //   // loop throught the fields
+            //   dojo.forEach(response.fields, function(field) {
+            //     if ( field.domain ) {
+            //       // use the field name as a key
+            //       //fieldsWithDomains["MI_SamplingMethod"] = field.domain; //"SurveyType" // field.name returns cv for fields that have cv
+            //       fieldsWithDomains[field.name] = field.domain; //"SurveyType" // field.name returns cv for fields that have cv
+            //     }
+            //   });
+            //     console.log("maps.js "+fieldsWithDomains.SurveyType.codedValues[0].name);
+                detailInfo = new DetailInfo({
+                  // "queryTask": queryTask,
+                  // "query": query
+                  "organizations": orgNames
+                  // "codedValues": fieldsWithDomains
+                });
+            //   }, function(error, io) {         
+            //   console.log("CV Failed: ", error);
+            // });
+
+            
+
+
 
             // cluster layer that uses OpenLayers style clustering
             clusterLayer = new ClusterLayer({
@@ -294,12 +327,41 @@
             });
           } // end addClusters
 
+          //method called for each selected site and each date with taht site if multiple
           getDetailData = function() {
+            detailInfo.clearSampleInfo();
             detailInfo.getDetailData();
           }
 
           addSampleInfo = function(results) {
-            detailInfo.addSampleInfo(results);
+  
+            var requestHandle = esri.request({
+              "url": "http://gis.carnegiemnh.org/arcgis/rest/services/Macroinvertebrates/MacroinvertebrateWaterMonitoring/MapServer/3",
+              "content": {
+                "f": "json"
+              },
+              "callbackParamName": "callback",
+            });
+
+            requestHandle.then(function(response, io) {
+              var fieldInfo, pad;
+              pad = dojo.string.pad;
+              //console.log("Succeeded: ", response);
+              var fieldsWithDomains = {};
+              // loop throught the fields
+              dojo.forEach(response.fields, function(field) {
+                if ( field.domain ) {
+                  // use the field name as a key
+                  //fieldsWithDomains["MI_SamplingMethod"] = field.domain; //"SurveyType" // field.name returns cv for fields that have cv
+                  fieldsWithDomains[field.name] = field.domain; //"SurveyType" // field.name returns cv for fields that have cv
+                }
+              });
+              //console.log("DetailInfo.js "+fieldsWithDomains.SurveyType.codedValues[0].name);
+              detailInfo.addSampleInfo(results, fieldsWithDomains);
+
+            }, function(error, io) {         
+              console.log("CV Failed: ", error);
+            });
           }
 
           function cleanUp() {
@@ -351,3 +413,4 @@
           }
           return val;
       }
+        
