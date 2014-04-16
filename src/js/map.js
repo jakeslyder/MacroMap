@@ -60,6 +60,15 @@
         //ready(function() {
           parser.parse();
 
+          var gisServer = "http://services2.arcgis.com/Hq6thdRH56GlK76e/ArcGIS/rest/services/MacroinvertebrateWaterMonitoring_Test/FeatureServer/"
+          //var gisServer = "http://gis.carnegiemnh.org/arcgis/rest/services/Macroinvertebrates/MacroinvertebrateWaterMonitoring/MapServer";
+          var requestHandle = esri.request({
+              "url": gisServer+"3",
+              "content": {
+                "f": "json"
+              },
+              "callbackParamName": "callback",
+            });
           var clusterLayer;
           var detailInfo;
           var sampleInfo;
@@ -244,45 +253,13 @@
               };
             });
 
-
-
-
-            // var requestHandle = esri.request({
-            //   "url": "http://gis.carnegiemnh.org/arcgis/rest/services/Macroinvertebrates/MacroinvertebrateWaterMonitoring/MapServer/3",
-            //   "content": {
-            //     "f": "json"
-            //   },
-            //   "callbackParamName": "callback",
-            // });
-
-            // requestHandle.then(function(response, io) {
-            //   var fieldInfo, pad;
-            //   pad = dojo.string.pad;
-            //   //console.log("Succeeded: ", response);
-            //   var fieldsWithDomains = {};
-            //   // loop throught the fields
-            //   dojo.forEach(response.fields, function(field) {
-            //     if ( field.domain ) {
-            //       // use the field name as a key
-            //       //fieldsWithDomains["MI_SamplingMethod"] = field.domain; //"SurveyType" // field.name returns cv for fields that have cv
-            //       fieldsWithDomains[field.name] = field.domain; //"SurveyType" // field.name returns cv for fields that have cv
-            //     }
-            //   });
-            //     console.log("maps.js "+fieldsWithDomains.SurveyType.codedValues[0].name);
-                detailInfo = new DetailInfo({
-                  // "queryTask": queryTask,
-                  // "query": query
-                  "organizations": orgNames
-                  // "codedValues": fieldsWithDomains
-                });
-            //   }, function(error, io) {         
-            //   console.log("CV Failed: ", error);
-            // });
-
+            detailInfo = new DetailInfo({
+              // "queryTask": queryTask,
+              // "query": query
+              "gisServer": gisServer,
+              "organizations": orgNames
+            });
             
-
-
-
             // cluster layer that uses OpenLayers style clustering
             clusterLayer = new ClusterLayer({
               "data": siteInfo.data,
@@ -329,20 +306,13 @@
 
           //method called for each selected site and each date with taht site if multiple
           getDetailData = function() {
+            //console.log("getDetailData in map.js");
             detailInfo.clearSampleInfo();
             detailInfo.getDetailData();
           }
 
           addSampleInfo = function(results) {
   
-            var requestHandle = esri.request({
-              "url": "http://gis.carnegiemnh.org/arcgis/rest/services/Macroinvertebrates/MacroinvertebrateWaterMonitoring/MapServer/3",
-              "content": {
-                "f": "json"
-              },
-              "callbackParamName": "callback",
-            });
-
             requestHandle.then(function(response, io) {
               var fieldInfo, pad;
               pad = dojo.string.pad;
@@ -390,20 +360,22 @@
             map.addLayer(extents, 0);
           }
 
+          /* jequery stuff */
+          $(document).ready(function(){
+             // $('.HomeButton').click(function(){ // hide graphic with geo search result "reset"
+             //    graphicsLayer.hide();
+             // });
+             $('.esriGeocoderReset').click(function(){ // hide graphic with geo search result "reset"
+                graphicsLayer.hide();
+             });
+             $('.LocateButton').click(function(){ // hide graphic with geo search result "reset"
+                graphicsLayer.show();
+             });
+          }); 
+
         });
 
-        /* jequery stuff */
-        $(document).ready(function(){
-           $('.HomeButton').click(function(){ // hide graphic with geo search result "reset"
-              graphicsLayer.hide();
-           });
-           $('.esriGeocoderReset').click(function(){ // hide graphic with geo search result "reset"
-              graphicsLayer.hide();
-           });
-           $('.LocateButton').click(function(){ // hide graphic with geo search result "reset"
-              graphicsLayer.show();
-           });
-        }); 
+        
 
       //}); // end ready function from line 54
 

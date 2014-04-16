@@ -11,27 +11,12 @@ define([
     constructor: function(options) {
       
 
-      // this._queryTask = options.queryTask || console.log("Error: the query link seems to be missing, please add a queryTask to the option when creating a ClusterLayer");
-        
+      // this._queryTask = options.queryTask || console.log("Error: the query link seems to be missing, please add a queryTask to the option when creating a ClusterLayer");        
       // this._query = options.query || new Query();
       // this._query.returnGeometry = false;
 
-      // this._requestHandle = esri.request({
-      //   "url": "http://gis.carnegiemnh.org/arcgis/rest/services/Macroinvertebrates/MacroinvertebrateWaterMonitoring/MapServer/3",
-      //   "content": {
-      //     "f": "json"
-      //   },
-      //   "callbackParamName": "callback",
-      // });
-
       this._organizations = options.organizations;
-      //this._codedValues = options.codedValues;
-      //console.log("detailInfo.js "+this._codedValues.SurveyType.codedValues[0].name);
-
-      this._gisServer = options.server || "http://services2.arcgis.com/Hq6thdRH56GlK76e/ArcGIS/rest/services/MacroinvertebrateWaterMonitoring_Test/FeatureServer/";
-      
-      // this._cvSamplingMethods = options.cvSamplingMethods;
-      // this._cvSurveyTypes = options.cvSurveyTypes;
+      this._gisServer = options.gisServer;
 
       this._sampleInfo = new Array();
 
@@ -185,11 +170,12 @@ define([
               if (day <= 9) day = "0"+day;
               $("#dates").append("<option id='date-values' value='"+attributes.DTI+"'>"  + day + "/" + month + "/" + d.getFullYear() + " </option>");
 
+              
               // add sample info for each date
               dateSpecificSampleInfo = new Object();
               dateSpecificSampleInfo.DTI = attributes.DTI;
-              dateSpecificSampleInfo.SurveyType = codedValues.SurveyType.codedValues[attributes.SurveyType].name;//+attributes.SurveyType;
-              dateSpecificSampleInfo.MI_SamplingMethod = codedValues.MI_SamplingMethod.codedValues[attributes.MI_SamplingMethod].name;//+attributes.MI_SamplingMethod;
+              dateSpecificSampleInfo.SurveyType = codedValues.SurveyType.codedValues[attributes.SurveyType-1].name;//+attributes.SurveyType;
+              dateSpecificSampleInfo.MI_SamplingMethod = codedValues.MI_SamplingMethod.codedValues[attributes.MI_SamplingMethod-1].name;//+attributes.MI_SamplingMethod;
               if (attributes.MI_SampleComments == null) {
                 dateSpecificSampleInfo.MI_SampleComments = "-";
               } else {
@@ -203,7 +189,10 @@ define([
         } else {
 
             var attributes = results.relatedRecordGroups[0].relatedRecords[0].attributes;
-            
+
+            // console.log(JSON.stringify(results.relatedRecordGroups[0].relatedRecords));
+            // console.log(attributes.DTI);
+
             // date values
             d = new Date(parseInt(attributes.SurveyDate+14400000));
             month =  parseInt(d.getMonth())+parseInt(1);
@@ -212,9 +201,11 @@ define([
             if (day <= 9) day = "0"+day;
 
             $(".date-content").append( "<div id='single-date'>" + day + "/" + month + "/" + d.getFullYear() + '<br /><br /></div><div id="specimen"><ul></ul></div>');
+            
             this._DTI = attributes.DTI; 
 
-            $("#single-date").append('<div id="sampleInfo" style="padding-left:0;">Survey Type: '+codedValues.SurveyType.codedValues[attributes.SurveyType].name+'<br />Sampling Method: '+codedValues.MI_SamplingMethod.codedValues[attributes.MI_SamplingMethod].name+'<br />Comments: '+attributes.MI_SampleComments+'</div>');
+            //console.log(attributes.SurveyType +"  "+JSON.stringify(codedValues.SurveyType.codedValues));
+            $("#single-date").append('<div id="sampleInfo" style="padding-left:0;">Survey Type: '+codedValues.SurveyType.codedValues[attributes.SurveyType-1].name+'<br />Sampling Method: '+codedValues.MI_SamplingMethod.codedValues[attributes.MI_SamplingMethod-1].name+'<br />Comments: '+attributes.MI_SampleComments+'</div>');
         }
 
        //end request for coded values
@@ -244,7 +235,7 @@ define([
       if(this._DTI != null) {
         //console.log("single date");
         tsnQuery.where = "DTI = '" + this._DTI + "'";
-        //console.log(tsnQuery.where);
+        //console.log("DTI in getDetailData: "+this._DTI);
       } else {
         //console.log("dropdown");
         tsnQuery.where = "DTI = '" + document.getElementById("dates").value + "'"; //get entries by DTI from date selection

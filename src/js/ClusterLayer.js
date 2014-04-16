@@ -172,7 +172,7 @@ define([
     onClick: function(e) {
       // remove any previously showing single features
       this.clearSingles(this._singles);
-      
+
       // find single graphics that make up the cluster that was clicked
       // would be nice to use filter but performance tanks with large arrays in IE
       var singles = [];
@@ -211,8 +211,9 @@ define([
           if ($( "#accordion" ).accordion( "option", "active" ) == 0) $( "#accordion" ).accordion({active: 2});
         }
         //console.log(e.graphic.attributes.ObjectID);
-        if(this._detailInfo) this._detailInfo.showDetailInfoDialog(singles, e.graphic.attributes.Status, e.graphic.attributes.ObjectID, e.graphic.attributes.Caption, e.graphic.attributes.SiteID, e.graphic.attributes.Name, e.graphic.attributes.Coordinates, e.graphic.attributes.SiteNotes, e.graphic.attributes.Elevation, e.graphic.attributes.SiteLocDesc, e.graphic.attributes.Ch93);
-
+        if(this._detailInfo) {
+          this._detailInfo.showDetailInfoDialog(singles, e.graphic.attributes.Status, e.graphic.attributes.ObjectID, e.graphic.attributes.Caption, e.graphic.attributes.SiteID, e.graphic.attributes.Name, e.graphic.attributes.Coordinates, e.graphic.attributes.SiteNotes, e.graphic.attributes.Elevation, e.graphic.attributes.SiteLocDesc, e.graphic.attributes.Ch93);
+        }
         this._addSingles(singles);
       }
 
