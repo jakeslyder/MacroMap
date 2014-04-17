@@ -60,8 +60,8 @@
         //ready(function() {
           parser.parse();
 
-          var gisServer = "http://services2.arcgis.com/Hq6thdRH56GlK76e/ArcGIS/rest/services/MacroinvertebrateWaterMonitoring_Test/FeatureServer/"
-          //var gisServer = "http://gis.carnegiemnh.org/arcgis/rest/services/Macroinvertebrates/MacroinvertebrateWaterMonitoring/MapServer";
+          //var gisServer = "http://services2.arcgis.com/Hq6thdRH56GlK76e/ArcGIS/rest/services/MacroinvertebrateWaterMonitoring_Test/FeatureServer/"
+          var gisServer = "http://gis.carnegiemnh.org/arcgis/rest/services/Macroinvertebrates/MacroinvertebrateWaterMonitoring/MapServer/";
           var requestHandle = esri.request({
               "url": gisServer+"3",
               "content": {
@@ -69,6 +69,7 @@
               },
               "callbackParamName": "callback",
             });
+          
           var clusterLayer;
           var detailInfo;
           var sampleInfo;
@@ -77,12 +78,32 @@
             "marginLeft": "20",
             "marginTop": "20"
           };
-          var orgNames;
-          $.getJSON("data/organizations.json", function(data) {
-              // console.log(data);
-              orgNames = data;
-              //console.log(JSON.stringify(orgNames));
-          });
+
+          // reading organization coded values from json
+          var url = gisServer+'0?f=pjson&callback=organizationCodedValues';
+          var script = document.createElement('script');
+          script.type = "text/javascript";
+          script.src= url;
+          document.getElementsByTagName('head')[0].appendChild(script);
+
+          var tmp = new Object();
+          var orgNames = new Array();
+          organizationCodedValues = function(results){
+            //console.log(results.fields[2].domain.codedValues);
+            for(var i=0;i<results.fields[2].domain.codedValues.length;i++){
+              var tmp = new Object();
+              tmp.name = results.fields[2].domain.codedValues[i].name;
+              tmp.code = results.fields[2].domain.codedValues[i].code;
+              orgNames[i] = tmp;
+            }
+          }
+          // old
+          // var orgNames;
+          // $.getJSON("data/organizations.json", function(data) {
+          //     // console.log(data);
+          //     orgNames = data;
+          //     //console.log(JSON.stringify(orgNames));
+          // });
 
           var map = new Map("map", {
             basemap:"national-geographic",

@@ -50,14 +50,6 @@ define([
       //populates tabs when site selected from map
       if(siteID != null) this._showSiteInfo(status, obID, orgID, siteID, coordinates, siteNotes, elevation, siteLocDesc, ch93);
       if(siteName != null) this._showMacroinvertebrates(obID, siteName);
-
-      // $( ".date" ).append("<div id='macro-helper'>Select a site from the map or in the tab titled: Select a Site</div>");
-      // if(!cv){
-      //   console.log("DetalInfo.js line 59 "+cv.SurveyType.codedValues[0].name);
-      // } else {
-      //   console.log("DetalInfo.js line 61 "+"codedValues not set");
-      // }
-
     },
 
     _requestFailed: function(error, io) {         
@@ -111,6 +103,7 @@ define([
       if (siteNotes == null) siteNotes = "-";
 
       var orgIDname;
+      
       for(var i = 0; i < this._organizations.length; i++){
           if( this._organizations[i].code.toLowerCase() == orgID.toLowerCase() ){
             orgIDname = this._organizations[i].name;
@@ -127,12 +120,13 @@ define([
 
       var dates = '<div class="date-content"></div>';
       
+      //get related records via JSON hhtp request
       var url = this._gisServer+'0/queryRelatedRecords?objectIds='+obID+'&relationshipId=0&outFields=DTI%2CSurveyDate%2CSurveyType%2CSurveyOther%2CMI_SamplingMethod%2CMI_OtherMethod%2CMI_SampleComments&definitionExpression=&returnGeometry=false&maxAllowableOffset=&geometryPrecision=&outSR=&returnZ=false&returnM=false&gdbVersion=&f=pjson&callback=addSampleInfo';
-      
-      var s = document.createElement('script');
-      s.src= url;
-      document.getElementsByTagName('head')[0].appendChild(s);
-      
+      var script = document.createElement('script');
+      script.type = "text/javascript";
+      script.src= url;
+      document.getElementsByTagName('head')[0].appendChild(script);
+
       $( "#dates" ).remove();
       $( "#specimen" ).remove();
       $( ".date-content").remove();
