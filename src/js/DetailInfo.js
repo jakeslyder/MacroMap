@@ -3,20 +3,24 @@ define([
   "esri/tasks/query", 
   "esri/tasks/QueryTask",
   "esri/layers/GraphicsLayer",
+  "esri/geometry/Point",
+  "esri/graphic",
 ], function (
   declare,
-  Query, QueryTask, GraphicsLayer
+  Query, QueryTask, GraphicsLayer, Point, Graphic
 ) {
   return declare( [GraphicsLayer], {
     constructor: function(options) {
       
-
       // this._queryTask = options.queryTask || console.log("Error: the query link seems to be missing, please add a queryTask to the option when creating a ClusterLayer");        
       // this._query = options.query || new Query();
       // this._query.returnGeometry = false;
 
-      this._organizations = options.organizations;
+      //options
       this._gisServer = options.gisServer;
+      this._organizations = options.organizations;
+      this._point = options.highlightPoint;
+      this._highlight = options.highlightGraphic;
 
       this._sampleInfo = new Array();
 
@@ -29,7 +33,7 @@ define([
       });
 
       this._DTI = null;
-
+      this._previousId = "";
     },
 
     showDetailInfoDialog: function(cluster, status, obID, orgID, siteID, siteName, coordinates, siteNotes, elevation, siteLocDesc, ch93){       
@@ -74,14 +78,22 @@ define([
       $( ".cluster-content").remove();
       $( ".cluster-info" ).append(content);
 
+      // get id from last list li hover
       var _this = this;
       var obID = data[0].attributes;
       var data = JSON.parse(JSON.stringify(c));
       $( ".site-selected" ).hover(
         function() {
           obID = c[this.id].attributes.ObjectID;
+          lastSiteInList = this.id;
+          // console.log(c[this.id].attributes);
+          // var res = c[this.id].attributes.Coordinates.split(" ");
+          // _this._point.setLongitude(res[0]);
+          // _this._point.setLatitude(res[1]);
+          // _this._highlight.getLayer().redraw();
         }
       );
+
 
       $( ".site-selected" ).click(function(event) {
         $( "#accordion" ).accordion({ active: 2});
@@ -89,6 +101,19 @@ define([
           $( "#siteInfo-content" ).remove();
           _this._showSiteInfo(site.Status, site.ObjectID, site.Caption, site.SiteID, site.Coordinates, site.SiteNotes, site.Elevation, site.SiteLocDesc, site.Ch93);
           _this._showMacroinvertebrates(obID, site.Name);
+
+          //update highlight graphic
+          var res = site.Coordinates.split(" ");
+          _this._point.setLongitude(res[0]);
+          _this._point.setLatitude(res[1]);
+          _this._highlight.show();
+          _this._highlight.getLayer().redraw();
+
+          // select li in list
+          $("#"+_this._previousId).css('color', '#fff');
+          $("#"+this.id).css('color', '#0099c1');
+          _this._previousId = this.id;
+
         $("#selectedSite").remove();
       });
 

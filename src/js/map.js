@@ -14,6 +14,7 @@
         "esri/geometry/Extent",
 
         "esri/symbols/SimpleMarkerSymbol",
+        "esri/symbols/SimpleLineSymbol",
         "esri/symbols/SimpleFillSymbol",
         "esri/symbols/PictureMarkerSymbol",
         "esri/renderers/ClassBreaksRenderer",
@@ -50,7 +51,7 @@
       ], function(
         parser, ready, arrayUtils, Color, domStyle, query,
         Map, esriRequest, Graphic, Extent,
-        SimpleMarkerSymbol, SimpleFillSymbol, PictureMarkerSymbol, ClassBreaksRenderer,
+        SimpleMarkerSymbol, SimpleLineSymbol, SimpleFillSymbol, PictureMarkerSymbol, ClassBreaksRenderer,
         GraphicsLayer, SpatialReference, Point, webMercatorUtils,
         PopupTemplate, DetailInfo, CodedValues, ClusterLayer, Query, QueryTask,
         HomeButton, Geocoder, LocateButton, InfoTemplate, BasemapGallery,
@@ -60,8 +61,8 @@
         //ready(function() {
           parser.parse();
 
-          //var gisServer = "http://services2.arcgis.com/Hq6thdRH56GlK76e/ArcGIS/rest/services/MacroinvertebrateWaterMonitoring_Test/FeatureServer/"
-          var gisServer = "http://gis.carnegiemnh.org/arcgis/rest/services/Macroinvertebrates/MacroinvertebrateWaterMonitoring/MapServer/";
+          var gisServer = "http://services2.arcgis.com/Hq6thdRH56GlK76e/ArcGIS/rest/services/MacroinvertebrateWaterMonitoring_Test/FeatureServer/"
+          //var gisServer = "http://gis.carnegiemnh.org/arcgis/rest/services/Macroinvertebrates/MacroinvertebrateWaterMonitoring/MapServer/";
           var requestHandle = esri.request({
               "url": gisServer+"3",
               "content": {
@@ -89,11 +90,12 @@
           var tmp = new Object();
           var orgNames = new Array();
           organizationCodedValues = function(results){
-            //console.log(results.fields[2].domain.codedValues);
-            for(var i=0;i<results.fields[2].domain.codedValues.length;i++){
+            //console.log(results);
+            //console.log(results.fields[1].domain.codedValues);
+            for(var i=0;i<results.fields[1].domain.codedValues.length;i++){
               var tmp = new Object();
-              tmp.name = results.fields[2].domain.codedValues[i].name;
-              tmp.code = results.fields[2].domain.codedValues[i].code;
+              tmp.name = results.fields[1].domain.codedValues[i].name;
+              tmp.code = results.fields[1].domain.codedValues[i].code;
               orgNames[i] = tmp;
             }
           }
@@ -131,7 +133,7 @@
             });
             sites.then(addClusters, error);
             
-            showCoordinates(map.extent.getCenter())
+            showCoordinates(map.extent.getCenter());
           });
 
           // add a graphics layer for geocoding results
@@ -274,11 +276,23 @@
               };
             });
 
+            var highlightPoint = new Point("0", "0", new SpatialReference({ "wkid":102100} ));
+            
+            var highlightMarker = new SimpleMarkerSymbol();
+              var highlightColor = new esri.Color([255,0,0,0.5])
+              highlightMarker.setColor(highlightColor);
+              highlightMarker.setSize(10);
+              highlightMarker.setOutline( new SimpleLineSymbol( SimpleLineSymbol.STYLE_SOLID, highlightColor, 3 ) );
+            
+            var highlightGraphic = new Graphic(highlightPoint, highlightMarker);
+
             detailInfo = new DetailInfo({
               // "queryTask": queryTask,
-              // "query": query
+              // "query": query,
               "gisServer": gisServer,
-              "organizations": orgNames
+              "organizations": orgNames,
+              "highlightPoint": highlightPoint,
+              "highlightGraphic": highlightGraphic
             });
             
             // cluster layer that uses OpenLayers style clustering
@@ -291,7 +305,9 @@
               "resolution": map.extent.getWidth() / map.width,
               "singleColor": "#888",
               //"singleTemplate": popupTemplate
-              "detailInfo": detailInfo
+              "detailInfo": detailInfo,
+              "highlightPoint": highlightPoint,
+              "highlightGraphic": highlightGraphic
             });
 
             var defaultSym = new SimpleMarkerSymbol().setSize(4);

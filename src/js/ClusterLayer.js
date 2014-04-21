@@ -85,6 +85,15 @@ define([
       //show custom popup DetailInfo
       this._detailInfo = options.detailInfo;// || console.log("Error: If using the DetailInfo option to show data you have to create a query and query task in the DetailInfo constructor to pass it along with the ClusterLayer");
       this._firstTime = 0;
+
+      //highlight selected site
+      this._point = options.highlightPoint;// || new Point("0", "0", new SpatialReference({ "wkid":102100} ));
+      // this._highlightMarker = options.highlightMarker || new SimpleMarkerSymbol();
+      // var highlightColor = new esri.Color([255,0,0,0.5])
+      // this._highlightMarker.setColor(highlightColor);
+      // this._highlightMarker.setSize(10);
+      // this._highlightMarker.setOutline( new SimpleLineSymbol( SimpleLineSymbol.STYLE_SOLID, highlightColor, 3 ) );
+      this._highlight = options.highlightGraphic;// || new Graphic(this._point, this._highlightMarker);
     },
 
     // override esri/layers/GraphicsLayer methods 
@@ -156,6 +165,7 @@ define([
       this._clusters.length = 0;
       if(this._detailInfo) this._detailInfo.deleteContent();
       $("#selectedSite").remove();
+      this._highlight.hide();
     },
 
     clearSingles: function(singles) {
@@ -167,12 +177,18 @@ define([
       this._singles.length = 0;
       if(this._detailInfo) this._detailInfo.deleteContent();
       $("#selectedSite").remove();
+      this._highlight.hide();
     },
 
     onClick: function(e) {
       // remove any previously showing single features
       this.clearSingles(this._singles);
 
+      //set point and add to graphics layer so it can be set by the detail info window as well.
+      this._point.update(e.mapPoint.x, e.mapPoint.y);
+      this._map.graphics.add(this._highlight);
+      
+      //console.log(e);
       // find single graphics that make up the cluster that was clicked
       // would be nice to use filter but performance tanks with large arrays in IE
       var singles = [];
@@ -200,16 +216,13 @@ define([
             $( "#accordion" ).accordion({ active: 0});
           // }
         } else { // indicates a site in the cluster not a cluster
-          //add dropdown
-          $("body").append('<div id="selectedSite"></div>');
-          //add marker which site was selected
-          $("#selectedSite").css('z-index', '999');
-          $("#selectedSite").css('border', '3px solid red');
-          $("#selectedSite").css('left', parseInt(e.x-4)+'px');
-          $("#selectedSite").css('top', parseInt(e.y-4)+'px');
+          // show highlight layer for selected site and redraw
+          this._highlight.show();
+          this._highlight.getLayer().redraw();
           //change focus in accordion container
           if ($( "#accordion" ).accordion( "option", "active" ) == 0) $( "#accordion" ).accordion({active: 2});
         }
+        //console.log(e.graphic.attributes.Coordinates);
         //console.log(e.graphic.attributes.ObjectID);
         if(this._detailInfo) {
           this._detailInfo.showDetailInfoDialog(singles, e.graphic.attributes.Status, e.graphic.attributes.ObjectID, e.graphic.attributes.Caption, e.graphic.attributes.SiteID, e.graphic.attributes.Name, e.graphic.attributes.Coordinates, e.graphic.attributes.SiteNotes, e.graphic.attributes.Elevation, e.graphic.attributes.SiteLocDesc, e.graphic.attributes.Ch93);
