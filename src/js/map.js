@@ -61,8 +61,8 @@
         //ready(function() {
           parser.parse();
 
-          var gisServer = "http://services2.arcgis.com/Hq6thdRH56GlK76e/ArcGIS/rest/services/MacroinvertebrateWaterMonitoring_Test/FeatureServer/"
-          //var gisServer = "http://gis.carnegiemnh.org/arcgis/rest/services/Macroinvertebrates/MacroinvertebrateWaterMonitoring/MapServer/";
+          //var gisServer = "http://services2.arcgis.com/Hq6thdRH56GlK76e/ArcGIS/rest/services/MacroinvertebrateWaterMonitoring_Test/FeatureServer/"
+          var gisServer = "http://gis.carnegiemnh.org/arcgis/rest/services/Macroinvertebrates/MacroinvertebrateWaterMonitoring/MapServer/";
           var requestHandle = esri.request({
               "url": gisServer+"3",
               "content": {
@@ -90,12 +90,11 @@
           var tmp = new Object();
           var orgNames = new Array();
           organizationCodedValues = function(results){
-            //console.log(results);
-            //console.log(results.fields[1].domain.codedValues);
-            for(var i=0;i<results.fields[1].domain.codedValues.length;i++){
+            // depending on which server it is used this is 1 or 2 (gis.carnegiemnh.org is 2)
+            for(var i=0;i<results.fields[2].domain.codedValues.length;i++){
               var tmp = new Object();
-              tmp.name = results.fields[1].domain.codedValues[i].name;
-              tmp.code = results.fields[1].domain.codedValues[i].code;
+              tmp.name = results.fields[2].domain.codedValues[i].name;
+              tmp.code = results.fields[2].domain.codedValues[i].code;
               orgNames[i] = tmp;
             }
           }
