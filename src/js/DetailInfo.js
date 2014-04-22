@@ -271,7 +271,7 @@ define([
       }
       
       tsnQuery.outFields = ["TSN, SpecimenCount"];
-      tsnQuery.orderByFields = ["SpecimenCount"];
+      tsnQuery.orderByFields = ["SpecimenCount DESC"];
 
       var nameQuery = new Query();
       var nameQueryTask = new QueryTask(this._gisServer + "4");//http://services2.arcgis.com/Hq6thdRH56GlK76e/ArcGIS/rest/services/MacroinvertebrateWaterMonitoring_Test/FeatureServer/4");
@@ -294,26 +294,30 @@ define([
             tsns[i] = tsn;
             scounts[i] = scount;
           }
+          
           // get names for tsn numbers
           tsnQueryString = tsnQueryString.slice(0, tsnQueryString.length-3); // drop last "or"
           nameQuery.where = tsnQueryString;
-          nameQuery.outFields = ["SciName"];
+          nameQuery.outFields = ["SciName,TSN"];
 
           if(nameQuery.where){
             nameQueryTask.execute(nameQuery, function(speciesList){
 
               if(speciesList.features.length > 0){
 
-                for(var j=speciesList.features.length-1; j >= 0; j--){
+                for(var j=0; j < tsns.length; j++){
 
-                  speciesName = JSON.stringify(speciesList.features[j].attributes.SciName);
-                  speciesName = speciesName.replace(/\"/g,"");
+                  speciesName = "";
+
+                  for(var t=0; t < speciesList.features.length; t++){
+                      if(tsns[j] == JSON.stringify(speciesList.features[t].attributes.TSN)){
+                        speciesName = JSON.stringify(speciesList.features[t].attributes.SciName);
+                        speciesName = speciesName.replace(/\"/g,"");
+                      }
+                  }
+
                   var speciesLink = speciesName.toLowerCase().replace(/ /g,"/");
 
-                  var externalLink = "http://macroinvertebrates.org/#/" + speciesLink;
-
-                  // console.log(thumbnails[0].url);
-                  // console.log("thumbnail image: " + thumbnails[0].url);
                   var onMacroOrg = false;
                   var thumbs = "";
                   var imageLink = "";
@@ -329,7 +333,7 @@ define([
                   }
                     if (onMacroOrg == true) {
                       // link to macroinvertebrates.org
-                      $("#specimen ul").append('<tr style="list-style:none"; class="specList"><td><a href="' + externalLink+ '" onmouseover="document.getElementById(\'place-holder-1\').src=\' ' + imageLink+ ' \';" onmouseout="document.getElementById(\'place-holder-1\').src=\'img/placeholder.png\';" target="blank" > ' + speciesName + '<img class="thumbsImage" src="img/placeholder.png" id="place-holder-1" /></a></td><td>' + scounts[j] + '</td></tr>');
+                      $("#specimen ul").append('<tr style="list-style:none"; class="specList"><td><a href="http://macroinvertebrates.org/#/' + speciesLink+ '" onmouseover="document.getElementById(\'place-holder-1\').src=\' ' + imageLink+ ' \';" onmouseout="document.getElementById(\'place-holder-1\').src=\'img/placeholder.png\';" target="blank" > ' + speciesName + '<img class="thumbsImage" src="img/placeholder.png" id="place-holder-1" /></a></td><td>' + scounts[j] + '</td></tr>');
                       // var currentMousePos = { x: -1, y: -1 };
                       // $(document).mousemove(function(event) {
                       //     currentMousePos.x = event.pageX;
@@ -340,6 +344,7 @@ define([
                       $( ".thumbsImage" ).css('right', '15px');                
                     } else {
                       // link to ITIS with tsn
+                      //console.log(tsns[j]);
                       $("#specimen ul").append('<tr style="list-style:none;" class="specList"><td><a href="http://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=' + tsns[j] + '" target="blank"> ' + speciesName + '</a></td><td>' + " " + scounts[j] + " " + '</td></tr>'); 
                     }
                   // backup link to macroinvertebrates 
