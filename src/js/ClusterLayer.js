@@ -181,6 +181,7 @@ define([
     },
 
     onClick: function(e) {
+      $('#about').hide();
       // remove any previously showing single features
       this.clearSingles(this._singles);
 

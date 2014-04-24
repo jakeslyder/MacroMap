@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=7, IE=9, IE=10" />
     <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no" />
-    <title>Macroinvertebrates Collection Map</title>
+    <title>Macroinvertebrate Water Monitoring Map</title>
 
     <link rel="stylesheet" href="http://js.arcgis.com/3.7/js/dojo/dijit/themes/tundra/tundra.css" />
     <link rel="stylesheet" href="http://js.arcgis.com/3.7/js/esri/css/esri.css" />
@@ -21,7 +21,32 @@
     <script type="text/javascript" src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
     <script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
- 
+
+  <style>
+      #about{
+        width:43%;
+        height:auto;
+        position: absolute;
+        left:30%;
+        top:8em;
+        background-color: #eeeeee;
+        opacity: .9;
+        z-index:999;
+        border-radius: 5px;
+        padding: 1em;
+        max-height:65%;
+        overflow:scroll;
+      }
+      #about p, #about li{
+        list-style:none;
+        font-size: .8em;
+        line-height: 1.5em;
+      }
+      #about a{
+        font-weight: normal;
+      }
+    </style>
+
     <script>
       // helpful for understanding dojoConfig.packages vs. dojoConfig.paths:
       // http://www.sitepen.com/blog/2013/06/20/dojo-faq-what-is-the-difference-packages-vs-paths-vs-aliases/
@@ -30,6 +55,14 @@
           extras: location.pathname.replace(/\/[^/]+$/, "") + "js"
         }
       };
+
+      $(document).ready(function () {
+        var open = false;
+        var options = { to: { width: 200, height: 60 } };
+        $('#AboutButton').click(function(){
+          $('#about').toggle('clip', options, 500 );
+        });
+      });
     </script>
     <script src="http://js.arcgis.com/3.9/"></script>
     <script type="text/javascript" src="js/map.js"></script>
@@ -61,9 +94,9 @@
         </div>
         
         <div id="BasemapToggle"></div><div id="BasemapToggleTitle">MAP</div>
-        
         <div id="LocateButton"></div><div id="LocateButtonTitle" title="locate">LOCATE</div>
         <div id="HomeButton"></div><div id="HomeButtonTitle" title="home">HOME</div>
+        <input type="button" id="AboutButton" value="?"/><div id="AboutButtonTitle" title="home">ABOUT</div>
       </div> <!-- header -->
       <div id="popuplocation"></div>
 
@@ -83,6 +116,40 @@
           </div>
       </div>
 
+      <div id="about" title="About the Macroinvertebrate Water Monitoring Map">
+        <h3>Welcome to the Macroinvertebrate Water Monitoring Map!</h3  >
+        <p>Environmental health requires monitoring streams and waterways to assess biological integrity and water quality. Aquatic macroinvertebrates are strong indicators of stream habitat health and can be used in habitat assessment. The Macroinvertebrate Water Monitoring Map shows the sites where macroinvertebrates are collected throughout Pennsylvania’s streams by the <a href="http://www.depweb.state.pa.us/portal/server.pt/community/dep_home/5968" target="_blank">Department of Environmental Protection</a> and other organizations, including the <a href="http://carnegiemnh.org/" target="_blank">Carnegie Museum of Natural History</a>. Each site is located on a stream from the <a href="http://nhd.usgs.gov/" target="_blank">National Hydrography Dataset</a>. Each site can have more than one collection event. For each event a list of macroinvertebrate specimens collected can be viewed, typically identified to the genus level.</p>
+        <h4>Using the Map</h4>
+        <p><strong>Step 1.</strong> Zoom in to an area by using your scroll wheel or double clicking on the map.</p>
+        <p><strong>Step 2.</strong> Click on a cluster.</p>
+        <ul>
+          <li>Each cluster circle contains the number of sites indicated.</li>
+          <li>The <b>Collections Sites</b> pane will open.</li>
+        </ul>
+        <p><strong>Step 3.</strong> Click on a site in the map or in the <strong>Sites in Cluster</strong> list.</p>
+        <ul>
+          <li>The <strong>Macroinvertebrates</strong> list will open to view the specimens collected.</li>
+          <li>If more than one collection event exists, there will be a drop down for other dates.</li>
+        </ul>
+        <p><strong>Step 4.</strong> Click on a macroinvertebrate.</p>
+        <ul>
+          <li>This will take you to more information on the macroinvertebrate.</li>
+          <li>If a species is included at <a href="http://www.macroinvertebrates.org/">www.macroinvertebrates.org</a>, you will be able to see what the specimen looks like. Additionally, the website will guide you to diagnostic features. This website is available as a prototype at this time.</li>
+          <li>All other specimens take you to the <a href="http://www.itis.gov/">Integrated Taxonomic Information System</a>. This website includes authoritative taxonomic information on plants, animals, fungi, and microbes of North America and the world.</li>
+        </ul>
+        <br />
+        <h4>Acknowledgements</h4>
+        <p>This web map is one piece of a larger project by the <a title="Carnegie Museum of Natural History" href="http://carnegiemnh.org/" target="_blank">Carnegie Museum of Natural History</a> focusing on compiling baseline data of macroinvertebrates in Pennsylvania.</p>
+        <p>James Whitacre, GIS Manager, Carnegie Museum of Natural History<br />
+        Anika Wilcox, Digital Innovation Specialist, Carnegie Museums of Pittsburgh<br />
+        Dr. John Wenzel, Director of Powdermill Nature Reserve, Carnegie Museum of Natural History</p>
+        <p>Special thanks to the <a title="Pennsylvania Department of Environmental Protection" href="http://www.depweb.state.pa.us/" target="_blank">Pennsylvania Department of Environmental Protection</a> and the <a title="Somerset Conservation District" href="http://www.somersetcd.com/" target="_blank">Somerset Conservation District</a>.</p>
+        <p style="text-align: center;">For questions, comments, or issues, please email <a title="gis@carnegiemnh.org" href="mailto:gis@carnegiemnh.org" target="_blank">gis@carnegiemnh.org</a></p>
+      </div>
+
+      <script>
+        $('#about').hide();
+      </script>
   </body>
     
 </html>

@@ -118,13 +118,12 @@ html, body {
 .ui-body-c, .ui-overlay-c {text-shadow:none !important;}
 
 /* basemap */
-
 #BasemapToggleTitle {
     color: #fff;
     font-size: 7px;
     position:absolute;
     top:45px;
-    right: 115px;
+    right: 155px;
     z-index: 99;
 }
 
@@ -136,7 +135,7 @@ html, body {
     border:none !important;
     position: absolute;
     top: -10px;
-    right: 7px;
+    right: 47px;
     z-index: 55;
     width:25px;
     height:25px;
@@ -155,21 +154,21 @@ html, body {
 #search {
     position: absolute;
     top: 14px;
-    right: 200px;
+    right: 240px;
     z-index: 50;
 }
 
 #LocateButton {
     position: absolute;
     top: 10px;
-    right: 62px;
+    right: 102px;
     z-index: 50;
 }
 
 #LocateButtonTitle{
     position: absolute;
     top: 44px;
-    right: 65px;
+    right: 105px;
     z-index: 50;
     font-size: 7px;
     color: #fff;
@@ -178,11 +177,34 @@ html, body {
 #HomeButton {
     position: absolute;
     top: 10px;
-    right: 21px;
+    right: 61px;
     z-index: 50;
 }
 
 #HomeButtonTitle {
+    position: absolute;
+    top: 44px;
+    right: 67px;
+    z-index: 53;
+    font-size: 7px;
+    color: #fff;
+}
+/*over writing*/
+.home   {background-color: #3a3a3a !important;}
+
+#AboutButton {
+    position: absolute;
+    top: -2px;
+    right: 18px;
+    width:5px;
+    z-index: 50;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    font-family: "Titillium Web", sans-serif;
+}
+
+#AboutButtonTitle {
     position: absolute;
     top: 44px;
     right: 27px;
@@ -190,8 +212,6 @@ html, body {
     font-size: 7px;
     color: #fff;
 }
-/*over writing*/
-.home   {background-color: #3a3a3a !important;}
 
 /* zoom over writing */
 .esriLargeSliderTL          { top:95px; left:20px;}

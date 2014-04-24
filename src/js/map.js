@@ -371,6 +371,7 @@
           }
 
           function cleanUp() {
+            $('#about').hide();
             map.infoWindow.hide();
             clusterLayer.clearSingles();
           }

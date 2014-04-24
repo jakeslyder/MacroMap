@@ -145,12 +145,13 @@ define([
 
       var dates = '<div class="date-content"></div>';
       
-      //get related records via JSON hhtp request
+      //get related records via JSON hhtp request (callback sampleInfo in map.js)
       var url = this._gisServer+'0/queryRelatedRecords?objectIds='+obID+'&relationshipId=0&outFields=DTI%2CSurveyDate%2CSurveyType%2CSurveyOther%2CMI_SamplingMethod%2CMI_OtherMethod%2CMI_SampleComments&definitionExpression=&returnGeometry=false&maxAllowableOffset=&geometryPrecision=&outSR=&returnZ=false&returnM=false&gdbVersion=&f=pjson&callback=addSampleInfo';
+      //console.log(obID);
       var script = document.createElement('script');
       script.type = "text/javascript";
       script.src= url;
-      document.getElementsByTagName('head')[0].appendChild(script);
+      document.getElementsByTagName('head')[0].appendChild(script); 
 
       $( "#dates" ).remove();
       $( "#specimen" ).remove();
@@ -162,33 +163,33 @@ define([
     addSampleInfo: function(results, codedValues) {
       
       var s = "";
-      var d = new Date(0); // The 0 there is the key, which sets the date to the epoch
-      var day = "";
-      var month = "";
       var opt = "";
 
       this._DTI = null;
 
       var sampleInfo = new Array();
       var dateSpecificSampleInfo;// = new Object();
+      var orderedAttributes = new Array();
 
         if(results.relatedRecordGroups[0].relatedRecords.length > 1){
+
+          this._orderDTIbyDate(results, orderedAttributes);
 
           $(".date-content").append('<select id="dates" onchange="getDetailData();"><option id="dateSelector"> Select a date </option></select><div id="sampleInfo"></div><div id="specimen"><ul></ul></div>');
 
           for (var i=0, il= results.relatedRecordGroups[0].relatedRecords.length; i<il; i++) {
 
               //console.log(il);
-              var attributes = results.relatedRecordGroups[0].relatedRecords[i].attributes;
+              //var attributes = results.relatedRecordGroups[0].relatedRecords[i].attributes;
+              var attributes = orderedAttributes[i];
             
               // date values
-              d = new Date(parseInt(attributes.SurveyDate+14400000));
-              month =  parseInt(d.getMonth())+parseInt(1);
-              if (month<=9) month = "0"+month;
-              day = d.getDate();
-              if (day <= 9) day = "0"+day;
-              $("#dates").append("<option id='date-values' value='"+attributes.DTI+"'>"  + day + "/" + month + "/" + d.getFullYear() + " </option>");
+              var date = attributes.DTI.split("-");
+              var day = date[0].substring(6,8);
+              var month = date[0].substring(4,6); 
+              var year = date[0].substring(0,4);
 
+              $("#dates").append("<option id='date-values' value='"+attributes.DTI+"'>"  + month + "/" + day + "/" + year + " </option>");
               
               // add sample info for each date
               dateSpecificSampleInfo = new Object();
@@ -234,6 +235,31 @@ define([
 
       //show default sample info without having to select from the drop down
       getDetailData();
+    },
+
+    _orderDTIbyDate: function(results, orderedAttributes){
+
+      var temp = new Array();
+
+      // for (var i=0;i<results.relatedRecordGroups[0].relatedRecords.length;i++) {
+      //   temp[i] = new Array();
+      // }
+      
+      for (var i=0, il= results.relatedRecordGroups[0].relatedRecords.length; i<il; i++) {
+        // orderedAttributes[i] = results.relatedRecordGroups[0].relatedRecords[i].attributes;
+        temp[i] = new Array();
+        temp[i][0] = results.relatedRecordGroups[0].relatedRecords[i].attributes.DTI.substring(0,8);
+        temp[i][1] = i;
+      }
+
+      temp.sort(function(a,b) {
+        return a[0]-b[0]
+      });
+
+      for (var i=0, il= temp.length; i<il; i++) {
+        orderedAttributes[i] = results.relatedRecordGroups[0].relatedRecords[temp[i][1]].attributes;
+      }
+      orderedAttributes.reverse();
     },
 
 
@@ -282,11 +308,11 @@ define([
       // check if a date is selected
       //if(document.getElementById("dates").value.localeCompare("Select a date") != 0 ){
 
-      $("#specimen ul").append('<tr style="list-style:none;" class="specListHeading"><td>Specimen</td><td>Count</td></tr>'); 
-      
+      $("#specimen ul").append('<tr style="list-style:none;" class="specListHeading"><td>Specimen</td><td>Count</td></tr>');
+
       // get tsn by selected date
       tsnQueryTask.execute(tsnQuery, function(tsnData){
-        //console.log('just in query');
+          
           for(var i=0; i < tsnData.features.length; i++){
             tsn = JSON.stringify(tsnData.features[i].attributes.TSN);
             scount = JSON.stringify(tsnData.features[i].attributes.SpecimenCount);
@@ -359,10 +385,10 @@ define([
           } else {
               $("#specimen ul").append('<li style="list-style:none;">No specimens available</li>');
           }
-        }, function(noResults){ // error callback for tsnQueryTask.execute()
-          $("#specimen ul").append('<li style="list-style:none;">No Results</li>');   
-        });
-      //}
+      }, function(noResults){ // error callback for tsnQueryTask.execute()
+        //console.log(noResults);
+        $("#specimen ul").append('<li style="list-style:none;">No Results</li>');   
+      });
     }, //end of getDetailData()
 
     _getThumbnails: function() {
