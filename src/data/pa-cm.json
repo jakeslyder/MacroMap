@@ -1,0 +1,9953 @@
+[{
+"County": "Adams", 
+"Municipality":"Abbottstown Borough"
+},
+{
+"County": "Adams", 
+"Municipality":"Arendtsville Borough"
+},
+{
+"County": "Adams", 
+"Municipality":"Bendersville Borough"
+},
+{
+"County": "Adams", 
+"Municipality":"Berwick Township"
+},
+{
+"County": "Adams", 
+"Municipality":"Biglerville Borough"
+},
+{
+"County": "Adams", 
+"Municipality":"Bonneauville Borough"
+},
+{
+"County": "Adams", 
+"Municipality":"Butler Township"
+},
+{
+"County": "Adams", 
+"Municipality":"Carroll Valley Borough"
+},
+{
+"County": "Adams", 
+"Municipality":"Conewago Township"
+},
+{
+"County": "Adams", 
+"Municipality":"Cumberland Township"
+},
+{
+"County": "Adams", 
+"Municipality":"East Berlin Borough"
+},
+{
+"County": "Adams", 
+"Municipality":"Fairfield Borough"
+},
+{
+"County": "Adams", 
+"Municipality":"Franklin Township"
+},
+{
+"County": "Adams", 
+"Municipality":"Freedom Township"
+},
+{
+"County": "Adams", 
+"Municipality":"Germany Township"
+},
+{
+"County": "Adams", 
+"Municipality":"Gettysburg Borough"
+},
+{
+"County": "Adams", 
+"Municipality":"Hamilton Township"
+},
+{
+"County": "Adams", 
+"Municipality":"Hamiltonban Township"
+},
+{
+"County": "Adams", 
+"Municipality":"Highland Township"
+},
+{
+"County": "Adams", 
+"Municipality":"Huntington Township"
+},
+{
+"County": "Adams", 
+"Municipality":"Latimore Township"
+},
+{
+"County": "Adams", 
+"Municipality":"Liberty Township"
+},
+{
+"County": "Adams", 
+"Municipality":"Littlestown Borough"
+},
+{
+"County": "Adams", 
+"Municipality":"McSherrystown Borough"
+},
+{
+"County": "Adams", 
+"Municipality":"Menallen Township"
+},
+{
+"County": "Adams", 
+"Municipality":"Mount Joy Township"
+},
+{
+"County": "Adams", 
+"Municipality":"Mount Pleasant Township"
+},
+{
+"County": "Adams", 
+"Municipality":"New Oxford Borough"
+},
+{
+"County": "Adams", 
+"Municipality":"Oxford Township"
+},
+{
+"County": "Adams", 
+"Municipality":"Reading Township"
+},
+{
+"County": "Adams", 
+"Municipality":"Straban Township"
+},
+{
+"County": "Adams", 
+"Municipality":"Tyrone Township"
+},
+{
+"County": "Adams", 
+"Municipality":"Union Township"
+},
+{
+"County": "Adams", 
+"Municipality":"York Springs Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Aleppo Township"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Aspinwall Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Avalon Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Baldwin Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Baldwin Township"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Bell Acres Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Bellevue Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Ben Avon Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Ben Avon Heights Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Bethel Park Municipality"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Blawnox Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Brackenridge Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Braddock Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Braddock Hills Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Bradfordwoods Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Brentwood Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Bridgeville Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Carnegie Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Castle Shannon Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Chalfant Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Cheswick Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Churchill Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Clairton City"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Collier Township"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Coraopolis Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Crafton Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Crescent Township"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Dormont Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Dravosburg Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Duquesne City"
+},
+{
+"County": "Allegheny", 
+"Municipality":"East Deer Township"
+},
+{
+"County": "Allegheny", 
+"Municipality":"East McKeesport Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"East Pittsburgh Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Edgewood Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Edgeworth Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Elizabeth Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Elizabeth Township"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Emsworth Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Etna Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Fawn Township"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Findlay Township"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Forest Hills Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Forward Township"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Fox Chapel Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Franklin Park Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Frazer Township"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Glassport Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Glen Osborne Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Glenfield Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Green Tree Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Hampton Township"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Harmar Township"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Harrison Township"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Haysville Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Heidelberg Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Homestead Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Indiana Township"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Ingram Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Jefferson Hills Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Kennedy Township"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Kilbuck Township"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Leet Township"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Leetsdale Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Liberty Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Lincoln Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Marshall Township"
+},
+{
+"County": "Allegheny", 
+"Municipality":"McCandless Township"
+},
+{
+"County": "Allegheny", 
+"Municipality":"McDonald Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"McKees Rocks Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"McKeesport City"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Millvale Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Moon Township"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Mount Lebanon Municipality"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Mount Oliver Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Munhall Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Municipality of Monroeville"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Neville Township"
+},
+{
+"County": "Allegheny", 
+"Municipality":"North Braddock Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"North Fayette Township"
+},
+{
+"County": "Allegheny", 
+"Municipality":"North Versailles Township"
+},
+{
+"County": "Allegheny", 
+"Municipality":"O'Hara Township"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Oakdale Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Oakmont Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Ohio Township"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Penn Hills Municipality"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Pennsbury Village Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Pine Township"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Pitcairn Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Pittsburgh City"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Pleasant Hills Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Plum Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Port Vue Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Rankin Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Reserve Township"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Richland Township"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Robinson Township"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Ross Township"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Rosslyn Farms Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Scott Township"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Sewickley Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Sewickley Heights Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Sewickley Hills Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Shaler Township"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Sharpsburg Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"South Fayette Township"
+},
+{
+"County": "Allegheny", 
+"Municipality":"South Park Township"
+},
+{
+"County": "Allegheny", 
+"Municipality":"South Versailles Township"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Springdale Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Springdale Township"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Stowe Township"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Swissvale Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Tarentum Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Thornburg Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Trafford Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Turtle Creek Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Upper St. Clair Township"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Verona Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Versailles Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Wall Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"West Deer Township"
+},
+{
+"County": "Allegheny", 
+"Municipality":"West Elizabeth Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"West Homestead Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"West Mifflin Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"West View Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Whitaker Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"White Oak Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Whitehall Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Wilkins Township"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Wilkinsburg Borough"
+},
+{
+"County": "Allegheny", 
+"Municipality":"Wilmerding Borough"
+},
+{
+"County": "Armstrong", 
+"Municipality":"Apollo Borough"
+},
+{
+"County": "Armstrong", 
+"Municipality":"Applewold Borough"
+},
+{
+"County": "Armstrong", 
+"Municipality":"Atwood Borough"
+},
+{
+"County": "Armstrong", 
+"Municipality":"Bethel Township"
+},
+{
+"County": "Armstrong", 
+"Municipality":"Boggs Township"
+},
+{
+"County": "Armstrong", 
+"Municipality":"Bradys Bend Township"
+},
+{
+"County": "Armstrong", 
+"Municipality":"Burrell Township"
+},
+{
+"County": "Armstrong", 
+"Municipality":"Cadogan Township"
+},
+{
+"County": "Armstrong", 
+"Municipality":"Cowanshannock Township"
+},
+{
+"County": "Armstrong", 
+"Municipality":"Dayton Borough"
+},
+{
+"County": "Armstrong", 
+"Municipality":"East Franklin Township"
+},
+{
+"County": "Armstrong", 
+"Municipality":"Elderton Borough"
+},
+{
+"County": "Armstrong", 
+"Municipality":"Ford City Borough"
+},
+{
+"County": "Armstrong", 
+"Municipality":"Ford Cliff Borough"
+},
+{
+"County": "Armstrong", 
+"Municipality":"Freeport Borough"
+},
+{
+"County": "Armstrong", 
+"Municipality":"Gilpin Township"
+},
+{
+"County": "Armstrong", 
+"Municipality":"Hovey Township"
+},
+{
+"County": "Armstrong", 
+"Municipality":"Kiskiminetas Township"
+},
+{
+"County": "Armstrong", 
+"Municipality":"Kittanning Borough"
+},
+{
+"County": "Armstrong", 
+"Municipality":"Kittanning Township"
+},
+{
+"County": "Armstrong", 
+"Municipality":"Leechburg Borough"
+},
+{
+"County": "Armstrong", 
+"Municipality":"Madison Township"
+},
+{
+"County": "Armstrong", 
+"Municipality":"Mahoning Township"
+},
+{
+"County": "Armstrong", 
+"Municipality":"Manor Township"
+},
+{
+"County": "Armstrong", 
+"Municipality":"Manorville Borough"
+},
+{
+"County": "Armstrong", 
+"Municipality":"North Apollo Borough"
+},
+{
+"County": "Armstrong", 
+"Municipality":"North Buffalo Township"
+},
+{
+"County": "Armstrong", 
+"Municipality":"Parker City"
+},
+{
+"County": "Armstrong", 
+"Municipality":"Parks Township"
+},
+{
+"County": "Armstrong", 
+"Municipality":"Perry Township"
+},
+{
+"County": "Armstrong", 
+"Municipality":"Pine Township"
+},
+{
+"County": "Armstrong", 
+"Municipality":"Plumcreek Township"
+},
+{
+"County": "Armstrong", 
+"Municipality":"Rayburn Township"
+},
+{
+"County": "Armstrong", 
+"Municipality":"Redbank Township"
+},
+{
+"County": "Armstrong", 
+"Municipality":"Rural Valley Borough"
+},
+{
+"County": "Armstrong", 
+"Municipality":"South Bend Township"
+},
+{
+"County": "Armstrong", 
+"Municipality":"South Bethlehem Borough"
+},
+{
+"County": "Armstrong", 
+"Municipality":"South Buffalo Township"
+},
+{
+"County": "Armstrong", 
+"Municipality":"Sugarcreek Township"
+},
+{
+"County": "Armstrong", 
+"Municipality":"Valley Township"
+},
+{
+"County": "Armstrong", 
+"Municipality":"Washington Township"
+},
+{
+"County": "Armstrong", 
+"Municipality":"Wayne Township"
+},
+{
+"County": "Armstrong", 
+"Municipality":"West Franklin Township"
+},
+{
+"County": "Armstrong", 
+"Municipality":"West Kittanning Borough"
+},
+{
+"County": "Armstrong", 
+"Municipality":"Worthington Borough"
+},
+{
+"County": "Beaver", 
+"Municipality":"Aliquippa City"
+},
+{
+"County": "Beaver", 
+"Municipality":"Ambridge Borough"
+},
+{
+"County": "Beaver", 
+"Municipality":"Baden Borough"
+},
+{
+"County": "Beaver", 
+"Municipality":"Beaver Borough"
+},
+{
+"County": "Beaver", 
+"Municipality":"Beaver Falls City"
+},
+{
+"County": "Beaver", 
+"Municipality":"Big Beaver Borough"
+},
+{
+"County": "Beaver", 
+"Municipality":"Bridgewater Borough"
+},
+{
+"County": "Beaver", 
+"Municipality":"Brighton Township"
+},
+{
+"County": "Beaver", 
+"Municipality":"Center Township"
+},
+{
+"County": "Beaver", 
+"Municipality":"Chippewa Township"
+},
+{
+"County": "Beaver", 
+"Municipality":"Conway Borough"
+},
+{
+"County": "Beaver", 
+"Municipality":"Darlington Borough"
+},
+{
+"County": "Beaver", 
+"Municipality":"Darlington Township"
+},
+{
+"County": "Beaver", 
+"Municipality":"Daugherty Township"
+},
+{
+"County": "Beaver", 
+"Municipality":"East Rochester Borough"
+},
+{
+"County": "Beaver", 
+"Municipality":"Eastvale Borough"
+},
+{
+"County": "Beaver", 
+"Municipality":"Economy Borough"
+},
+{
+"County": "Beaver", 
+"Municipality":"Fallston Borough"
+},
+{
+"County": "Beaver", 
+"Municipality":"Frankfort Springs Borough"
+},
+{
+"County": "Beaver", 
+"Municipality":"Franklin Township"
+},
+{
+"County": "Beaver", 
+"Municipality":"Freedom Borough"
+},
+{
+"County": "Beaver", 
+"Municipality":"Georgetown Borough"
+},
+{
+"County": "Beaver", 
+"Municipality":"Glasgow Borough"
+},
+{
+"County": "Beaver", 
+"Municipality":"Greene Township"
+},
+{
+"County": "Beaver", 
+"Municipality":"Hanover Township"
+},
+{
+"County": "Beaver", 
+"Municipality":"Harmony Township"
+},
+{
+"County": "Beaver", 
+"Municipality":"Homewood Borough"
+},
+{
+"County": "Beaver", 
+"Municipality":"Hookstown Borough"
+},
+{
+"County": "Beaver", 
+"Municipality":"Hopewell Township"
+},
+{
+"County": "Beaver", 
+"Municipality":"Independence Township"
+},
+{
+"County": "Beaver", 
+"Municipality":"Industry Borough"
+},
+{
+"County": "Beaver", 
+"Municipality":"Koppel Borough"
+},
+{
+"County": "Beaver", 
+"Municipality":"Marion Township"
+},
+{
+"County": "Beaver", 
+"Municipality":"Midland Borough"
+},
+{
+"County": "Beaver", 
+"Municipality":"Monaca Borough"
+},
+{
+"County": "Beaver", 
+"Municipality":"New Brighton Borough"
+},
+{
+"County": "Beaver", 
+"Municipality":"New Galilee Borough"
+},
+{
+"County": "Beaver", 
+"Municipality":"New Sewickley Township"
+},
+{
+"County": "Beaver", 
+"Municipality":"North Sewickley Township"
+},
+{
+"County": "Beaver", 
+"Municipality":"Ohioville Borough"
+},
+{
+"County": "Beaver", 
+"Municipality":"Patterson Heights Borough"
+},
+{
+"County": "Beaver", 
+"Municipality":"Patterson Township"
+},
+{
+"County": "Beaver", 
+"Municipality":"Potter Township"
+},
+{
+"County": "Beaver", 
+"Municipality":"Pulaski Township"
+},
+{
+"County": "Beaver", 
+"Municipality":"Raccoon Township"
+},
+{
+"County": "Beaver", 
+"Municipality":"Rochester Borough"
+},
+{
+"County": "Beaver", 
+"Municipality":"Rochester Township"
+},
+{
+"County": "Beaver", 
+"Municipality":"Shippingport Borough"
+},
+{
+"County": "Beaver", 
+"Municipality":"South Beaver Township"
+},
+{
+"County": "Beaver", 
+"Municipality":"South Heights Borough"
+},
+{
+"County": "Beaver", 
+"Municipality":"Vanport Township"
+},
+{
+"County": "Beaver", 
+"Municipality":"West Mayfield Borough"
+},
+{
+"County": "Beaver", 
+"Municipality":"White Township"
+},
+{
+"County": "Bedford", 
+"Municipality":"Bedford Borough"
+},
+{
+"County": "Bedford", 
+"Municipality":"Bedford Township"
+},
+{
+"County": "Bedford", 
+"Municipality":"Bloomfield Township"
+},
+{
+"County": "Bedford", 
+"Municipality":"Broad Top Township"
+},
+{
+"County": "Bedford", 
+"Municipality":"Coaldale Borough"
+},
+{
+"County": "Bedford", 
+"Municipality":"Colerain Township"
+},
+{
+"County": "Bedford", 
+"Municipality":"Cumberland Valley Township"
+},
+{
+"County": "Bedford", 
+"Municipality":"East Providence Township"
+},
+{
+"County": "Bedford", 
+"Municipality":"East St. Clair Township"
+},
+{
+"County": "Bedford", 
+"Municipality":"Everett Borough"
+},
+{
+"County": "Bedford", 
+"Municipality":"Harrison Township"
+},
+{
+"County": "Bedford", 
+"Municipality":"Hopewell Borough"
+},
+{
+"County": "Bedford", 
+"Municipality":"Hopewell Township"
+},
+{
+"County": "Bedford", 
+"Municipality":"Hyndman Borough"
+},
+{
+"County": "Bedford", 
+"Municipality":"Juniata Township"
+},
+{
+"County": "Bedford", 
+"Municipality":"Kimmel Township"
+},
+{
+"County": "Bedford", 
+"Municipality":"King Township"
+},
+{
+"County": "Bedford", 
+"Municipality":"Liberty Township"
+},
+{
+"County": "Bedford", 
+"Municipality":"Lincoln Township"
+},
+{
+"County": "Bedford", 
+"Municipality":"Londonderry Township"
+},
+{
+"County": "Bedford", 
+"Municipality":"Mann Township"
+},
+{
+"County": "Bedford", 
+"Municipality":"Manns Choice Borough"
+},
+{
+"County": "Bedford", 
+"Municipality":"Monroe Township"
+},
+{
+"County": "Bedford", 
+"Municipality":"Napier Township"
+},
+{
+"County": "Bedford", 
+"Municipality":"New Paris Borough"
+},
+{
+"County": "Bedford", 
+"Municipality":"Pavia Township"
+},
+{
+"County": "Bedford", 
+"Municipality":"Pleasantville Borough"
+},
+{
+"County": "Bedford", 
+"Municipality":"Rainsburg Borough"
+},
+{
+"County": "Bedford", 
+"Municipality":"Saxton Borough"
+},
+{
+"County": "Bedford", 
+"Municipality":"Schellsburg Borough"
+},
+{
+"County": "Bedford", 
+"Municipality":"Snake Spring Township"
+},
+{
+"County": "Bedford", 
+"Municipality":"South Woodbury Township"
+},
+{
+"County": "Bedford", 
+"Municipality":"Southampton Township"
+},
+{
+"County": "Bedford", 
+"Municipality":"St. Clairsville Borough"
+},
+{
+"County": "Bedford", 
+"Municipality":"West Providence Township"
+},
+{
+"County": "Bedford", 
+"Municipality":"West St. Clair Township"
+},
+{
+"County": "Bedford", 
+"Municipality":"Woodbury Borough"
+},
+{
+"County": "Bedford", 
+"Municipality":"Woodbury Township"
+},
+{
+"County": "Berks", 
+"Municipality":"Albany Township"
+},
+{
+"County": "Berks", 
+"Municipality":"Alsace Township"
+},
+{
+"County": "Berks", 
+"Municipality":"Amity Township"
+},
+{
+"County": "Berks", 
+"Municipality":"Bally Borough"
+},
+{
+"County": "Berks", 
+"Municipality":"Bechtelsville Borough"
+},
+{
+"County": "Berks", 
+"Municipality":"Bern Township"
+},
+{
+"County": "Berks", 
+"Municipality":"Bernville Borough"
+},
+{
+"County": "Berks", 
+"Municipality":"Bethel Township"
+},
+{
+"County": "Berks", 
+"Municipality":"Birdsboro Borough"
+},
+{
+"County": "Berks", 
+"Municipality":"Boyertown Borough"
+},
+{
+"County": "Berks", 
+"Municipality":"Brecknock Township"
+},
+{
+"County": "Berks", 
+"Municipality":"Caernarvon Township"
+},
+{
+"County": "Berks", 
+"Municipality":"Centerport Borough"
+},
+{
+"County": "Berks", 
+"Municipality":"Centre Township"
+},
+{
+"County": "Berks", 
+"Municipality":"Colebrookdale Township"
+},
+{
+"County": "Berks", 
+"Municipality":"Cumru Township"
+},
+{
+"County": "Berks", 
+"Municipality":"District Township"
+},
+{
+"County": "Berks", 
+"Municipality":"Douglass Township"
+},
+{
+"County": "Berks", 
+"Municipality":"Earl Township"
+},
+{
+"County": "Berks", 
+"Municipality":"Exeter Township"
+},
+{
+"County": "Berks", 
+"Municipality":"Fleetwood Borough"
+},
+{
+"County": "Berks", 
+"Municipality":"Greenwich Township"
+},
+{
+"County": "Berks", 
+"Municipality":"Hamburg Borough"
+},
+{
+"County": "Berks", 
+"Municipality":"Heidelberg Township"
+},
+{
+"County": "Berks", 
+"Municipality":"Hereford Township"
+},
+{
+"County": "Berks", 
+"Municipality":"Jefferson Township"
+},
+{
+"County": "Berks", 
+"Municipality":"Kenhorst Borough"
+},
+{
+"County": "Berks", 
+"Municipality":"Kutztown Borough"
+},
+{
+"County": "Berks", 
+"Municipality":"Laureldale Borough"
+},
+{
+"County": "Berks", 
+"Municipality":"Leesport Borough"
+},
+{
+"County": "Berks", 
+"Municipality":"Lenhartsville Borough"
+},
+{
+"County": "Berks", 
+"Municipality":"Longswamp Township"
+},
+{
+"County": "Berks", 
+"Municipality":"Lower Alsace Township"
+},
+{
+"County": "Berks", 
+"Municipality":"Lower Heidelberg Township"
+},
+{
+"County": "Berks", 
+"Municipality":"Lyons Borough"
+},
+{
+"County": "Berks", 
+"Municipality":"Maidencreek Township"
+},
+{
+"County": "Berks", 
+"Municipality":"Marion Township"
+},
+{
+"County": "Berks", 
+"Municipality":"Maxatawny Township"
+},
+{
+"County": "Berks", 
+"Municipality":"Mohnton Borough"
+},
+{
+"County": "Berks", 
+"Municipality":"Mount Penn Borough"
+},
+{
+"County": "Berks", 
+"Municipality":"Muhlenberg Township"
+},
+{
+"County": "Berks", 
+"Municipality":"New Morgan Borough"
+},
+{
+"County": "Berks", 
+"Municipality":"North Heidelberg Township"
+},
+{
+"County": "Berks", 
+"Municipality":"Oley Township"
+},
+{
+"County": "Berks", 
+"Municipality":"Ontelaunee Township"
+},
+{
+"County": "Berks", 
+"Municipality":"Penn Township"
+},
+{
+"County": "Berks", 
+"Municipality":"Perry Township"
+},
+{
+"County": "Berks", 
+"Municipality":"Pike Township"
+},
+{
+"County": "Berks", 
+"Municipality":"Reading City"
+},
+{
+"County": "Berks", 
+"Municipality":"Richmond Township"
+},
+{
+"County": "Berks", 
+"Municipality":"Robeson Township"
+},
+{
+"County": "Berks", 
+"Municipality":"Robesonia Borough"
+},
+{
+"County": "Berks", 
+"Municipality":"Rockland Township"
+},
+{
+"County": "Berks", 
+"Municipality":"Ruscombmanor Township"
+},
+{
+"County": "Berks", 
+"Municipality":"Shillington Borough"
+},
+{
+"County": "Berks", 
+"Municipality":"Shoemakersville Borough"
+},
+{
+"County": "Berks", 
+"Municipality":"Sinking Spring Borough"
+},
+{
+"County": "Berks", 
+"Municipality":"South Heidelberg Township"
+},
+{
+"County": "Berks", 
+"Municipality":"Spring Township"
+},
+{
+"County": "Berks", 
+"Municipality":"St. Lawrence Borough"
+},
+{
+"County": "Berks", 
+"Municipality":"Strausstown Borough"
+},
+{
+"County": "Berks", 
+"Municipality":"Tilden Township"
+},
+{
+"County": "Berks", 
+"Municipality":"Topton Borough"
+},
+{
+"County": "Berks", 
+"Municipality":"Tulpehocken Township"
+},
+{
+"County": "Berks", 
+"Municipality":"Union Township"
+},
+{
+"County": "Berks", 
+"Municipality":"Upper Bern Township"
+},
+{
+"County": "Berks", 
+"Municipality":"Upper Tulpehocken Township"
+},
+{
+"County": "Berks", 
+"Municipality":"Washington Township"
+},
+{
+"County": "Berks", 
+"Municipality":"Wernersville Borough"
+},
+{
+"County": "Berks", 
+"Municipality":"West Reading Borough"
+},
+{
+"County": "Berks", 
+"Municipality":"Windsor Township"
+},
+{
+"County": "Berks", 
+"Municipality":"Womelsdorf Borough"
+},
+{
+"County": "Berks", 
+"Municipality":"Wyomissing Borough"
+},
+{
+"County": "Blair", 
+"Municipality":"Allegheny Township"
+},
+{
+"County": "Blair", 
+"Municipality":"Altoona City"
+},
+{
+"County": "Blair", 
+"Municipality":"Antis Township"
+},
+{
+"County": "Blair", 
+"Municipality":"Bellwood Borough"
+},
+{
+"County": "Blair", 
+"Municipality":"Blair Township"
+},
+{
+"County": "Blair", 
+"Municipality":"Catharine Township"
+},
+{
+"County": "Blair", 
+"Municipality":"Duncansville Borough"
+},
+{
+"County": "Blair", 
+"Municipality":"Frankstown Township"
+},
+{
+"County": "Blair", 
+"Municipality":"Freedom Township"
+},
+{
+"County": "Blair", 
+"Municipality":"Greenfield Township"
+},
+{
+"County": "Blair", 
+"Municipality":"Hollidaysburg Borough"
+},
+{
+"County": "Blair", 
+"Municipality":"Huston Township"
+},
+{
+"County": "Blair", 
+"Municipality":"Juniata Township"
+},
+{
+"County": "Blair", 
+"Municipality":"Logan Township"
+},
+{
+"County": "Blair", 
+"Municipality":"Martinsburg Borough"
+},
+{
+"County": "Blair", 
+"Municipality":"Newry Borough"
+},
+{
+"County": "Blair", 
+"Municipality":"North Woodbury Township"
+},
+{
+"County": "Blair", 
+"Municipality":"Roaring Spring Borough"
+},
+{
+"County": "Blair", 
+"Municipality":"Snyder Township"
+},
+{
+"County": "Blair", 
+"Municipality":"Taylor Township"
+},
+{
+"County": "Blair", 
+"Municipality":"Tyrone Borough"
+},
+{
+"County": "Blair", 
+"Municipality":"Tyrone Township"
+},
+{
+"County": "Blair", 
+"Municipality":"Williamsburg Borough"
+},
+{
+"County": "Blair", 
+"Municipality":"Woodbury Township"
+},
+{
+"County": "Bradford", 
+"Municipality":"Alba Borough"
+},
+{
+"County": "Bradford", 
+"Municipality":"Albany Township"
+},
+{
+"County": "Bradford", 
+"Municipality":"Armenia Township"
+},
+{
+"County": "Bradford", 
+"Municipality":"Asylum Township"
+},
+{
+"County": "Bradford", 
+"Municipality":"Athens Borough"
+},
+{
+"County": "Bradford", 
+"Municipality":"Athens Township"
+},
+{
+"County": "Bradford", 
+"Municipality":"Burlington Borough"
+},
+{
+"County": "Bradford", 
+"Municipality":"Burlington Township"
+},
+{
+"County": "Bradford", 
+"Municipality":"Canton Borough"
+},
+{
+"County": "Bradford", 
+"Municipality":"Canton Township"
+},
+{
+"County": "Bradford", 
+"Municipality":"Columbia Township"
+},
+{
+"County": "Bradford", 
+"Municipality":"Franklin Township"
+},
+{
+"County": "Bradford", 
+"Municipality":"Granville Township"
+},
+{
+"County": "Bradford", 
+"Municipality":"Herrick Township"
+},
+{
+"County": "Bradford", 
+"Municipality":"Le Raysville Borough"
+},
+{
+"County": "Bradford", 
+"Municipality":"Leroy Township"
+},
+{
+"County": "Bradford", 
+"Municipality":"Litchfield Township"
+},
+{
+"County": "Bradford", 
+"Municipality":"Monroe Borough"
+},
+{
+"County": "Bradford", 
+"Municipality":"Monroe Township"
+},
+{
+"County": "Bradford", 
+"Municipality":"New Albany Borough"
+},
+{
+"County": "Bradford", 
+"Municipality":"North Towanda Township"
+},
+{
+"County": "Bradford", 
+"Municipality":"Orwell Township"
+},
+{
+"County": "Bradford", 
+"Municipality":"Overton Township"
+},
+{
+"County": "Bradford", 
+"Municipality":"Pike Township"
+},
+{
+"County": "Bradford", 
+"Municipality":"Ridgebury Township"
+},
+{
+"County": "Bradford", 
+"Municipality":"Rome Borough"
+},
+{
+"County": "Bradford", 
+"Municipality":"Rome Township"
+},
+{
+"County": "Bradford", 
+"Municipality":"Sayre Borough"
+},
+{
+"County": "Bradford", 
+"Municipality":"Sheshequin Township"
+},
+{
+"County": "Bradford", 
+"Municipality":"Smithfield Township"
+},
+{
+"County": "Bradford", 
+"Municipality":"South Creek Township"
+},
+{
+"County": "Bradford", 
+"Municipality":"South Waverly Borough"
+},
+{
+"County": "Bradford", 
+"Municipality":"Springfield Township"
+},
+{
+"County": "Bradford", 
+"Municipality":"Standing Stone Township"
+},
+{
+"County": "Bradford", 
+"Municipality":"Stevens Township"
+},
+{
+"County": "Bradford", 
+"Municipality":"Sylvania Borough"
+},
+{
+"County": "Bradford", 
+"Municipality":"Terry Township"
+},
+{
+"County": "Bradford", 
+"Municipality":"Towanda Borough"
+},
+{
+"County": "Bradford", 
+"Municipality":"Towanda Township"
+},
+{
+"County": "Bradford", 
+"Municipality":"Troy Borough"
+},
+{
+"County": "Bradford", 
+"Municipality":"Troy Township"
+},
+{
+"County": "Bradford", 
+"Municipality":"Tuscarora Township"
+},
+{
+"County": "Bradford", 
+"Municipality":"Ulster Township"
+},
+{
+"County": "Bradford", 
+"Municipality":"Warren Township"
+},
+{
+"County": "Bradford", 
+"Municipality":"Wells Township"
+},
+{
+"County": "Bradford", 
+"Municipality":"West Burlington Township"
+},
+{
+"County": "Bradford", 
+"Municipality":"Wilmot Township"
+},
+{
+"County": "Bradford", 
+"Municipality":"Windham Township"
+},
+{
+"County": "Bradford", 
+"Municipality":"Wyalusing Borough"
+},
+{
+"County": "Bradford", 
+"Municipality":"Wyalusing Township"
+},
+{
+"County": "Bradford", 
+"Municipality":"Wysox Township"
+},
+{
+"County": "Bucks", 
+"Municipality":"Bedminster Township"
+},
+{
+"County": "Bucks", 
+"Municipality":"Bensalem Township"
+},
+{
+"County": "Bucks", 
+"Municipality":"Bridgeton Township"
+},
+{
+"County": "Bucks", 
+"Municipality":"Bristol Borough"
+},
+{
+"County": "Bucks", 
+"Municipality":"Bristol Township"
+},
+{
+"County": "Bucks", 
+"Municipality":"Buckingham Township"
+},
+{
+"County": "Bucks", 
+"Municipality":"Chalfont Borough"
+},
+{
+"County": "Bucks", 
+"Municipality":"Doylestown Borough"
+},
+{
+"County": "Bucks", 
+"Municipality":"Doylestown Township"
+},
+{
+"County": "Bucks", 
+"Municipality":"Dublin Borough"
+},
+{
+"County": "Bucks", 
+"Municipality":"Durham Township"
+},
+{
+"County": "Bucks", 
+"Municipality":"East Rockhill Township"
+},
+{
+"County": "Bucks", 
+"Municipality":"Falls Township"
+},
+{
+"County": "Bucks", 
+"Municipality":"Haycock Township"
+},
+{
+"County": "Bucks", 
+"Municipality":"Hilltown Township"
+},
+{
+"County": "Bucks", 
+"Municipality":"Hulmeville Borough"
+},
+{
+"County": "Bucks", 
+"Municipality":"Ivyland Borough"
+},
+{
+"County": "Bucks", 
+"Municipality":"Langhorne Borough"
+},
+{
+"County": "Bucks", 
+"Municipality":"Langhorne Manor Borough"
+},
+{
+"County": "Bucks", 
+"Municipality":"Lower Makefield Township"
+},
+{
+"County": "Bucks", 
+"Municipality":"Lower Southampton Township"
+},
+{
+"County": "Bucks", 
+"Municipality":"Middletown Township"
+},
+{
+"County": "Bucks", 
+"Municipality":"Milford Township"
+},
+{
+"County": "Bucks", 
+"Municipality":"Morrisville Borough"
+},
+{
+"County": "Bucks", 
+"Municipality":"New Britain Borough"
+},
+{
+"County": "Bucks", 
+"Municipality":"New Britain Township"
+},
+{
+"County": "Bucks", 
+"Municipality":"New Hope Borough"
+},
+{
+"County": "Bucks", 
+"Municipality":"Newtown Borough"
+},
+{
+"County": "Bucks", 
+"Municipality":"Newtown Township"
+},
+{
+"County": "Bucks", 
+"Municipality":"Nockamixon Township"
+},
+{
+"County": "Bucks", 
+"Municipality":"Northampton Township"
+},
+{
+"County": "Bucks", 
+"Municipality":"Penndel Borough"
+},
+{
+"County": "Bucks", 
+"Municipality":"Perkasie Borough"
+},
+{
+"County": "Bucks", 
+"Municipality":"Plumstead Township"
+},
+{
+"County": "Bucks", 
+"Municipality":"Quakertown Borough"
+},
+{
+"County": "Bucks", 
+"Municipality":"Richland Township"
+},
+{
+"County": "Bucks", 
+"Municipality":"Richlandtown Borough"
+},
+{
+"County": "Bucks", 
+"Municipality":"Riegelsville Borough"
+},
+{
+"County": "Bucks", 
+"Municipality":"Sellersville Borough"
+},
+{
+"County": "Bucks", 
+"Municipality":"Silverdale Borough"
+},
+{
+"County": "Bucks", 
+"Municipality":"Solebury Township"
+},
+{
+"County": "Bucks", 
+"Municipality":"Springfield Township"
+},
+{
+"County": "Bucks", 
+"Municipality":"Telford Borough"
+},
+{
+"County": "Bucks", 
+"Municipality":"Tinicum Township"
+},
+{
+"County": "Bucks", 
+"Municipality":"Trumbauersville Borough"
+},
+{
+"County": "Bucks", 
+"Municipality":"Tullytown Borough"
+},
+{
+"County": "Bucks", 
+"Municipality":"Upper Makefield Township"
+},
+{
+"County": "Bucks", 
+"Municipality":"Upper Southampton Township"
+},
+{
+"County": "Bucks", 
+"Municipality":"Warminster Township"
+},
+{
+"County": "Bucks", 
+"Municipality":"Warrington Township"
+},
+{
+"County": "Bucks", 
+"Municipality":"Warwick Township"
+},
+{
+"County": "Bucks", 
+"Municipality":"West Rockhill Township"
+},
+{
+"County": "Bucks", 
+"Municipality":"Wrightstown Township"
+},
+{
+"County": "Bucks", 
+"Municipality":"Yardley Borough"
+},
+{
+"County": "Butler", 
+"Municipality":"Adams Township"
+},
+{
+"County": "Butler", 
+"Municipality":"Allegheny Township"
+},
+{
+"County": "Butler", 
+"Municipality":"Brady Township"
+},
+{
+"County": "Butler", 
+"Municipality":"Bruin Borough"
+},
+{
+"County": "Butler", 
+"Municipality":"Buffalo Township"
+},
+{
+"County": "Butler", 
+"Municipality":"Butler City"
+},
+{
+"County": "Butler", 
+"Municipality":"Butler Township"
+},
+{
+"County": "Butler", 
+"Municipality":"Callery Borough"
+},
+{
+"County": "Butler", 
+"Municipality":"Center Township"
+},
+{
+"County": "Butler", 
+"Municipality":"Cherry Township"
+},
+{
+"County": "Butler", 
+"Municipality":"Cherry Valley Borough"
+},
+{
+"County": "Butler", 
+"Municipality":"Chicora Borough"
+},
+{
+"County": "Butler", 
+"Municipality":"Clay Township"
+},
+{
+"County": "Butler", 
+"Municipality":"Clearfield Township"
+},
+{
+"County": "Butler", 
+"Municipality":"Clinton Township"
+},
+{
+"County": "Butler", 
+"Municipality":"Concord Township"
+},
+{
+"County": "Butler", 
+"Municipality":"Connoquenessing Borough"
+},
+{
+"County": "Butler", 
+"Municipality":"Connoquenessing Township"
+},
+{
+"County": "Butler", 
+"Municipality":"Cranberry Township"
+},
+{
+"County": "Butler", 
+"Municipality":"Donegal Township"
+},
+{
+"County": "Butler", 
+"Municipality":"East Butler Borough"
+},
+{
+"County": "Butler", 
+"Municipality":"Eau Claire Borough"
+},
+{
+"County": "Butler", 
+"Municipality":"Evans City Borough"
+},
+{
+"County": "Butler", 
+"Municipality":"Fairview Borough"
+},
+{
+"County": "Butler", 
+"Municipality":"Fairview Township"
+},
+{
+"County": "Butler", 
+"Municipality":"Forward Township"
+},
+{
+"County": "Butler", 
+"Municipality":"Franklin Township"
+},
+{
+"County": "Butler", 
+"Municipality":"Harmony Borough"
+},
+{
+"County": "Butler", 
+"Municipality":"Harrisville Borough"
+},
+{
+"County": "Butler", 
+"Municipality":"Jackson Township"
+},
+{
+"County": "Butler", 
+"Municipality":"Jefferson Township"
+},
+{
+"County": "Butler", 
+"Municipality":"Karns City Borough"
+},
+{
+"County": "Butler", 
+"Municipality":"Lancaster Township"
+},
+{
+"County": "Butler", 
+"Municipality":"Marion Township"
+},
+{
+"County": "Butler", 
+"Municipality":"Mars Borough"
+},
+{
+"County": "Butler", 
+"Municipality":"Mercer Township"
+},
+{
+"County": "Butler", 
+"Municipality":"Middlesex Township"
+},
+{
+"County": "Butler", 
+"Municipality":"Muddy Creek Township"
+},
+{
+"County": "Butler", 
+"Municipality":"Oakland Township"
+},
+{
+"County": "Butler", 
+"Municipality":"Parker Township"
+},
+{
+"County": "Butler", 
+"Municipality":"Penn Township"
+},
+{
+"County": "Butler", 
+"Municipality":"Petrolia Borough"
+},
+{
+"County": "Butler", 
+"Municipality":"Portersville Borough"
+},
+{
+"County": "Butler", 
+"Municipality":"Prospect Borough"
+},
+{
+"County": "Butler", 
+"Municipality":"Saxonburg Borough"
+},
+{
+"County": "Butler", 
+"Municipality":"Seven Fields Borough"
+},
+{
+"County": "Butler", 
+"Municipality":"Slippery Rock Borough"
+},
+{
+"County": "Butler", 
+"Municipality":"Slippery Rock Township"
+},
+{
+"County": "Butler", 
+"Municipality":"Summit Township"
+},
+{
+"County": "Butler", 
+"Municipality":"Valencia Borough"
+},
+{
+"County": "Butler", 
+"Municipality":"Venango Township"
+},
+{
+"County": "Butler", 
+"Municipality":"Washington Township"
+},
+{
+"County": "Butler", 
+"Municipality":"West Liberty Borough"
+},
+{
+"County": "Butler", 
+"Municipality":"West Sunbury Borough"
+},
+{
+"County": "Butler", 
+"Municipality":"Winfield Township"
+},
+{
+"County": "Butler", 
+"Municipality":"Worth Township"
+},
+{
+"County": "Butler", 
+"Municipality":"Zelienople Borough"
+},
+{
+"County": "Cambria", 
+"Municipality":"Adams Township"
+},
+{
+"County": "Cambria", 
+"Municipality":"Allegheny Township"
+},
+{
+"County": "Cambria", 
+"Municipality":"Ashville Borough"
+},
+{
+"County": "Cambria", 
+"Municipality":"Barr Township"
+},
+{
+"County": "Cambria", 
+"Municipality":"Blacklick Township"
+},
+{
+"County": "Cambria", 
+"Municipality":"Brownstown Borough"
+},
+{
+"County": "Cambria", 
+"Municipality":"Cambria Township"
+},
+{
+"County": "Cambria", 
+"Municipality":"Carrolltown Borough"
+},
+{
+"County": "Cambria", 
+"Municipality":"Daisytown Borough"
+},
+{
+"County": "Cambria", 
+"Municipality":"Dale Borough"
+},
+{
+"County": "Cambria", 
+"Municipality":"Dean Township"
+},
+{
+"County": "Cambria", 
+"Municipality":"East Carroll Township"
+},
+{
+"County": "Cambria", 
+"Municipality":"East Conemaugh Borough"
+},
+{
+"County": "Cambria", 
+"Municipality":"East Taylor Township"
+},
+{
+"County": "Cambria", 
+"Municipality":"Ebensburg Borough"
+},
+{
+"County": "Cambria", 
+"Municipality":"Ehrenfeld Borough"
+},
+{
+"County": "Cambria", 
+"Municipality":"Johnstown City"
+},
+{
+"County": "Cambria", 
+"Municipality":"Lilly Borough"
+},
+{
+"County": "Cambria", 
+"Municipality":"Lorain Borough"
+},
+{
+"County": "Cambria", 
+"Municipality":"Loretto Borough"
+},
+{
+"County": "Cambria", 
+"Municipality":"Lower Yoder Township"
+},
+{
+"County": "Cambria", 
+"Municipality":"Middle Taylor Township"
+},
+{
+"County": "Cambria", 
+"Municipality":"Munster Township"
+},
+{
+"County": "Cambria", 
+"Municipality":"South Fork Borough"
+},
+{
+"County": "Cambria", 
+"Municipality":"Southmont Borough"
+},
+{
+"County": "Cambria", 
+"Municipality":"Stonycreek Township"
+},
+{
+"County": "Cambria", 
+"Municipality":"Summerhill Borough"
+},
+{
+"County": "Cambria", 
+"Municipality":"Summerhill Township"
+},
+{
+"County": "Cambria", 
+"Municipality":"Susquehanna Township"
+},
+{
+"County": "Cambria", 
+"Municipality":"Tunnelhill Borough"
+},
+{
+"County": "NantyGlo Borough", 
+"Municipality":"Cassandra Borough"
+},
+{
+"County": "NantyGlo Borough", 
+"Municipality":"Chest Springs Borough"
+},
+{
+"County": "NantyGlo Borough", 
+"Municipality":"Chest Township"
+},
+{
+"County": "NantyGlo Borough", 
+"Municipality":"Clearfield Township"
+},
+{
+"County": "NantyGlo Borough", 
+"Municipality":"Conemaugh Township"
+},
+{
+"County": "NantyGlo Borough", 
+"Municipality":"Cresson Borough"
+},
+{
+"County": "NantyGlo Borough", 
+"Municipality":"Cresson Township"
+},
+{
+"County": "NantyGlo Borough", 
+"Municipality":"Croyle Township"
+},
+{
+"County": "NantyGlo Borough", 
+"Municipality":"Elder Township"
+},
+{
+"County": "NantyGlo Borough", 
+"Municipality":"Ferndale Borough"
+},
+{
+"County": "NantyGlo Borough", 
+"Municipality":"Franklin Borough"
+},
+{
+"County": "NantyGlo Borough", 
+"Municipality":"Gallitzin Borough"
+},
+{
+"County": "NantyGlo Borough", 
+"Municipality":"Gallitzin Township"
+},
+{
+"County": "NantyGlo Borough", 
+"Municipality":"Geistown Borough"
+},
+{
+"County": "NantyGlo Borough", 
+"Municipality":"Hastings Borough"
+},
+{
+"County": "NantyGlo Borough", 
+"Municipality":"Jackson Township"
+},
+{
+"County": "NantyGlo Borough", 
+"Municipality":"Northern Cambria Borough"
+},
+{
+"County": "NantyGlo Borough", 
+"Municipality":"Patton Borough"
+},
+{
+"County": "NantyGlo Borough", 
+"Municipality":"Portage Borough"
+},
+{
+"County": "NantyGlo Borough", 
+"Municipality":"Portage Township"
+},
+{
+"County": "NantyGlo Borough", 
+"Municipality":"Reade Township"
+},
+{
+"County": "NantyGlo Borough", 
+"Municipality":"Richland Township"
+},
+{
+"County": "NantyGlo Borough", 
+"Municipality":"Sankertown Borough"
+},
+{
+"County": "NantyGlo Borough", 
+"Municipality":"Scalp Level Borough"
+},
+{
+"County": "NantyGlo Borough", 
+"Municipality":"Upper Yoder Township"
+},
+{
+"County": "NantyGlo Borough", 
+"Municipality":"Vintondale Borough"
+},
+{
+"County": "NantyGlo Borough", 
+"Municipality":"Washington Township"
+},
+{
+"County": "NantyGlo Borough", 
+"Municipality":"West Carroll Township"
+},
+{
+"County": "NantyGlo Borough", 
+"Municipality":"West Taylor Township"
+},
+{
+"County": "NantyGlo Borough", 
+"Municipality":"Westmont Borough"
+},
+{
+"County": "NantyGlo Borough", 
+"Municipality":"White Township"
+},
+{
+"County": "NantyGlo Borough", 
+"Municipality":"Wilmore Borough"
+},
+{
+"County": "Cameron", 
+"Municipality":"Driftwood Borough"
+},
+{
+"County": "Cameron", 
+"Municipality":"Emporium Borough"
+},
+{
+"County": "Cameron", 
+"Municipality":"Gibson Township"
+},
+{
+"County": "Cameron", 
+"Municipality":"Grove Township"
+},
+{
+"County": "Cameron", 
+"Municipality":"Lumber Township"
+},
+{
+"County": "Cameron", 
+"Municipality":"Portage Township"
+},
+{
+"County": "Cameron", 
+"Municipality":"Shippen Township"
+},
+{
+"County": "Carbon", 
+"Municipality":"Banks Township"
+},
+{
+"County": "Carbon", 
+"Municipality":"Beaver Meadows Borough"
+},
+{
+"County": "Carbon", 
+"Municipality":"Bowmanstown Borough"
+},
+{
+"County": "Carbon", 
+"Municipality":"East Penn Township"
+},
+{
+"County": "Carbon", 
+"Municipality":"East Side Borough"
+},
+{
+"County": "Carbon", 
+"Municipality":"Franklin Township"
+},
+{
+"County": "Carbon", 
+"Municipality":"Jim Thorpe Borough"
+},
+{
+"County": "Carbon", 
+"Municipality":"Kidder Township"
+},
+{
+"County": "Carbon", 
+"Municipality":"Lansford Borough"
+},
+{
+"County": "Carbon", 
+"Municipality":"Lausanne Township"
+},
+{
+"County": "Carbon", 
+"Municipality":"Lehigh Township"
+},
+{
+"County": "Carbon", 
+"Municipality":"Lehighton Borough"
+},
+{
+"County": "Carbon", 
+"Municipality":"Lower Towamensing Township"
+},
+{
+"County": "Carbon", 
+"Municipality":"Mahoning Township"
+},
+{
+"County": "Carbon", 
+"Municipality":"Nesquehoning Borough"
+},
+{
+"County": "Carbon", 
+"Municipality":"Packer Township"
+},
+{
+"County": "Carbon", 
+"Municipality":"Palmerton Borough"
+},
+{
+"County": "Carbon", 
+"Municipality":"Parryville Borough"
+},
+{
+"County": "Carbon", 
+"Municipality":"Penn Forest Township"
+},
+{
+"County": "Carbon", 
+"Municipality":"Summit Hill Borough"
+},
+{
+"County": "Carbon", 
+"Municipality":"Towamensing Township"
+},
+{
+"County": "Carbon", 
+"Municipality":"Weatherly Borough"
+},
+{
+"County": "Carbon", 
+"Municipality":"Weissport Borough"
+},
+{
+"County": "Centre", 
+"Municipality":"Bellefonte Borough"
+},
+{
+"County": "Centre", 
+"Municipality":"Benner Township"
+},
+{
+"County": "Centre", 
+"Municipality":"Boggs Township"
+},
+{
+"County": "Centre", 
+"Municipality":"Burnside Township"
+},
+{
+"County": "Centre", 
+"Municipality":"Centre Hall Borough"
+},
+{
+"County": "Centre", 
+"Municipality":"College Township"
+},
+{
+"County": "Centre", 
+"Municipality":"Curtin Township"
+},
+{
+"County": "Centre", 
+"Municipality":"Ferguson Township"
+},
+{
+"County": "Centre", 
+"Municipality":"Gregg Township"
+},
+{
+"County": "Centre", 
+"Municipality":"Haines Township"
+},
+{
+"County": "Centre", 
+"Municipality":"Halfmoon Township"
+},
+{
+"County": "Centre", 
+"Municipality":"Harris Township"
+},
+{
+"County": "Centre", 
+"Municipality":"Howard Borough"
+},
+{
+"County": "Centre", 
+"Municipality":"Howard Township"
+},
+{
+"County": "Centre", 
+"Municipality":"Huston Township"
+},
+{
+"County": "Centre", 
+"Municipality":"Liberty Township"
+},
+{
+"County": "Centre", 
+"Municipality":"Marion Township"
+},
+{
+"County": "Centre", 
+"Municipality":"Miles Township"
+},
+{
+"County": "Centre", 
+"Municipality":"Milesburg Borough"
+},
+{
+"County": "Centre", 
+"Municipality":"Millheim Borough"
+},
+{
+"County": "Centre", 
+"Municipality":"Patton Township"
+},
+{
+"County": "Centre", 
+"Municipality":"Penn Township"
+},
+{
+"County": "Centre", 
+"Municipality":"Philipsburg Borough"
+},
+{
+"County": "Centre", 
+"Municipality":"Port Matilda Borough"
+},
+{
+"County": "Centre", 
+"Municipality":"Potter Township"
+},
+{
+"County": "Centre", 
+"Municipality":"Rush Township"
+},
+{
+"County": "Centre", 
+"Municipality":"Snow Shoe Borough"
+},
+{
+"County": "Centre", 
+"Municipality":"Snow Shoe Township"
+},
+{
+"County": "Centre", 
+"Municipality":"Spring Township"
+},
+{
+"County": "Centre", 
+"Municipality":"State College Borough"
+},
+{
+"County": "Centre", 
+"Municipality":"Taylor Township"
+},
+{
+"County": "Centre", 
+"Municipality":"Union Township"
+},
+{
+"County": "Centre", 
+"Municipality":"Unionville Borough"
+},
+{
+"County": "Centre", 
+"Municipality":"Walker Township"
+},
+{
+"County": "Centre", 
+"Municipality":"Worth Township"
+},
+{
+"County": "Chester", 
+"Municipality":"Atglen Borough"
+},
+{
+"County": "Chester", 
+"Municipality":"Avondale Borough"
+},
+{
+"County": "Chester", 
+"Municipality":"Birmingham Township"
+},
+{
+"County": "Chester", 
+"Municipality":"Caln Township"
+},
+{
+"County": "Chester", 
+"Municipality":"Charlestown Township"
+},
+{
+"County": "Chester", 
+"Municipality":"Coatesville City"
+},
+{
+"County": "Chester", 
+"Municipality":"Downingtown Borough"
+},
+{
+"County": "Chester", 
+"Municipality":"East Bradford Township"
+},
+{
+"County": "Chester", 
+"Municipality":"East Brandywine Township"
+},
+{
+"County": "Chester", 
+"Municipality":"East Caln Township"
+},
+{
+"County": "Chester", 
+"Municipality":"East Coventry Township"
+},
+{
+"County": "Chester", 
+"Municipality":"East Fallowfield Township"
+},
+{
+"County": "Chester", 
+"Municipality":"East Goshen Township"
+},
+{
+"County": "Chester", 
+"Municipality":"East Marlborough Township"
+},
+{
+"County": "Chester", 
+"Municipality":"East Nantmeal Township"
+},
+{
+"County": "Chester", 
+"Municipality":"East Nottingham Township"
+},
+{
+"County": "Chester", 
+"Municipality":"East Pikeland Township"
+},
+{
+"County": "Chester", 
+"Municipality":"East Vincent Township"
+},
+{
+"County": "Chester", 
+"Municipality":"East Whiteland Township"
+},
+{
+"County": "Chester", 
+"Municipality":"Easttown Township"
+},
+{
+"County": "Chester", 
+"Municipality":"Elk Township"
+},
+{
+"County": "Chester", 
+"Municipality":"Elverson Borough"
+},
+{
+"County": "Chester", 
+"Municipality":"Franklin Township"
+},
+{
+"County": "Chester", 
+"Municipality":"Highland Township"
+},
+{
+"County": "Chester", 
+"Municipality":"Honey Brook Borough"
+},
+{
+"County": "Chester", 
+"Municipality":"Honey Brook Township"
+},
+{
+"County": "Chester", 
+"Municipality":"Kennett Square Borough"
+},
+{
+"County": "Chester", 
+"Municipality":"Kennett Township"
+},
+{
+"County": "Chester", 
+"Municipality":"London Britain Township"
+},
+{
+"County": "Chester", 
+"Municipality":"London Grove Township"
+},
+{
+"County": "Chester", 
+"Municipality":"Londonderry Township"
+},
+{
+"County": "Chester", 
+"Municipality":"Lower Oxford Township"
+},
+{
+"County": "Chester", 
+"Municipality":"Malvern Borough"
+},
+{
+"County": "Chester", 
+"Municipality":"Modena Borough"
+},
+{
+"County": "Chester", 
+"Municipality":"New Garden Township"
+},
+{
+"County": "Chester", 
+"Municipality":"New London Township"
+},
+{
+"County": "Chester", 
+"Municipality":"Newlin Township"
+},
+{
+"County": "Chester", 
+"Municipality":"North Coventry Township"
+},
+{
+"County": "Chester", 
+"Municipality":"Oxford Borough"
+},
+{
+"County": "Chester", 
+"Municipality":"Parkesburg Borough"
+},
+{
+"County": "Chester", 
+"Municipality":"Penn Township"
+},
+{
+"County": "Chester", 
+"Municipality":"Pennsbury Township"
+},
+{
+"County": "Chester", 
+"Municipality":"Phoenixville Borough"
+},
+{
+"County": "Chester", 
+"Municipality":"Pocopson Township"
+},
+{
+"County": "Chester", 
+"Municipality":"Sadsbury Township"
+},
+{
+"County": "Chester", 
+"Municipality":"Schuylkill Township"
+},
+{
+"County": "Chester", 
+"Municipality":"South Coatesville Borough"
+},
+{
+"County": "Chester", 
+"Municipality":"South Coventry Township"
+},
+{
+"County": "Chester", 
+"Municipality":"Spring City Borough"
+},
+{
+"County": "Chester", 
+"Municipality":"Thornbury Township"
+},
+{
+"County": "Chester", 
+"Municipality":"Tredyffrin Township"
+},
+{
+"County": "Chester", 
+"Municipality":"Upper Oxford Township"
+},
+{
+"County": "Chester", 
+"Municipality":"Upper Uwchlan Township"
+},
+{
+"County": "Chester", 
+"Municipality":"Uwchlan Township"
+},
+{
+"County": "Chester", 
+"Municipality":"Valley Township"
+},
+{
+"County": "Chester", 
+"Municipality":"Wallace Township"
+},
+{
+"County": "Chester", 
+"Municipality":"Warwick Township"
+},
+{
+"County": "Chester", 
+"Municipality":"West Bradford Township"
+},
+{
+"County": "Chester", 
+"Municipality":"West Brandywine Township"
+},
+{
+"County": "Chester", 
+"Municipality":"West Caln Township"
+},
+{
+"County": "Chester", 
+"Municipality":"West Chester Borough"
+},
+{
+"County": "Chester", 
+"Municipality":"West Fallowfield Township"
+},
+{
+"County": "Chester", 
+"Municipality":"West Goshen Township"
+},
+{
+"County": "Chester", 
+"Municipality":"West Grove Borough"
+},
+{
+"County": "Chester", 
+"Municipality":"West Marlborough Township"
+},
+{
+"County": "Chester", 
+"Municipality":"West Nantmeal Township"
+},
+{
+"County": "Chester", 
+"Municipality":"West Nottingham Township"
+},
+{
+"County": "Chester", 
+"Municipality":"West Pikeland Township"
+},
+{
+"County": "Chester", 
+"Municipality":"West Sadsbury Township"
+},
+{
+"County": "Chester", 
+"Municipality":"West Vincent Township"
+},
+{
+"County": "Chester", 
+"Municipality":"West Whiteland Township"
+},
+{
+"County": "Chester", 
+"Municipality":"Westtown Township"
+},
+{
+"County": "Chester", 
+"Municipality":"Willistown Township"
+},
+{
+"County": "Clarion", 
+"Municipality":"Ashland Township"
+},
+{
+"County": "Clarion", 
+"Municipality":"Beaver Township"
+},
+{
+"County": "Clarion", 
+"Municipality":"Brady Township"
+},
+{
+"County": "Clarion", 
+"Municipality":"Callensburg Borough"
+},
+{
+"County": "Clarion", 
+"Municipality":"Clarion Borough"
+},
+{
+"County": "Clarion", 
+"Municipality":"Clarion Township"
+},
+{
+"County": "Clarion", 
+"Municipality":"East Brady Borough"
+},
+{
+"County": "Clarion", 
+"Municipality":"Elk Township"
+},
+{
+"County": "Clarion", 
+"Municipality":"Farmington Township"
+},
+{
+"County": "Clarion", 
+"Municipality":"Foxburg Borough"
+},
+{
+"County": "Clarion", 
+"Municipality":"Hawthorn Borough"
+},
+{
+"County": "Clarion", 
+"Municipality":"Highland Township"
+},
+{
+"County": "Clarion", 
+"Municipality":"Knox Borough"
+},
+{
+"County": "Clarion", 
+"Municipality":"Knox Township"
+},
+{
+"County": "Clarion", 
+"Municipality":"Licking Township"
+},
+{
+"County": "Clarion", 
+"Municipality":"Limestone Township"
+},
+{
+"County": "Clarion", 
+"Municipality":"Madison Township"
+},
+{
+"County": "Clarion", 
+"Municipality":"Millcreek Township"
+},
+{
+"County": "Clarion", 
+"Municipality":"Monroe Township"
+},
+{
+"County": "Clarion", 
+"Municipality":"New Bethlehem Borough"
+},
+{
+"County": "Clarion", 
+"Municipality":"Paint Township"
+},
+{
+"County": "Clarion", 
+"Municipality":"Perry Township"
+},
+{
+"County": "Clarion", 
+"Municipality":"Piney Township"
+},
+{
+"County": "Clarion", 
+"Municipality":"Porter Township"
+},
+{
+"County": "Clarion", 
+"Municipality":"Redbank Township"
+},
+{
+"County": "Clarion", 
+"Municipality":"Richland Township"
+},
+{
+"County": "Clarion", 
+"Municipality":"Rimersburg Borough"
+},
+{
+"County": "Clarion", 
+"Municipality":"Salem Township"
+},
+{
+"County": "Clarion", 
+"Municipality":"Shippenville Borough"
+},
+{
+"County": "Clarion", 
+"Municipality":"Sligo Borough"
+},
+{
+"County": "Clarion", 
+"Municipality":"St. Petersburg Borough"
+},
+{
+"County": "Clarion", 
+"Municipality":"Strattanville Borough"
+},
+{
+"County": "Clarion", 
+"Municipality":"Toby Township"
+},
+{
+"County": "Clarion", 
+"Municipality":"Washington Township"
+},
+{
+"County": "Clearfield", 
+"Municipality":"Beccaria Township"
+},
+{
+"County": "Clearfield", 
+"Municipality":"Bell Township"
+},
+{
+"County": "Clearfield", 
+"Municipality":"Bigler Township"
+},
+{
+"County": "Clearfield", 
+"Municipality":"Bloom Township"
+},
+{
+"County": "Clearfield", 
+"Municipality":"Boggs Township"
+},
+{
+"County": "Clearfield", 
+"Municipality":"Bradford Township"
+},
+{
+"County": "Clearfield", 
+"Municipality":"Brady Township"
+},
+{
+"County": "Clearfield", 
+"Municipality":"Brisbin Borough"
+},
+{
+"County": "Clearfield", 
+"Municipality":"Burnside Borough"
+},
+{
+"County": "Clearfield", 
+"Municipality":"Burnside Township"
+},
+{
+"County": "Clearfield", 
+"Municipality":"Chest Township"
+},
+{
+"County": "Clearfield", 
+"Municipality":"Chester Hill Borough"
+},
+{
+"County": "Clearfield", 
+"Municipality":"Clearfield Borough"
+},
+{
+"County": "Clearfield", 
+"Municipality":"Coalport Borough"
+},
+{
+"County": "Clearfield", 
+"Municipality":"Cooper Township"
+},
+{
+"County": "Clearfield", 
+"Municipality":"Covington Township"
+},
+{
+"County": "Clearfield", 
+"Municipality":"Curwensville Borough"
+},
+{
+"County": "Clearfield", 
+"Municipality":"Decatur Township"
+},
+{
+"County": "Clearfield", 
+"Municipality":"DuBois City"
+},
+{
+"County": "Clearfield", 
+"Municipality":"Ferguson Township"
+},
+{
+"County": "Clearfield", 
+"Municipality":"Girard Township"
+},
+{
+"County": "Clearfield", 
+"Municipality":"Glen Hope Borough"
+},
+{
+"County": "Clearfield", 
+"Municipality":"Goshen Township"
+},
+{
+"County": "Clearfield", 
+"Municipality":"Graham Township"
+},
+{
+"County": "Clearfield", 
+"Municipality":"Grampian Borough"
+},
+{
+"County": "Clearfield", 
+"Municipality":"Greenwood Township"
+},
+{
+"County": "Clearfield", 
+"Municipality":"Gulich Township"
+},
+{
+"County": "Clearfield", 
+"Municipality":"Houtzdale Borough"
+},
+{
+"County": "Clearfield", 
+"Municipality":"Huston Township"
+},
+{
+"County": "Clearfield", 
+"Municipality":"Irvona Borough"
+},
+{
+"County": "Clearfield", 
+"Municipality":"Jordan Township"
+},
+{
+"County": "Clearfield", 
+"Municipality":"Karthaus Township"
+},
+{
+"County": "Clearfield", 
+"Municipality":"Knox Township"
+},
+{
+"County": "Clearfield", 
+"Municipality":"Lawrence Township"
+},
+{
+"County": "Clearfield", 
+"Municipality":"Mahaffey Borough"
+},
+{
+"County": "Clearfield", 
+"Municipality":"Morris Township"
+},
+{
+"County": "Clearfield", 
+"Municipality":"New Washington Borough"
+},
+{
+"County": "Clearfield", 
+"Municipality":"Newburg Borough"
+},
+{
+"County": "Clearfield", 
+"Municipality":"Osceola Mills Borough"
+},
+{
+"County": "Clearfield", 
+"Municipality":"Penn Township"
+},
+{
+"County": "Clearfield", 
+"Municipality":"Pike Township"
+},
+{
+"County": "Clearfield", 
+"Municipality":"Pine Township"
+},
+{
+"County": "Clearfield", 
+"Municipality":"Ramey Borough"
+},
+{
+"County": "Clearfield", 
+"Municipality":"Sandy Township"
+},
+{
+"County": "Clearfield", 
+"Municipality":"Troutville Borough"
+},
+{
+"County": "Clearfield", 
+"Municipality":"Union Township"
+},
+{
+"County": "Clearfield", 
+"Municipality":"Wallaceton Borough"
+},
+{
+"County": "Clearfield", 
+"Municipality":"Westover Borough"
+},
+{
+"County": "Clearfield", 
+"Municipality":"Woodward Township"
+},
+{
+"County": "Clinton", 
+"Municipality":"Allison Township"
+},
+{
+"County": "Clinton", 
+"Municipality":"Avis Borough"
+},
+{
+"County": "Clinton", 
+"Municipality":"Bald Eagle Township"
+},
+{
+"County": "Clinton", 
+"Municipality":"Beech Creek Borough"
+},
+{
+"County": "Clinton", 
+"Municipality":"Beech Creek Township"
+},
+{
+"County": "Clinton", 
+"Municipality":"Castanea Township"
+},
+{
+"County": "Clinton", 
+"Municipality":"Chapman Township"
+},
+{
+"County": "Clinton", 
+"Municipality":"Colebrook Township"
+},
+{
+"County": "Clinton", 
+"Municipality":"Crawford Township"
+},
+{
+"County": "Clinton", 
+"Municipality":"Dunnstable Township"
+},
+{
+"County": "Clinton", 
+"Municipality":"East Keating Township"
+},
+{
+"County": "Clinton", 
+"Municipality":"Flemington Borough"
+},
+{
+"County": "Clinton", 
+"Municipality":"Gallagher Township"
+},
+{
+"County": "Clinton", 
+"Municipality":"Greene Township"
+},
+{
+"County": "Clinton", 
+"Municipality":"Grugan Township"
+},
+{
+"County": "Clinton", 
+"Municipality":"Lamar Township"
+},
+{
+"County": "Clinton", 
+"Municipality":"Leidy Township"
+},
+{
+"County": "Clinton", 
+"Municipality":"Lock Haven City"
+},
+{
+"County": "Clinton", 
+"Municipality":"Logan Township"
+},
+{
+"County": "Clinton", 
+"Municipality":"Loganton Borough"
+},
+{
+"County": "Clinton", 
+"Municipality":"Mill Hall Borough"
+},
+{
+"County": "Clinton", 
+"Municipality":"Noyes Township"
+},
+{
+"County": "Clinton", 
+"Municipality":"Pine Creek Township"
+},
+{
+"County": "Clinton", 
+"Municipality":"Porter Township"
+},
+{
+"County": "Clinton", 
+"Municipality":"Renovo Borough"
+},
+{
+"County": "Clinton", 
+"Municipality":"South Renovo Borough"
+},
+{
+"County": "Clinton", 
+"Municipality":"Wayne Township"
+},
+{
+"County": "Clinton", 
+"Municipality":"West Keating Township"
+},
+{
+"County": "Clinton", 
+"Municipality":"Woodward Township"
+},
+{
+"County": "Columbia", 
+"Municipality":"Beaver Township"
+},
+{
+"County": "Columbia", 
+"Municipality":"Benton Borough"
+},
+{
+"County": "Columbia", 
+"Municipality":"Benton Township"
+},
+{
+"County": "Columbia", 
+"Municipality":"Berwick Borough"
+},
+{
+"County": "Columbia", 
+"Municipality":"Bloomsburg Town"
+},
+{
+"County": "Columbia", 
+"Municipality":"Briar Creek Borough"
+},
+{
+"County": "Columbia", 
+"Municipality":"Briar Creek Township"
+},
+{
+"County": "Columbia", 
+"Municipality":"Catawissa Borough"
+},
+{
+"County": "Columbia", 
+"Municipality":"Catawissa Township"
+},
+{
+"County": "Columbia", 
+"Municipality":"Centralia Borough"
+},
+{
+"County": "Columbia", 
+"Municipality":"Cleveland Township"
+},
+{
+"County": "Columbia", 
+"Municipality":"Conyngham Township"
+},
+{
+"County": "Columbia", 
+"Municipality":"Fishing Creek Township"
+},
+{
+"County": "Columbia", 
+"Municipality":"Franklin Township"
+},
+{
+"County": "Columbia", 
+"Municipality":"Greenwood Township"
+},
+{
+"County": "Columbia", 
+"Municipality":"Hemlock Township"
+},
+{
+"County": "Columbia", 
+"Municipality":"Jackson Township"
+},
+{
+"County": "Columbia", 
+"Municipality":"Locust Township"
+},
+{
+"County": "Columbia", 
+"Municipality":"Madison Township"
+},
+{
+"County": "Columbia", 
+"Municipality":"Main Township"
+},
+{
+"County": "Columbia", 
+"Municipality":"Mifflin Township"
+},
+{
+"County": "Columbia", 
+"Municipality":"Millville Borough"
+},
+{
+"County": "Columbia", 
+"Municipality":"Montour Township"
+},
+{
+"County": "Columbia", 
+"Municipality":"Mount Pleasant Township"
+},
+{
+"County": "Columbia", 
+"Municipality":"North Centre Township"
+},
+{
+"County": "Columbia", 
+"Municipality":"Orange Township"
+},
+{
+"County": "Columbia", 
+"Municipality":"Orangeville Borough"
+},
+{
+"County": "Columbia", 
+"Municipality":"Pine Township"
+},
+{
+"County": "Columbia", 
+"Municipality":"Roaring Creek Township"
+},
+{
+"County": "Columbia", 
+"Municipality":"Scott Township"
+},
+{
+"County": "Columbia", 
+"Municipality":"South Centre Township"
+},
+{
+"County": "Columbia", 
+"Municipality":"Stillwater Borough"
+},
+{
+"County": "Columbia", 
+"Municipality":"Sugarloaf Township"
+},
+{
+"County": "Crawford", 
+"Municipality":"Athens Township"
+},
+{
+"County": "Crawford", 
+"Municipality":"Beaver Township"
+},
+{
+"County": "Crawford", 
+"Municipality":"Bloomfield Township"
+},
+{
+"County": "Crawford", 
+"Municipality":"Blooming Valley Borough"
+},
+{
+"County": "Crawford", 
+"Municipality":"Cambridge Springs Borough"
+},
+{
+"County": "Crawford", 
+"Municipality":"Cambridge Township"
+},
+{
+"County": "Crawford", 
+"Municipality":"Centerville Borough"
+},
+{
+"County": "Crawford", 
+"Municipality":"Cochranton Borough"
+},
+{
+"County": "Crawford", 
+"Municipality":"Conneaut Lake Borough"
+},
+{
+"County": "Crawford", 
+"Municipality":"Conneaut Township"
+},
+{
+"County": "Crawford", 
+"Municipality":"Conneautville Borough"
+},
+{
+"County": "Crawford", 
+"Municipality":"Cussewago Township"
+},
+{
+"County": "Crawford", 
+"Municipality":"East Fairfield Township"
+},
+{
+"County": "Crawford", 
+"Municipality":"East Fallowfield Township"
+},
+{
+"County": "Crawford", 
+"Municipality":"East Mead Township"
+},
+{
+"County": "Crawford", 
+"Municipality":"Fairfield Township"
+},
+{
+"County": "Crawford", 
+"Municipality":"Greenwood Township"
+},
+{
+"County": "Crawford", 
+"Municipality":"Hayfield Township"
+},
+{
+"County": "Crawford", 
+"Municipality":"Hydetown Borough"
+},
+{
+"County": "Crawford", 
+"Municipality":"Linesville Borough"
+},
+{
+"County": "Crawford", 
+"Municipality":"Meadville City"
+},
+{
+"County": "Crawford", 
+"Municipality":"North Shenango Township"
+},
+{
+"County": "Crawford", 
+"Municipality":"Oil Creek Township"
+},
+{
+"County": "Crawford", 
+"Municipality":"Pine Township"
+},
+{
+"County": "Crawford", 
+"Municipality":"Randolph Township"
+},
+{
+"County": "Crawford", 
+"Municipality":"Richmond Township"
+},
+{
+"County": "Crawford", 
+"Municipality":"Rockdale Township"
+},
+{
+"County": "Crawford", 
+"Municipality":"Rome Township"
+},
+{
+"County": "Crawford", 
+"Municipality":"Sadsbury Township"
+},
+{
+"County": "Crawford", 
+"Municipality":"Saegertown Borough"
+},
+{
+"County": "Crawford", 
+"Municipality":"South Shenango Township"
+},
+{
+"County": "Crawford", 
+"Municipality":"Sparta Township"
+},
+{
+"County": "Crawford", 
+"Municipality":"Spartansburg Borough"
+},
+{
+"County": "Crawford", 
+"Municipality":"Spring Township"
+},
+{
+"County": "Crawford", 
+"Municipality":"Springboro Borough"
+},
+{
+"County": "Crawford", 
+"Municipality":"Steuben Township"
+},
+{
+"County": "Crawford", 
+"Municipality":"Summerhill Township"
+},
+{
+"County": "Crawford", 
+"Municipality":"Summit Township"
+},
+{
+"County": "Crawford", 
+"Municipality":"Titusville City"
+},
+{
+"County": "Crawford", 
+"Municipality":"Townville Borough"
+},
+{
+"County": "Crawford", 
+"Municipality":"Troy Township"
+},
+{
+"County": "Crawford", 
+"Municipality":"Union Township"
+},
+{
+"County": "Crawford", 
+"Municipality":"Venango Borough"
+},
+{
+"County": "Crawford", 
+"Municipality":"Venango Township"
+},
+{
+"County": "Crawford", 
+"Municipality":"Vernon Township"
+},
+{
+"County": "Crawford", 
+"Municipality":"Wayne Township"
+},
+{
+"County": "Crawford", 
+"Municipality":"West Fallowfield Township"
+},
+{
+"County": "Crawford", 
+"Municipality":"West Mead Township"
+},
+{
+"County": "Crawford", 
+"Municipality":"West Shenango Township"
+},
+{
+"County": "Crawford", 
+"Municipality":"Woodcock Borough"
+},
+{
+"County": "Crawford", 
+"Municipality":"Woodcock Township"
+},
+{
+"County": "Cumberland", 
+"Municipality":"Camp Hill Borough"
+},
+{
+"County": "Cumberland", 
+"Municipality":"Carlisle Borough"
+},
+{
+"County": "Cumberland", 
+"Municipality":"Cooke Township"
+},
+{
+"County": "Cumberland", 
+"Municipality":"Dickinson Township"
+},
+{
+"County": "Cumberland", 
+"Municipality":"East Pennsboro Township"
+},
+{
+"County": "Cumberland", 
+"Municipality":"Hampden Township"
+},
+{
+"County": "Cumberland", 
+"Municipality":"Hopewell Township"
+},
+{
+"County": "Cumberland", 
+"Municipality":"Lemoyne Borough"
+},
+{
+"County": "Cumberland", 
+"Municipality":"Lower Allen Township"
+},
+{
+"County": "Cumberland", 
+"Municipality":"Lower Frankford Township"
+},
+{
+"County": "Cumberland", 
+"Municipality":"Lower Mifflin Township"
+},
+{
+"County": "Cumberland", 
+"Municipality":"Mechanicsburg Borough"
+},
+{
+"County": "Cumberland", 
+"Municipality":"Middlesex Township"
+},
+{
+"County": "Cumberland", 
+"Municipality":"Monroe Township"
+},
+{
+"County": "Cumberland", 
+"Municipality":"Mount Holly Springs Borough"
+},
+{
+"County": "Cumberland", 
+"Municipality":"New Cumberland Borough"
+},
+{
+"County": "Cumberland", 
+"Municipality":"Newburg Borough"
+},
+{
+"County": "Cumberland", 
+"Municipality":"Newville Borough"
+},
+{
+"County": "Cumberland", 
+"Municipality":"North Middleton Township"
+},
+{
+"County": "Cumberland", 
+"Municipality":"North Newton Township"
+},
+{
+"County": "Cumberland", 
+"Municipality":"Penn Township"
+},
+{
+"County": "Cumberland", 
+"Municipality":"Shippensburg Borough"
+},
+{
+"County": "Cumberland", 
+"Municipality":"Shippensburg Township"
+},
+{
+"County": "Cumberland", 
+"Municipality":"Shiremanstown Borough"
+},
+{
+"County": "Cumberland", 
+"Municipality":"Silver Spring Township"
+},
+{
+"County": "Cumberland", 
+"Municipality":"South Middleton Township"
+},
+{
+"County": "Cumberland", 
+"Municipality":"South Newton Township"
+},
+{
+"County": "Cumberland", 
+"Municipality":"Southampton Township"
+},
+{
+"County": "Cumberland", 
+"Municipality":"Upper Allen Township"
+},
+{
+"County": "Cumberland", 
+"Municipality":"Upper Frankford Township"
+},
+{
+"County": "Cumberland", 
+"Municipality":"Upper Mifflin Township"
+},
+{
+"County": "Cumberland", 
+"Municipality":"West Pennsboro Township"
+},
+{
+"County": "Cumberland", 
+"Municipality":"Wormleysburg Borough"
+},
+{
+"County": "Dauphin", 
+"Municipality":"Berrysburg Borough"
+},
+{
+"County": "Dauphin", 
+"Municipality":"Conewago Township"
+},
+{
+"County": "Dauphin", 
+"Municipality":"Dauphin Borough"
+},
+{
+"County": "Dauphin", 
+"Municipality":"Derry Township"
+},
+{
+"County": "Dauphin", 
+"Municipality":"East Hanover Township"
+},
+{
+"County": "Dauphin", 
+"Municipality":"Elizabethville Borough"
+},
+{
+"County": "Dauphin", 
+"Municipality":"Gratz Borough"
+},
+{
+"County": "Dauphin", 
+"Municipality":"Halifax Borough"
+},
+{
+"County": "Dauphin", 
+"Municipality":"Halifax Township"
+},
+{
+"County": "Dauphin", 
+"Municipality":"Harrisburg City"
+},
+{
+"County": "Dauphin", 
+"Municipality":"Highspire Borough"
+},
+{
+"County": "Dauphin", 
+"Municipality":"Hummelstown Borough"
+},
+{
+"County": "Dauphin", 
+"Municipality":"Jackson Township"
+},
+{
+"County": "Dauphin", 
+"Municipality":"Jefferson Township"
+},
+{
+"County": "Dauphin", 
+"Municipality":"Londonderry Township"
+},
+{
+"County": "Dauphin", 
+"Municipality":"Lower Paxton Township"
+},
+{
+"County": "Dauphin", 
+"Municipality":"Lower Swatara Township"
+},
+{
+"County": "Dauphin", 
+"Municipality":"Lykens Borough"
+},
+{
+"County": "Dauphin", 
+"Municipality":"Lykens Township"
+},
+{
+"County": "Dauphin", 
+"Municipality":"Middle Paxton Township"
+},
+{
+"County": "Dauphin", 
+"Municipality":"Middletown Borough"
+},
+{
+"County": "Dauphin", 
+"Municipality":"Mifflin Township"
+},
+{
+"County": "Dauphin", 
+"Municipality":"Millersburg Borough"
+},
+{
+"County": "Dauphin", 
+"Municipality":"Paxtang Borough"
+},
+{
+"County": "Dauphin", 
+"Municipality":"Penbrook Borough"
+},
+{
+"County": "Dauphin", 
+"Municipality":"Pillow Borough"
+},
+{
+"County": "Dauphin", 
+"Municipality":"Reed Township"
+},
+{
+"County": "Dauphin", 
+"Municipality":"Royalton Borough"
+},
+{
+"County": "Dauphin", 
+"Municipality":"Rush Township"
+},
+{
+"County": "Dauphin", 
+"Municipality":"South Hanover Township"
+},
+{
+"County": "Dauphin", 
+"Municipality":"Steelton Borough"
+},
+{
+"County": "Dauphin", 
+"Municipality":"Susquehanna Township"
+},
+{
+"County": "Dauphin", 
+"Municipality":"Swatara Township"
+},
+{
+"County": "Dauphin", 
+"Municipality":"Upper Paxton Township"
+},
+{
+"County": "Dauphin", 
+"Municipality":"Washington Township"
+},
+{
+"County": "Dauphin", 
+"Municipality":"Wayne Township"
+},
+{
+"County": "Dauphin", 
+"Municipality":"West Hanover Township"
+},
+{
+"County": "Dauphin", 
+"Municipality":"Wiconisco Township"
+},
+{
+"County": "Dauphin", 
+"Municipality":"Williams Township"
+},
+{
+"County": "Dauphin", 
+"Municipality":"Williamstown Borough"
+},
+{
+"County": "Delaware", 
+"Municipality":"Aldan Borough"
+},
+{
+"County": "Delaware", 
+"Municipality":"Aston Township"
+},
+{
+"County": "Delaware", 
+"Municipality":"Bethel Township"
+},
+{
+"County": "Delaware", 
+"Municipality":"Brookhaven Borough"
+},
+{
+"County": "Delaware", 
+"Municipality":"Chadds Ford Township"
+},
+{
+"County": "Delaware", 
+"Municipality":"Chester City"
+},
+{
+"County": "Delaware", 
+"Municipality":"Chester Heights Borough"
+},
+{
+"County": "Delaware", 
+"Municipality":"Chester Township"
+},
+{
+"County": "Delaware", 
+"Municipality":"Clifton Heights Borough"
+},
+{
+"County": "Delaware", 
+"Municipality":"Collingdale Borough"
+},
+{
+"County": "Delaware", 
+"Municipality":"Colwyn Borough"
+},
+{
+"County": "Delaware", 
+"Municipality":"Concord Township"
+},
+{
+"County": "Delaware", 
+"Municipality":"Darby Borough"
+},
+{
+"County": "Delaware", 
+"Municipality":"Darby Township"
+},
+{
+"County": "Delaware", 
+"Municipality":"East Lansdowne Borough"
+},
+{
+"County": "Delaware", 
+"Municipality":"Eddystone Borough"
+},
+{
+"County": "Delaware", 
+"Municipality":"Edgmont Township"
+},
+{
+"County": "Delaware", 
+"Municipality":"Folcroft Borough"
+},
+{
+"County": "Delaware", 
+"Municipality":"Glenolden Borough"
+},
+{
+"County": "Delaware", 
+"Municipality":"Haverford Township"
+},
+{
+"County": "Delaware", 
+"Municipality":"Lansdowne Borough"
+},
+{
+"County": "Delaware", 
+"Municipality":"Lower Chichester Township"
+},
+{
+"County": "Delaware", 
+"Municipality":"Marcus Hook Borough"
+},
+{
+"County": "Delaware", 
+"Municipality":"Marple Township"
+},
+{
+"County": "Delaware", 
+"Municipality":"Media Borough"
+},
+{
+"County": "Delaware", 
+"Municipality":"Middletown Township"
+},
+{
+"County": "Delaware", 
+"Municipality":"Millbourne Borough"
+},
+{
+"County": "Delaware", 
+"Municipality":"Morton Borough"
+},
+{
+"County": "Delaware", 
+"Municipality":"Nether Providence Township"
+},
+{
+"County": "Delaware", 
+"Municipality":"Newtown Township"
+},
+{
+"County": "Delaware", 
+"Municipality":"Norwood Borough"
+},
+{
+"County": "Delaware", 
+"Municipality":"Parkside Borough"
+},
+{
+"County": "Delaware", 
+"Municipality":"Prospect Park Borough"
+},
+{
+"County": "Delaware", 
+"Municipality":"Radnor Township"
+},
+{
+"County": "Delaware", 
+"Municipality":"Ridley Park Borough"
+},
+{
+"County": "Delaware", 
+"Municipality":"Ridley Township"
+},
+{
+"County": "Delaware", 
+"Municipality":"Rose Valley Borough"
+},
+{
+"County": "Delaware", 
+"Municipality":"Rutledge Borough"
+},
+{
+"County": "Delaware", 
+"Municipality":"Sharon Hill Borough"
+},
+{
+"County": "Delaware", 
+"Municipality":"Springfield Township"
+},
+{
+"County": "Delaware", 
+"Municipality":"Swarthmore Borough"
+},
+{
+"County": "Delaware", 
+"Municipality":"Thornbury Township"
+},
+{
+"County": "Delaware", 
+"Municipality":"Tinicum Township"
+},
+{
+"County": "Delaware", 
+"Municipality":"Trainer Borough"
+},
+{
+"County": "Delaware", 
+"Municipality":"Upland Borough"
+},
+{
+"County": "Delaware", 
+"Municipality":"Upper Chichester Township"
+},
+{
+"County": "Delaware", 
+"Municipality":"Upper Darby Township"
+},
+{
+"County": "Delaware", 
+"Municipality":"Upper Providence Township"
+},
+{
+"County": "Delaware", 
+"Municipality":"Yeadon Borough"
+},
+{
+"County": "Elk", 
+"Municipality":"Benezette Township"
+},
+{
+"County": "Elk", 
+"Municipality":"Fox Township"
+},
+{
+"County": "Elk", 
+"Municipality":"Highland Township"
+},
+{
+"County": "Elk", 
+"Municipality":"Horton Township"
+},
+{
+"County": "Elk", 
+"Municipality":"Jay Township"
+},
+{
+"County": "Elk", 
+"Municipality":"Johnsonburg Borough"
+},
+{
+"County": "Elk", 
+"Municipality":"Jones Township"
+},
+{
+"County": "Elk", 
+"Municipality":"Millstone Township"
+},
+{
+"County": "Elk", 
+"Municipality":"Ridgway Borough"
+},
+{
+"County": "Elk", 
+"Municipality":"Ridgway Township"
+},
+{
+"County": "Elk", 
+"Municipality":"Spring Creek Township"
+},
+{
+"County": "Elk", 
+"Municipality":"St. Marys City"
+},
+{
+"County": "Erie", 
+"Municipality":"Albion Borough"
+},
+{
+"County": "Erie", 
+"Municipality":"Amity Township"
+},
+{
+"County": "Erie", 
+"Municipality":"Concord Township"
+},
+{
+"County": "Erie", 
+"Municipality":"Conneaut Township"
+},
+{
+"County": "Erie", 
+"Municipality":"Corry City"
+},
+{
+"County": "Erie", 
+"Municipality":"Cranesville Borough"
+},
+{
+"County": "Erie", 
+"Municipality":"Edinboro Borough"
+},
+{
+"County": "Erie", 
+"Municipality":"Elgin Borough"
+},
+{
+"County": "Erie", 
+"Municipality":"Elk Creek Township"
+},
+{
+"County": "Erie", 
+"Municipality":"Erie City"
+},
+{
+"County": "Erie", 
+"Municipality":"Fairview Township"
+},
+{
+"County": "Erie", 
+"Municipality":"Franklin Township"
+},
+{
+"County": "Erie", 
+"Municipality":"Girard Borough"
+},
+{
+"County": "Erie", 
+"Municipality":"Girard Township"
+},
+{
+"County": "Erie", 
+"Municipality":"Greene Township"
+},
+{
+"County": "Erie", 
+"Municipality":"Greenfield Township"
+},
+{
+"County": "Erie", 
+"Municipality":"Harborcreek Township"
+},
+{
+"County": "Erie", 
+"Municipality":"Lake City Borough"
+},
+{
+"County": "Erie", 
+"Municipality":"Lawrence Park Township"
+},
+{
+"County": "Erie", 
+"Municipality":"LeBoeuf Township"
+},
+{
+"County": "Erie", 
+"Municipality":"McKean Borough"
+},
+{
+"County": "Erie", 
+"Municipality":"McKean Township"
+},
+{
+"County": "Erie", 
+"Municipality":"Mill Village Borough"
+},
+{
+"County": "Erie", 
+"Municipality":"Millcreek Township"
+},
+{
+"County": "Erie", 
+"Municipality":"North East Borough"
+},
+{
+"County": "Erie", 
+"Municipality":"North East Township"
+},
+{
+"County": "Erie", 
+"Municipality":"Platea Borough"
+},
+{
+"County": "Erie", 
+"Municipality":"Springfield Township"
+},
+{
+"County": "Erie", 
+"Municipality":"Summit Township"
+},
+{
+"County": "Erie", 
+"Municipality":"Union City Borough"
+},
+{
+"County": "Erie", 
+"Municipality":"Union Township"
+},
+{
+"County": "Erie", 
+"Municipality":"Venango Township"
+},
+{
+"County": "Erie", 
+"Municipality":"Washington Township"
+},
+{
+"County": "Erie", 
+"Municipality":"Waterford Borough"
+},
+{
+"County": "Erie", 
+"Municipality":"Waterford Township"
+},
+{
+"County": "Erie", 
+"Municipality":"Wattsburg Borough"
+},
+{
+"County": "Erie", 
+"Municipality":"Wayne Township"
+},
+{
+"County": "Erie", 
+"Municipality":"Wesleyville Borough"
+},
+{
+"County": "Fayette", 
+"Municipality":"Belle Vernon Borough"
+},
+{
+"County": "Fayette", 
+"Municipality":"Brownsville Borough"
+},
+{
+"County": "Fayette", 
+"Municipality":"Brownsville Township"
+},
+{
+"County": "Fayette", 
+"Municipality":"Bullskin Township"
+},
+{
+"County": "Fayette", 
+"Municipality":"Connellsville City"
+},
+{
+"County": "Fayette", 
+"Municipality":"Connellsville Township"
+},
+{
+"County": "Fayette", 
+"Municipality":"Dawson Borough"
+},
+{
+"County": "Fayette", 
+"Municipality":"Dunbar Borough"
+},
+{
+"County": "Fayette", 
+"Municipality":"Dunbar Township"
+},
+{
+"County": "Fayette", 
+"Municipality":"Everson Borough"
+},
+{
+"County": "Fayette", 
+"Municipality":"Fairchance Borough"
+},
+{
+"County": "Fayette", 
+"Municipality":"Fayette City Borough"
+},
+{
+"County": "Fayette", 
+"Municipality":"Franklin Township"
+},
+{
+"County": "Fayette", 
+"Municipality":"Georges Township"
+},
+{
+"County": "Fayette", 
+"Municipality":"German Township"
+},
+{
+"County": "Fayette", 
+"Municipality":"Henry Clay Township"
+},
+{
+"County": "Fayette", 
+"Municipality":"Jefferson Township"
+},
+{
+"County": "Fayette", 
+"Municipality":"Lower Tyrone Township"
+},
+{
+"County": "Fayette", 
+"Municipality":"Luzerne Township"
+},
+{
+"County": "Fayette", 
+"Municipality":"Markleysburg Borough"
+},
+{
+"County": "Fayette", 
+"Municipality":"Masontown Borough"
+},
+{
+"County": "Fayette", 
+"Municipality":"Menallen Township"
+},
+{
+"County": "Fayette", 
+"Municipality":"Newell Borough"
+},
+{
+"County": "Fayette", 
+"Municipality":"Nicholson Township"
+},
+{
+"County": "Fayette", 
+"Municipality":"North Union Township"
+},
+{
+"County": "Fayette", 
+"Municipality":"Ohiopyle Borough"
+},
+{
+"County": "Fayette", 
+"Municipality":"Perry Township"
+},
+{
+"County": "Fayette", 
+"Municipality":"Perryopolis Borough"
+},
+{
+"County": "Fayette", 
+"Municipality":"Point Marion Borough"
+},
+{
+"County": "Fayette", 
+"Municipality":"Redstone Township"
+},
+{
+"County": "Fayette", 
+"Municipality":"Saltlick Township"
+},
+{
+"County": "Fayette", 
+"Municipality":"Smithfield Borough"
+},
+{
+"County": "Fayette", 
+"Municipality":"South Connellsville Borough"
+},
+{
+"County": "Fayette", 
+"Municipality":"South Union Township"
+},
+{
+"County": "Fayette", 
+"Municipality":"Springfield Township"
+},
+{
+"County": "Fayette", 
+"Municipality":"Springhill Township"
+},
+{
+"County": "Fayette", 
+"Municipality":"Stewart Township"
+},
+{
+"County": "Fayette", 
+"Municipality":"Uniontown City"
+},
+{
+"County": "Fayette", 
+"Municipality":"Upper Tyrone Township"
+},
+{
+"County": "Fayette", 
+"Municipality":"Vanderbilt Borough"
+},
+{
+"County": "Fayette", 
+"Municipality":"Washington Township"
+},
+{
+"County": "Fayette", 
+"Municipality":"Wharton Township"
+},
+{
+"County": "Forest", 
+"Municipality":"Barnett Township"
+},
+{
+"County": "Forest", 
+"Municipality":"Green Township"
+},
+{
+"County": "Forest", 
+"Municipality":"Harmony Township"
+},
+{
+"County": "Forest", 
+"Municipality":"Hickory Township"
+},
+{
+"County": "Forest", 
+"Municipality":"Howe Township"
+},
+{
+"County": "Forest", 
+"Municipality":"Jenks Township"
+},
+{
+"County": "Forest", 
+"Municipality":"Kingsley Township"
+},
+{
+"County": "Forest", 
+"Municipality":"Tionesta Borough"
+},
+{
+"County": "Forest", 
+"Municipality":"Tionesta Township"
+},
+{
+"County": "Franklin", 
+"Municipality":"Antrim Township"
+},
+{
+"County": "Franklin", 
+"Municipality":"Chambersburg Borough"
+},
+{
+"County": "Franklin", 
+"Municipality":"Fannett Township"
+},
+{
+"County": "Franklin", 
+"Municipality":"Greencastle Borough"
+},
+{
+"County": "Franklin", 
+"Municipality":"Greene Township"
+},
+{
+"County": "Franklin", 
+"Municipality":"Guilford Township"
+},
+{
+"County": "Franklin", 
+"Municipality":"Hamilton Township"
+},
+{
+"County": "Franklin", 
+"Municipality":"Letterkenny Township"
+},
+{
+"County": "Franklin", 
+"Municipality":"Lurgan Township"
+},
+{
+"County": "Franklin", 
+"Municipality":"Mercersburg Borough"
+},
+{
+"County": "Franklin", 
+"Municipality":"Metal Township"
+},
+{
+"County": "Franklin", 
+"Municipality":"Mont Alto Borough"
+},
+{
+"County": "Franklin", 
+"Municipality":"Montgomery Township"
+},
+{
+"County": "Franklin", 
+"Municipality":"Orrstown Borough"
+},
+{
+"County": "Franklin", 
+"Municipality":"Peters Township"
+},
+{
+"County": "Franklin", 
+"Municipality":"Quincy Township"
+},
+{
+"County": "Franklin", 
+"Municipality":"Southampton Township"
+},
+{
+"County": "Franklin", 
+"Municipality":"St. Thomas Township"
+},
+{
+"County": "Franklin", 
+"Municipality":"Warren Township"
+},
+{
+"County": "Franklin", 
+"Municipality":"Washington Township"
+},
+{
+"County": "Franklin", 
+"Municipality":"Waynesboro Borough"
+},
+{
+"County": "Fulton", 
+"Municipality":"Ayr Township"
+},
+{
+"County": "Fulton", 
+"Municipality":"Belfast Township"
+},
+{
+"County": "Fulton", 
+"Municipality":"Dublin Township"
+},
+{
+"County": "Fulton", 
+"Municipality":"Licking Creek Township"
+},
+{
+"County": "Fulton", 
+"Municipality":"Taylor Township"
+},
+{
+"County": "Fulton", 
+"Municipality":"Thompson Township"
+},
+{
+"County": "Fulton", 
+"Municipality":"Union Township"
+},
+{
+"County": "ValleyHi Borough", 
+"Municipality":"Bethel Township"
+},
+{
+"County": "ValleyHi Borough", 
+"Municipality":"Brush Creek Township"
+},
+{
+"County": "ValleyHi Borough", 
+"Municipality":"McConnellsburg Borough"
+},
+{
+"County": "ValleyHi Borough", 
+"Municipality":"Todd Township"
+},
+{
+"County": "ValleyHi Borough", 
+"Municipality":"Wells Township"
+},
+{
+"County": "Greene", 
+"Municipality":"Aleppo Township"
+},
+{
+"County": "Greene", 
+"Municipality":"Carmichaels Borough"
+},
+{
+"County": "Greene", 
+"Municipality":"Center Township"
+},
+{
+"County": "Greene", 
+"Municipality":"Clarksville Borough"
+},
+{
+"County": "Greene", 
+"Municipality":"Cumberland Township"
+},
+{
+"County": "Greene", 
+"Municipality":"Dunkard Township"
+},
+{
+"County": "Greene", 
+"Municipality":"Franklin Township"
+},
+{
+"County": "Greene", 
+"Municipality":"Freeport Township"
+},
+{
+"County": "Greene", 
+"Municipality":"Gilmore Township"
+},
+{
+"County": "Greene", 
+"Municipality":"Gray Township"
+},
+{
+"County": "Greene", 
+"Municipality":"Greene Township"
+},
+{
+"County": "Greene", 
+"Municipality":"Greensboro Borough"
+},
+{
+"County": "Greene", 
+"Municipality":"Jackson Township"
+},
+{
+"County": "Greene", 
+"Municipality":"Jefferson Borough"
+},
+{
+"County": "Greene", 
+"Municipality":"Jefferson Township"
+},
+{
+"County": "Greene", 
+"Municipality":"Monongahela Township"
+},
+{
+"County": "Greene", 
+"Municipality":"Morgan Township"
+},
+{
+"County": "Greene", 
+"Municipality":"Morris Township"
+},
+{
+"County": "Greene", 
+"Municipality":"Perry Township"
+},
+{
+"County": "Greene", 
+"Municipality":"Rices Landing Borough"
+},
+{
+"County": "Greene", 
+"Municipality":"Richhill Township"
+},
+{
+"County": "Greene", 
+"Municipality":"Springhill Township"
+},
+{
+"County": "Greene", 
+"Municipality":"Washington Township"
+},
+{
+"County": "Greene", 
+"Municipality":"Wayne Township"
+},
+{
+"County": "Greene", 
+"Municipality":"Waynesburg Borough"
+},
+{
+"County": "Greene", 
+"Municipality":"Whiteley Township"
+},
+{
+"County": "Huntingdon", 
+"Municipality":"Alexandria Borough"
+},
+{
+"County": "Huntingdon", 
+"Municipality":"Barree Township"
+},
+{
+"County": "Huntingdon", 
+"Municipality":"Birmingham Borough"
+},
+{
+"County": "Huntingdon", 
+"Municipality":"Brady Township"
+},
+{
+"County": "Huntingdon", 
+"Municipality":"Broad Top City Borough"
+},
+{
+"County": "Huntingdon", 
+"Municipality":"Carbon Township"
+},
+{
+"County": "Huntingdon", 
+"Municipality":"Cass Township"
+},
+{
+"County": "Huntingdon", 
+"Municipality":"Cassville Borough"
+},
+{
+"County": "Huntingdon", 
+"Municipality":"Clay Township"
+},
+{
+"County": "Huntingdon", 
+"Municipality":"Coalmont Borough"
+},
+{
+"County": "Huntingdon", 
+"Municipality":"Cromwell Township"
+},
+{
+"County": "Huntingdon", 
+"Municipality":"Dublin Township"
+},
+{
+"County": "Huntingdon", 
+"Municipality":"Dudley Borough"
+},
+{
+"County": "Huntingdon", 
+"Municipality":"Franklin Township"
+},
+{
+"County": "Huntingdon", 
+"Municipality":"Henderson Township"
+},
+{
+"County": "Huntingdon", 
+"Municipality":"Hopewell Township"
+},
+{
+"County": "Huntingdon", 
+"Municipality":"Huntingdon Borough"
+},
+{
+"County": "Huntingdon", 
+"Municipality":"Jackson Township"
+},
+{
+"County": "Huntingdon", 
+"Municipality":"Juniata Township"
+},
+{
+"County": "Huntingdon", 
+"Municipality":"Lincoln Township"
+},
+{
+"County": "Huntingdon", 
+"Municipality":"Logan Township"
+},
+{
+"County": "Huntingdon", 
+"Municipality":"Mapleton Borough"
+},
+{
+"County": "Huntingdon", 
+"Municipality":"Marklesburg Borough"
+},
+{
+"County": "Huntingdon", 
+"Municipality":"Mill Creek Borough"
+},
+{
+"County": "Huntingdon", 
+"Municipality":"Miller Township"
+},
+{
+"County": "Huntingdon", 
+"Municipality":"Morris Township"
+},
+{
+"County": "Huntingdon", 
+"Municipality":"Mount Union Borough"
+},
+{
+"County": "Huntingdon", 
+"Municipality":"Oneida Township"
+},
+{
+"County": "Huntingdon", 
+"Municipality":"Orbisonia Borough"
+},
+{
+"County": "Huntingdon", 
+"Municipality":"Penn Township"
+},
+{
+"County": "Huntingdon", 
+"Municipality":"Petersburg Borough"
+},
+{
+"County": "Huntingdon", 
+"Municipality":"Porter Township"
+},
+{
+"County": "Huntingdon", 
+"Municipality":"Rockhill Furnace Borough"
+},
+{
+"County": "Huntingdon", 
+"Municipality":"Saltillo Borough"
+},
+{
+"County": "Huntingdon", 
+"Municipality":"Shade Gap Borough"
+},
+{
+"County": "Huntingdon", 
+"Municipality":"Shirley Township"
+},
+{
+"County": "Huntingdon", 
+"Municipality":"Shirleysburg Borough"
+},
+{
+"County": "Huntingdon", 
+"Municipality":"Smithfield Township"
+},
+{
+"County": "Huntingdon", 
+"Municipality":"Springfield Township"
+},
+{
+"County": "Huntingdon", 
+"Municipality":"Spruce Creek Township"
+},
+{
+"County": "Huntingdon", 
+"Municipality":"Tell Township"
+},
+{
+"County": "Huntingdon", 
+"Municipality":"Three Springs Borough"
+},
+{
+"County": "Huntingdon", 
+"Municipality":"Todd Township"
+},
+{
+"County": "Huntingdon", 
+"Municipality":"Union Township"
+},
+{
+"County": "Huntingdon", 
+"Municipality":"Walker Township"
+},
+{
+"County": "Huntingdon", 
+"Municipality":"Warriors Mark Township"
+},
+{
+"County": "Huntingdon", 
+"Municipality":"West Township"
+},
+{
+"County": "Huntingdon", 
+"Municipality":"Wood Township"
+},
+{
+"County": "Indiana", 
+"Municipality":"Armagh Borough"
+},
+{
+"County": "Indiana", 
+"Municipality":"Armstrong Township"
+},
+{
+"County": "Indiana", 
+"Municipality":"Banks Township"
+},
+{
+"County": "Indiana", 
+"Municipality":"Black Lick Township"
+},
+{
+"County": "Indiana", 
+"Municipality":"Blairsville Borough"
+},
+{
+"County": "Indiana", 
+"Municipality":"Brush Valley Township"
+},
+{
+"County": "Indiana", 
+"Municipality":"Buffington Township"
+},
+{
+"County": "Indiana", 
+"Municipality":"Burrell Township"
+},
+{
+"County": "Indiana", 
+"Municipality":"Canoe Township"
+},
+{
+"County": "Indiana", 
+"Municipality":"Center Township"
+},
+{
+"County": "Indiana", 
+"Municipality":"Cherry Tree Borough"
+},
+{
+"County": "Indiana", 
+"Municipality":"Cherryhill Township"
+},
+{
+"County": "Indiana", 
+"Municipality":"Clymer Borough"
+},
+{
+"County": "Indiana", 
+"Municipality":"Conemaugh Township"
+},
+{
+"County": "Indiana", 
+"Municipality":"Creekside Borough"
+},
+{
+"County": "Indiana", 
+"Municipality":"East Mahoning Township"
+},
+{
+"County": "Indiana", 
+"Municipality":"East Wheatfield Township"
+},
+{
+"County": "Indiana", 
+"Municipality":"Ernest Borough"
+},
+{
+"County": "Indiana", 
+"Municipality":"Glen Campbell Borough"
+},
+{
+"County": "Indiana", 
+"Municipality":"Grant Township"
+},
+{
+"County": "Indiana", 
+"Municipality":"Green Township"
+},
+{
+"County": "Indiana", 
+"Municipality":"Homer City Borough"
+},
+{
+"County": "Indiana", 
+"Municipality":"Indiana Borough"
+},
+{
+"County": "Indiana", 
+"Municipality":"Marion Center Borough"
+},
+{
+"County": "Indiana", 
+"Municipality":"Montgomery Township"
+},
+{
+"County": "Indiana", 
+"Municipality":"North Mahoning Township"
+},
+{
+"County": "Indiana", 
+"Municipality":"Pine Township"
+},
+{
+"County": "Indiana", 
+"Municipality":"Plumville Borough"
+},
+{
+"County": "Indiana", 
+"Municipality":"Rayne Township"
+},
+{
+"County": "Indiana", 
+"Municipality":"Saltsburg Borough"
+},
+{
+"County": "Indiana", 
+"Municipality":"Shelocta Borough"
+},
+{
+"County": "Indiana", 
+"Municipality":"Smicksburg Borough"
+},
+{
+"County": "Indiana", 
+"Municipality":"South Mahoning Township"
+},
+{
+"County": "Indiana", 
+"Municipality":"Washington Township"
+},
+{
+"County": "Indiana", 
+"Municipality":"West Mahoning Township"
+},
+{
+"County": "Indiana", 
+"Municipality":"West Wheatfield Township"
+},
+{
+"County": "Indiana", 
+"Municipality":"White Township"
+},
+{
+"County": "Indiana", 
+"Municipality":"Young Township"
+},
+{
+"County": "Jefferson", 
+"Municipality":"Barnett Township"
+},
+{
+"County": "Jefferson", 
+"Municipality":"Beaver Township"
+},
+{
+"County": "Jefferson", 
+"Municipality":"Bell Township"
+},
+{
+"County": "Jefferson", 
+"Municipality":"Big Run Borough"
+},
+{
+"County": "Jefferson", 
+"Municipality":"Brockway Borough"
+},
+{
+"County": "Jefferson", 
+"Municipality":"Brookville Borough"
+},
+{
+"County": "Jefferson", 
+"Municipality":"Clover Township"
+},
+{
+"County": "Jefferson", 
+"Municipality":"Corsica Borough"
+},
+{
+"County": "Jefferson", 
+"Municipality":"Eldred Township"
+},
+{
+"County": "Jefferson", 
+"Municipality":"Falls Creek Borough"
+},
+{
+"County": "Jefferson", 
+"Municipality":"Gaskill Township"
+},
+{
+"County": "Jefferson", 
+"Municipality":"Heath Township"
+},
+{
+"County": "Jefferson", 
+"Municipality":"Henderson Township"
+},
+{
+"County": "Jefferson", 
+"Municipality":"Knox Township"
+},
+{
+"County": "Jefferson", 
+"Municipality":"McCalmont Township"
+},
+{
+"County": "Jefferson", 
+"Municipality":"Oliver Township"
+},
+{
+"County": "Jefferson", 
+"Municipality":"Perry Township"
+},
+{
+"County": "Jefferson", 
+"Municipality":"Pine Creek Township"
+},
+{
+"County": "Jefferson", 
+"Municipality":"Polk Township"
+},
+{
+"County": "Jefferson", 
+"Municipality":"Porter Township"
+},
+{
+"County": "Jefferson", 
+"Municipality":"Punxsutawney Borough"
+},
+{
+"County": "Jefferson", 
+"Municipality":"Reynoldsville Borough"
+},
+{
+"County": "Jefferson", 
+"Municipality":"Ringgold Township"
+},
+{
+"County": "Jefferson", 
+"Municipality":"Rose Township"
+},
+{
+"County": "Jefferson", 
+"Municipality":"Snyder Township"
+},
+{
+"County": "Jefferson", 
+"Municipality":"Summerville Borough"
+},
+{
+"County": "Jefferson", 
+"Municipality":"Sykesville Borough"
+},
+{
+"County": "Jefferson", 
+"Municipality":"Timblin Borough"
+},
+{
+"County": "Jefferson", 
+"Municipality":"Union Township"
+},
+{
+"County": "Jefferson", 
+"Municipality":"Warsaw Township"
+},
+{
+"County": "Jefferson", 
+"Municipality":"Washington Township"
+},
+{
+"County": "Jefferson", 
+"Municipality":"Winslow Township"
+},
+{
+"County": "Jefferson", 
+"Municipality":"Worthville Borough"
+},
+{
+"County": "Jefferson", 
+"Municipality":"Young Township"
+},
+{
+"County": "Juniata", 
+"Municipality":"Beale Township"
+},
+{
+"County": "Juniata", 
+"Municipality":"Delaware Township"
+},
+{
+"County": "Juniata", 
+"Municipality":"Fayette Township"
+},
+{
+"County": "Juniata", 
+"Municipality":"Fermanagh Township"
+},
+{
+"County": "Juniata", 
+"Municipality":"Greenwood Township"
+},
+{
+"County": "Juniata", 
+"Municipality":"Lack Township"
+},
+{
+"County": "Juniata", 
+"Municipality":"Mifflin Borough"
+},
+{
+"County": "Juniata", 
+"Municipality":"Mifflintown Borough"
+},
+{
+"County": "Juniata", 
+"Municipality":"Milford Township"
+},
+{
+"County": "Juniata", 
+"Municipality":"Monroe Township"
+},
+{
+"County": "Juniata", 
+"Municipality":"Port Royal Borough"
+},
+{
+"County": "Juniata", 
+"Municipality":"Spruce Hill Township"
+},
+{
+"County": "Juniata", 
+"Municipality":"Susquehanna Township"
+},
+{
+"County": "Juniata", 
+"Municipality":"Thompsontown Borough"
+},
+{
+"County": "Juniata", 
+"Municipality":"Turbett Township"
+},
+{
+"County": "Juniata", 
+"Municipality":"Tuscarora Township"
+},
+{
+"County": "Juniata", 
+"Municipality":"Walker Township"
+},
+{
+"County": "Lackawanna", 
+"Municipality":"Archbald Borough"
+},
+{
+"County": "Lackawanna", 
+"Municipality":"Benton Township"
+},
+{
+"County": "Lackawanna", 
+"Municipality":"Blakely Borough"
+},
+{
+"County": "Lackawanna", 
+"Municipality":"Carbondale City"
+},
+{
+"County": "Lackawanna", 
+"Municipality":"Carbondale Township"
+},
+{
+"County": "Lackawanna", 
+"Municipality":"Clarks Green Borough"
+},
+{
+"County": "Lackawanna", 
+"Municipality":"Clarks Summit Borough"
+},
+{
+"County": "Lackawanna", 
+"Municipality":"Clifton Township"
+},
+{
+"County": "Lackawanna", 
+"Municipality":"Covington Township"
+},
+{
+"County": "Lackawanna", 
+"Municipality":"Dalton Borough"
+},
+{
+"County": "Lackawanna", 
+"Municipality":"Dickson City Borough"
+},
+{
+"County": "Lackawanna", 
+"Municipality":"Dunmore Borough"
+},
+{
+"County": "Lackawanna", 
+"Municipality":"Elmhurst Township"
+},
+{
+"County": "Lackawanna", 
+"Municipality":"Fell Township"
+},
+{
+"County": "Lackawanna", 
+"Municipality":"Glenburn Township"
+},
+{
+"County": "Lackawanna", 
+"Municipality":"Greenfield Township"
+},
+{
+"County": "Lackawanna", 
+"Municipality":"Jefferson Township"
+},
+{
+"County": "Lackawanna", 
+"Municipality":"Jermyn Borough"
+},
+{
+"County": "Lackawanna", 
+"Municipality":"Jessup Borough"
+},
+{
+"County": "Lackawanna", 
+"Municipality":"La Plume Township"
+},
+{
+"County": "Lackawanna", 
+"Municipality":"Madison Township"
+},
+{
+"County": "Lackawanna", 
+"Municipality":"Mayfield Borough"
+},
+{
+"County": "Lackawanna", 
+"Municipality":"Moosic Borough"
+},
+{
+"County": "Lackawanna", 
+"Municipality":"Moscow Borough"
+},
+{
+"County": "Lackawanna", 
+"Municipality":"Newton Township"
+},
+{
+"County": "Lackawanna", 
+"Municipality":"North Abington Township"
+},
+{
+"County": "Lackawanna", 
+"Municipality":"Old Forge Borough"
+},
+{
+"County": "Lackawanna", 
+"Municipality":"Olyphant Borough"
+},
+{
+"County": "Lackawanna", 
+"Municipality":"Ransom Township"
+},
+{
+"County": "Lackawanna", 
+"Municipality":"Roaring Brook Township"
+},
+{
+"County": "Lackawanna", 
+"Municipality":"Scott Township"
+},
+{
+"County": "Lackawanna", 
+"Municipality":"Scranton City"
+},
+{
+"County": "Lackawanna", 
+"Municipality":"South Abington Township"
+},
+{
+"County": "Lackawanna", 
+"Municipality":"Spring Brook Township"
+},
+{
+"County": "Lackawanna", 
+"Municipality":"Taylor Borough"
+},
+{
+"County": "Lackawanna", 
+"Municipality":"Thornhurst Township"
+},
+{
+"County": "Lackawanna", 
+"Municipality":"Throop Borough"
+},
+{
+"County": "Lackawanna", 
+"Municipality":"Vandling Borough"
+},
+{
+"County": "Lackawanna", 
+"Municipality":"Waverly Township"
+},
+{
+"County": "Lackawanna", 
+"Municipality":"West Abington Township"
+},
+{
+"County": "Lancaster", 
+"Municipality":"Adamstown Borough"
+},
+{
+"County": "Lancaster", 
+"Municipality":"Akron Borough"
+},
+{
+"County": "Lancaster", 
+"Municipality":"Bart Township"
+},
+{
+"County": "Lancaster", 
+"Municipality":"Brecknock Township"
+},
+{
+"County": "Lancaster", 
+"Municipality":"Caernarvon Township"
+},
+{
+"County": "Lancaster", 
+"Municipality":"Christiana Borough"
+},
+{
+"County": "Lancaster", 
+"Municipality":"Clay Township"
+},
+{
+"County": "Lancaster", 
+"Municipality":"Colerain Township"
+},
+{
+"County": "Lancaster", 
+"Municipality":"Columbia Borough"
+},
+{
+"County": "Lancaster", 
+"Municipality":"Conestoga Township"
+},
+{
+"County": "Lancaster", 
+"Municipality":"Conoy Township"
+},
+{
+"County": "Lancaster", 
+"Municipality":"Denver Borough"
+},
+{
+"County": "Lancaster", 
+"Municipality":"Drumore Township"
+},
+{
+"County": "Lancaster", 
+"Municipality":"Earl Township"
+},
+{
+"County": "Lancaster", 
+"Municipality":"East Cocalico Township"
+},
+{
+"County": "Lancaster", 
+"Municipality":"East Donegal Township"
+},
+{
+"County": "Lancaster", 
+"Municipality":"East Drumore Township"
+},
+{
+"County": "Lancaster", 
+"Municipality":"East Earl Township"
+},
+{
+"County": "Lancaster", 
+"Municipality":"East Hempfield Township"
+},
+{
+"County": "Lancaster", 
+"Municipality":"East Lampeter Township"
+},
+{
+"County": "Lancaster", 
+"Municipality":"East Petersburg Borough"
+},
+{
+"County": "Lancaster", 
+"Municipality":"Eden Township"
+},
+{
+"County": "Lancaster", 
+"Municipality":"Elizabeth Township"
+},
+{
+"County": "Lancaster", 
+"Municipality":"Elizabethtown Borough"
+},
+{
+"County": "Lancaster", 
+"Municipality":"Ephrata Borough"
+},
+{
+"County": "Lancaster", 
+"Municipality":"Ephrata Township"
+},
+{
+"County": "Lancaster", 
+"Municipality":"Fulton Township"
+},
+{
+"County": "Lancaster", 
+"Municipality":"Lancaster City"
+},
+{
+"County": "Lancaster", 
+"Municipality":"Lancaster Township"
+},
+{
+"County": "Lancaster", 
+"Municipality":"Leacock Township"
+},
+{
+"County": "Lancaster", 
+"Municipality":"Lititz Borough"
+},
+{
+"County": "Lancaster", 
+"Municipality":"Little Britain Township"
+},
+{
+"County": "Lancaster", 
+"Municipality":"Manheim Borough"
+},
+{
+"County": "Lancaster", 
+"Municipality":"Manheim Township"
+},
+{
+"County": "Lancaster", 
+"Municipality":"Manor Township"
+},
+{
+"County": "Lancaster", 
+"Municipality":"Marietta Borough"
+},
+{
+"County": "Lancaster", 
+"Municipality":"Martic Township"
+},
+{
+"County": "Lancaster", 
+"Municipality":"Millersville Borough"
+},
+{
+"County": "Lancaster", 
+"Municipality":"Mount Joy Borough"
+},
+{
+"County": "Lancaster", 
+"Municipality":"Mount Joy Township"
+},
+{
+"County": "Lancaster", 
+"Municipality":"Mountville Borough"
+},
+{
+"County": "Lancaster", 
+"Municipality":"New Holland Borough"
+},
+{
+"County": "Lancaster", 
+"Municipality":"Paradise Township"
+},
+{
+"County": "Lancaster", 
+"Municipality":"Penn Township"
+},
+{
+"County": "Lancaster", 
+"Municipality":"Pequea Township"
+},
+{
+"County": "Lancaster", 
+"Municipality":"Providence Township"
+},
+{
+"County": "Lancaster", 
+"Municipality":"Quarryville Borough"
+},
+{
+"County": "Lancaster", 
+"Municipality":"Rapho Township"
+},
+{
+"County": "Lancaster", 
+"Municipality":"Sadsbury Township"
+},
+{
+"County": "Lancaster", 
+"Municipality":"Salisbury Township"
+},
+{
+"County": "Lancaster", 
+"Municipality":"Strasburg Borough"
+},
+{
+"County": "Lancaster", 
+"Municipality":"Strasburg Township"
+},
+{
+"County": "Lancaster", 
+"Municipality":"Terre Hill Borough"
+},
+{
+"County": "Lancaster", 
+"Municipality":"Upper Leacock Township"
+},
+{
+"County": "Lancaster", 
+"Municipality":"Warwick Township"
+},
+{
+"County": "Lancaster", 
+"Municipality":"West Cocalico Township"
+},
+{
+"County": "Lancaster", 
+"Municipality":"West Donegal Township"
+},
+{
+"County": "Lancaster", 
+"Municipality":"West Earl Township"
+},
+{
+"County": "Lancaster", 
+"Municipality":"West Hempfield Township"
+},
+{
+"County": "Lancaster", 
+"Municipality":"West Lampeter Township"
+},
+{
+"County": "Lawrence", 
+"Municipality":"Bessemer Borough"
+},
+{
+"County": "Lawrence", 
+"Municipality":"Ellport Borough"
+},
+{
+"County": "Lawrence", 
+"Municipality":"Ellwood City Borough"
+},
+{
+"County": "Lawrence", 
+"Municipality":"Enon Valley Borough"
+},
+{
+"County": "Lawrence", 
+"Municipality":"Hickory Township"
+},
+{
+"County": "Lawrence", 
+"Municipality":"Little Beaver Township"
+},
+{
+"County": "Lawrence", 
+"Municipality":"Mahoning Township"
+},
+{
+"County": "Lawrence", 
+"Municipality":"Neshannock Township"
+},
+{
+"County": "Lawrence", 
+"Municipality":"New Beaver Borough"
+},
+{
+"County": "Lawrence", 
+"Municipality":"New Castle City"
+},
+{
+"County": "Lawrence", 
+"Municipality":"New Wilmington Borough"
+},
+{
+"County": "Lawrence", 
+"Municipality":"North Beaver Township"
+},
+{
+"County": "Lawrence", 
+"Municipality":"Perry Township"
+},
+{
+"County": "Lawrence", 
+"Municipality":"Plain Grove Township"
+},
+{
+"County": "Lawrence", 
+"Municipality":"Pulaski Township"
+},
+{
+"County": "Lawrence", 
+"Municipality":"S.N.P.J. Borough"
+},
+{
+"County": "Lawrence", 
+"Municipality":"Scott Township"
+},
+{
+"County": "Lawrence", 
+"Municipality":"Shenango Township"
+},
+{
+"County": "Lawrence", 
+"Municipality":"Slippery Rock Township"
+},
+{
+"County": "Lawrence", 
+"Municipality":"South New Castle Borough"
+},
+{
+"County": "Lawrence", 
+"Municipality":"Taylor Township"
+},
+{
+"County": "Lawrence", 
+"Municipality":"Union Township"
+},
+{
+"County": "Lawrence", 
+"Municipality":"Volant Borough"
+},
+{
+"County": "Lawrence", 
+"Municipality":"Wampum Borough"
+},
+{
+"County": "Lawrence", 
+"Municipality":"Washington Township"
+},
+{
+"County": "Lawrence", 
+"Municipality":"Wayne Township"
+},
+{
+"County": "Lawrence", 
+"Municipality":"Wilmington Township"
+},
+{
+"County": "Lebanon", 
+"Municipality":"Annville Township"
+},
+{
+"County": "Lebanon", 
+"Municipality":"Bethel Township"
+},
+{
+"County": "Lebanon", 
+"Municipality":"Cleona Borough"
+},
+{
+"County": "Lebanon", 
+"Municipality":"Cornwall Borough"
+},
+{
+"County": "Lebanon", 
+"Municipality":"East Hanover Township"
+},
+{
+"County": "Lebanon", 
+"Municipality":"Heidelberg Township"
+},
+{
+"County": "Lebanon", 
+"Municipality":"Jackson Township"
+},
+{
+"County": "Lebanon", 
+"Municipality":"Jonestown Borough"
+},
+{
+"County": "Lebanon", 
+"Municipality":"Lebanon City"
+},
+{
+"County": "Lebanon", 
+"Municipality":"Millcreek Township"
+},
+{
+"County": "Lebanon", 
+"Municipality":"Mount Gretna Borough"
+},
+{
+"County": "Lebanon", 
+"Municipality":"Myerstown Borough"
+},
+{
+"County": "Lebanon", 
+"Municipality":"North Annville Township"
+},
+{
+"County": "Lebanon", 
+"Municipality":"North Cornwall Township"
+},
+{
+"County": "Lebanon", 
+"Municipality":"North Lebanon Township"
+},
+{
+"County": "Lebanon", 
+"Municipality":"North Londonderry Township"
+},
+{
+"County": "Lebanon", 
+"Municipality":"Palmyra Borough"
+},
+{
+"County": "Lebanon", 
+"Municipality":"Richland Borough"
+},
+{
+"County": "Lebanon", 
+"Municipality":"South Annville Township"
+},
+{
+"County": "Lebanon", 
+"Municipality":"South Lebanon Township"
+},
+{
+"County": "Lebanon", 
+"Municipality":"South Londonderry Township"
+},
+{
+"County": "Lebanon", 
+"Municipality":"Swatara Township"
+},
+{
+"County": "Lebanon", 
+"Municipality":"Union Township"
+},
+{
+"County": "Lebanon", 
+"Municipality":"West Cornwall Township"
+},
+{
+"County": "Lebanon", 
+"Municipality":"West Lebanon Township"
+},
+{
+"County": "Lehigh", 
+"Municipality":"Alburtis Borough"
+},
+{
+"County": "Lehigh", 
+"Municipality":"Allentown City"
+},
+{
+"County": "Lehigh", 
+"Municipality":"Catasauqua Borough"
+},
+{
+"County": "Lehigh", 
+"Municipality":"Coopersburg Borough"
+},
+{
+"County": "Lehigh", 
+"Municipality":"Coplay Borough"
+},
+{
+"County": "Lehigh", 
+"Municipality":"Emmaus Borough"
+},
+{
+"County": "Lehigh", 
+"Municipality":"Fountain Hill Borough"
+},
+{
+"County": "Lehigh", 
+"Municipality":"Hanover Township"
+},
+{
+"County": "Lehigh", 
+"Municipality":"Heidelberg Township"
+},
+{
+"County": "Lehigh", 
+"Municipality":"Lower Macungie Township"
+},
+{
+"County": "Lehigh", 
+"Municipality":"Lower Milford Township"
+},
+{
+"County": "Lehigh", 
+"Municipality":"Lowhill Township"
+},
+{
+"County": "Lehigh", 
+"Municipality":"Lynn Township"
+},
+{
+"County": "Lehigh", 
+"Municipality":"Macungie Borough"
+},
+{
+"County": "Lehigh", 
+"Municipality":"North Whitehall Township"
+},
+{
+"County": "Lehigh", 
+"Municipality":"Salisbury Township"
+},
+{
+"County": "Lehigh", 
+"Municipality":"Slatington Borough"
+},
+{
+"County": "Lehigh", 
+"Municipality":"South Whitehall Township"
+},
+{
+"County": "Lehigh", 
+"Municipality":"Upper Macungie Township"
+},
+{
+"County": "Lehigh", 
+"Municipality":"Upper Milford Township"
+},
+{
+"County": "Lehigh", 
+"Municipality":"Upper Saucon Township"
+},
+{
+"County": "Lehigh", 
+"Municipality":"Washington Township"
+},
+{
+"County": "Lehigh", 
+"Municipality":"Weisenberg Township"
+},
+{
+"County": "Lehigh", 
+"Municipality":"Whitehall Township"
+},
+{
+"County": "Luzerne", 
+"Municipality":"Ashley Borough"
+},
+{
+"County": "Luzerne", 
+"Municipality":"Avoca Borough"
+},
+{
+"County": "Luzerne", 
+"Municipality":"Bear Creek Township"
+},
+{
+"County": "Luzerne", 
+"Municipality":"Bear Creek Village Borough"
+},
+{
+"County": "Luzerne", 
+"Municipality":"Black Creek Township"
+},
+{
+"County": "Luzerne", 
+"Municipality":"Buck Township"
+},
+{
+"County": "Luzerne", 
+"Municipality":"Butler Township"
+},
+{
+"County": "Luzerne", 
+"Municipality":"Conyngham Borough"
+},
+{
+"County": "Luzerne", 
+"Municipality":"Conyngham Township"
+},
+{
+"County": "Luzerne", 
+"Municipality":"Courtdale Borough"
+},
+{
+"County": "Luzerne", 
+"Municipality":"Dallas Borough"
+},
+{
+"County": "Luzerne", 
+"Municipality":"Dallas Township"
+},
+{
+"County": "Luzerne", 
+"Municipality":"Dennison Township"
+},
+{
+"County": "Luzerne", 
+"Municipality":"Dorrance Township"
+},
+{
+"County": "Luzerne", 
+"Municipality":"Dupont Borough"
+},
+{
+"County": "Luzerne", 
+"Municipality":"Fairmount Township"
+},
+{
+"County": "Luzerne", 
+"Municipality":"Fairview Township"
+},
+{
+"County": "Luzerne", 
+"Municipality":"Forty Fort Borough"
+},
+{
+"County": "Luzerne", 
+"Municipality":"Foster Township"
+},
+{
+"County": "Luzerne", 
+"Municipality":"Franklin Township"
+},
+{
+"County": "Luzerne", 
+"Municipality":"Freeland Borough"
+},
+{
+"County": "Luzerne", 
+"Municipality":"Hanover Township"
+},
+{
+"County": "Luzerne", 
+"Municipality":"Harveys Lake Borough"
+},
+{
+"County": "Luzerne", 
+"Municipality":"Hazle Township"
+},
+{
+"County": "Luzerne", 
+"Municipality":"Hazleton City"
+},
+{
+"County": "Luzerne", 
+"Municipality":"Hollenback Township"
+},
+{
+"County": "Luzerne", 
+"Municipality":"Hughestown Borough"
+},
+{
+"County": "Luzerne", 
+"Municipality":"Hunlock Township"
+},
+{
+"County": "Luzerne", 
+"Municipality":"Huntington Township"
+},
+{
+"County": "Luzerne", 
+"Municipality":"Jackson Township"
+},
+{
+"County": "Luzerne", 
+"Municipality":"Laflin Borough"
+},
+{
+"County": "Luzerne", 
+"Municipality":"Lake Township"
+},
+{
+"County": "Luzerne", 
+"Municipality":"Larksville Borough"
+},
+{
+"County": "Luzerne", 
+"Municipality":"Laurel Run Borough"
+},
+{
+"County": "Luzerne", 
+"Municipality":"Lehman Township"
+},
+{
+"County": "Luzerne", 
+"Municipality":"Luzerne Borough"
+},
+{
+"County": "Luzerne", 
+"Municipality":"Nanticoke City"
+},
+{
+"County": "Luzerne", 
+"Municipality":"Nescopeck Borough"
+},
+{
+"County": "Luzerne", 
+"Municipality":"Nescopeck Township"
+},
+{
+"County": "Luzerne", 
+"Municipality":"New Columbus Borough"
+},
+{
+"County": "Luzerne", 
+"Municipality":"Newport Township"
+},
+{
+"County": "Luzerne", 
+"Municipality":"Nuangola Borough"
+},
+{
+"County": "Luzerne", 
+"Municipality":"Penn Lake Park Borough"
+},
+{
+"County": "Luzerne", 
+"Municipality":"Pittston City"
+},
+{
+"County": "Luzerne", 
+"Municipality":"Pittston Township"
+},
+{
+"County": "Luzerne", 
+"Municipality":"Rice Township"
+},
+{
+"County": "Luzerne", 
+"Municipality":"Ross Township"
+},
+{
+"County": "Luzerne", 
+"Municipality":"Salem Township"
+},
+{
+"County": "Luzerne", 
+"Municipality":"Shickshinny Borough"
+},
+{
+"County": "Luzerne", 
+"Municipality":"Slocum Township"
+},
+{
+"County": "Luzerne", 
+"Municipality":"Sugar Notch Borough"
+},
+{
+"County": "Luzerne", 
+"Municipality":"Sugarloaf Township"
+},
+{
+"County": "Luzerne", 
+"Municipality":"Swoyersville Borough"
+},
+{
+"County": "Luzerne", 
+"Municipality":"Union Township"
+},
+{
+"County": "Luzerne", 
+"Municipality":"Warrior Run Borough"
+},
+{
+"County": "Luzerne", 
+"Municipality":"West Hazleton Borough"
+},
+{
+"County": "Luzerne", 
+"Municipality":"West Pittston Borough"
+},
+{
+"County": "Luzerne", 
+"Municipality":"West Wyoming Borough"
+},
+{
+"County": "Luzerne", 
+"Municipality":"White Haven Borough"
+},
+{
+"County": "WilkesBarre City", 
+"Municipality":"Duryea Borough"
+},
+{
+"County": "WilkesBarre City", 
+"Municipality":"Jeddo Borough"
+},
+{
+"County": "WilkesBarre City", 
+"Municipality":"Plains Township"
+},
+{
+"County": "WilkesBarre Township", 
+"Municipality":"Edwardsville Borough"
+},
+{
+"County": "WilkesBarre Township", 
+"Municipality":"Exeter Borough"
+},
+{
+"County": "WilkesBarre Township", 
+"Municipality":"Exeter Township"
+},
+{
+"County": "WilkesBarre Township", 
+"Municipality":"Jenkins Township"
+},
+{
+"County": "WilkesBarre Township", 
+"Municipality":"Kingston Borough"
+},
+{
+"County": "WilkesBarre Township", 
+"Municipality":"Kingston Township"
+},
+{
+"County": "WilkesBarre Township", 
+"Municipality":"Plymouth Borough"
+},
+{
+"County": "WilkesBarre Township", 
+"Municipality":"Plymouth Township"
+},
+{
+"County": "WilkesBarre Township", 
+"Municipality":"Pringle Borough"
+},
+{
+"County": "WilkesBarre Township", 
+"Municipality":"Wright Township"
+},
+{
+"County": "WilkesBarre Township", 
+"Municipality":"Wyoming Borough"
+},
+{
+"County": "WilkesBarre Township", 
+"Municipality":"Yatesville Borough"
+},
+{
+"County": "Lycoming", 
+"Municipality":"Anthony Township"
+},
+{
+"County": "Lycoming", 
+"Municipality":"Armstrong Township"
+},
+{
+"County": "Lycoming", 
+"Municipality":"Bastress Township"
+},
+{
+"County": "Lycoming", 
+"Municipality":"Brady Township"
+},
+{
+"County": "Lycoming", 
+"Municipality":"Brown Township"
+},
+{
+"County": "Lycoming", 
+"Municipality":"Cascade Township"
+},
+{
+"County": "Lycoming", 
+"Municipality":"Clinton Township"
+},
+{
+"County": "Lycoming", 
+"Municipality":"Cogan House Township"
+},
+{
+"County": "Lycoming", 
+"Municipality":"Cummings Township"
+},
+{
+"County": "Lycoming", 
+"Municipality":"Duboistown Borough"
+},
+{
+"County": "Lycoming", 
+"Municipality":"Eldred Township"
+},
+{
+"County": "Lycoming", 
+"Municipality":"Fairfield Township"
+},
+{
+"County": "Lycoming", 
+"Municipality":"Franklin Township"
+},
+{
+"County": "Lycoming", 
+"Municipality":"Gamble Township"
+},
+{
+"County": "Lycoming", 
+"Municipality":"Hepburn Township"
+},
+{
+"County": "Lycoming", 
+"Municipality":"Hughesville Borough"
+},
+{
+"County": "Lycoming", 
+"Municipality":"Jackson Township"
+},
+{
+"County": "Lycoming", 
+"Municipality":"Jersey Shore Borough"
+},
+{
+"County": "Lycoming", 
+"Municipality":"Jordan Township"
+},
+{
+"County": "Lycoming", 
+"Municipality":"Lewis Township"
+},
+{
+"County": "Lycoming", 
+"Municipality":"Limestone Township"
+},
+{
+"County": "Lycoming", 
+"Municipality":"Loyalsock Township"
+},
+{
+"County": "Lycoming", 
+"Municipality":"Lycoming Township"
+},
+{
+"County": "Lycoming", 
+"Municipality":"McHenry Township"
+},
+{
+"County": "Lycoming", 
+"Municipality":"McIntyre Township"
+},
+{
+"County": "Lycoming", 
+"Municipality":"McNett Township"
+},
+{
+"County": "Lycoming", 
+"Municipality":"Mifflin Township"
+},
+{
+"County": "Lycoming", 
+"Municipality":"Mill Creek Township"
+},
+{
+"County": "Lycoming", 
+"Municipality":"Montgomery Borough"
+},
+{
+"County": "Lycoming", 
+"Municipality":"Montoursville Borough"
+},
+{
+"County": "Lycoming", 
+"Municipality":"Moreland Township"
+},
+{
+"County": "Lycoming", 
+"Municipality":"Muncy Borough"
+},
+{
+"County": "Lycoming", 
+"Municipality":"Muncy Creek Township"
+},
+{
+"County": "Lycoming", 
+"Municipality":"Muncy Township"
+},
+{
+"County": "Lycoming", 
+"Municipality":"Nippenose Township"
+},
+{
+"County": "Lycoming", 
+"Municipality":"Old Lycoming Township"
+},
+{
+"County": "Lycoming", 
+"Municipality":"Penn Township"
+},
+{
+"County": "Lycoming", 
+"Municipality":"Piatt Township"
+},
+{
+"County": "Lycoming", 
+"Municipality":"Picture Rocks Borough"
+},
+{
+"County": "Lycoming", 
+"Municipality":"Pine Township"
+},
+{
+"County": "Lycoming", 
+"Municipality":"Plunketts Creek Township"
+},
+{
+"County": "Lycoming", 
+"Municipality":"Porter Township"
+},
+{
+"County": "Lycoming", 
+"Municipality":"Salladasburg Borough"
+},
+{
+"County": "Lycoming", 
+"Municipality":"Shrewsbury Township"
+},
+{
+"County": "Lycoming", 
+"Municipality":"South Williamsport Borough"
+},
+{
+"County": "Lycoming", 
+"Municipality":"Susquehanna Township"
+},
+{
+"County": "Lycoming", 
+"Municipality":"Upper Fairfield Township"
+},
+{
+"County": "Lycoming", 
+"Municipality":"Washington Township"
+},
+{
+"County": "Lycoming", 
+"Municipality":"Watson Township"
+},
+{
+"County": "Lycoming", 
+"Municipality":"Williamsport City"
+},
+{
+"County": "Lycoming", 
+"Municipality":"Wolf Township"
+},
+{
+"County": "Lycoming", 
+"Municipality":"Woodward Township"
+},
+{
+"County": "McKean", 
+"Municipality":"Annin Township"
+},
+{
+"County": "McKean", 
+"Municipality":"Bradford City"
+},
+{
+"County": "McKean", 
+"Municipality":"Bradford Township"
+},
+{
+"County": "McKean", 
+"Municipality":"Ceres Township"
+},
+{
+"County": "McKean", 
+"Municipality":"Corydon Township"
+},
+{
+"County": "McKean", 
+"Municipality":"Eldred Borough"
+},
+{
+"County": "McKean", 
+"Municipality":"Eldred Township"
+},
+{
+"County": "McKean", 
+"Municipality":"Foster Township"
+},
+{
+"County": "McKean", 
+"Municipality":"Hamilton Township"
+},
+{
+"County": "McKean", 
+"Municipality":"Hamlin Township"
+},
+{
+"County": "McKean", 
+"Municipality":"Kane Borough"
+},
+{
+"County": "McKean", 
+"Municipality":"Keating Township"
+},
+{
+"County": "McKean", 
+"Municipality":"Lafayette Township"
+},
+{
+"County": "McKean", 
+"Municipality":"Lewis Run Borough"
+},
+{
+"County": "McKean", 
+"Municipality":"Liberty Township"
+},
+{
+"County": "McKean", 
+"Municipality":"Mount Jewett Borough"
+},
+{
+"County": "McKean", 
+"Municipality":"Norwich Township"
+},
+{
+"County": "McKean", 
+"Municipality":"Otto Township"
+},
+{
+"County": "McKean", 
+"Municipality":"Port Allegany Borough"
+},
+{
+"County": "McKean", 
+"Municipality":"Sergeant Township"
+},
+{
+"County": "McKean", 
+"Municipality":"Smethport Borough"
+},
+{
+"County": "McKean", 
+"Municipality":"Wetmore Township"
+},
+{
+"County": "Mercer", 
+"Municipality":"Clark Borough"
+},
+{
+"County": "Mercer", 
+"Municipality":"Coolspring Township"
+},
+{
+"County": "Mercer", 
+"Municipality":"Deer Creek Township"
+},
+{
+"County": "Mercer", 
+"Municipality":"Delaware Township"
+},
+{
+"County": "Mercer", 
+"Municipality":"East Lackawannock Township"
+},
+{
+"County": "Mercer", 
+"Municipality":"Fairview Township"
+},
+{
+"County": "Mercer", 
+"Municipality":"Farrell City"
+},
+{
+"County": "Mercer", 
+"Municipality":"Findley Township"
+},
+{
+"County": "Mercer", 
+"Municipality":"Fredonia Borough"
+},
+{
+"County": "Mercer", 
+"Municipality":"French Creek Township"
+},
+{
+"County": "Mercer", 
+"Municipality":"Greene Township"
+},
+{
+"County": "Mercer", 
+"Municipality":"Greenville Borough"
+},
+{
+"County": "Mercer", 
+"Municipality":"Grove City Borough"
+},
+{
+"County": "Mercer", 
+"Municipality":"Hempfield Township"
+},
+{
+"County": "Mercer", 
+"Municipality":"Hermitage City"
+},
+{
+"County": "Mercer", 
+"Municipality":"Jackson Center Borough"
+},
+{
+"County": "Mercer", 
+"Municipality":"Jackson Township"
+},
+{
+"County": "Mercer", 
+"Municipality":"Jamestown Borough"
+},
+{
+"County": "Mercer", 
+"Municipality":"Jefferson Township"
+},
+{
+"County": "Mercer", 
+"Municipality":"Lackawannock Township"
+},
+{
+"County": "Mercer", 
+"Municipality":"Lake Township"
+},
+{
+"County": "Mercer", 
+"Municipality":"Liberty Township"
+},
+{
+"County": "Mercer", 
+"Municipality":"Mercer Borough"
+},
+{
+"County": "Mercer", 
+"Municipality":"Mill Creek Township"
+},
+{
+"County": "Mercer", 
+"Municipality":"New Lebanon Borough"
+},
+{
+"County": "Mercer", 
+"Municipality":"New Vernon Township"
+},
+{
+"County": "Mercer", 
+"Municipality":"Otter Creek Township"
+},
+{
+"County": "Mercer", 
+"Municipality":"Perry Township"
+},
+{
+"County": "Mercer", 
+"Municipality":"Pine Township"
+},
+{
+"County": "Mercer", 
+"Municipality":"Pymatuning Township"
+},
+{
+"County": "Mercer", 
+"Municipality":"Salem Township"
+},
+{
+"County": "Mercer", 
+"Municipality":"Sandy Creek Township"
+},
+{
+"County": "Mercer", 
+"Municipality":"Sandy Lake Borough"
+},
+{
+"County": "Mercer", 
+"Municipality":"Sandy Lake Township"
+},
+{
+"County": "Mercer", 
+"Municipality":"Sharon City"
+},
+{
+"County": "Mercer", 
+"Municipality":"Sharpsville Borough"
+},
+{
+"County": "Mercer", 
+"Municipality":"Sheakleyville Borough"
+},
+{
+"County": "Mercer", 
+"Municipality":"Shenango Township"
+},
+{
+"County": "Mercer", 
+"Municipality":"South Pymatuning Township"
+},
+{
+"County": "Mercer", 
+"Municipality":"Springfield Township"
+},
+{
+"County": "Mercer", 
+"Municipality":"Stoneboro Borough"
+},
+{
+"County": "Mercer", 
+"Municipality":"Sugar Grove Township"
+},
+{
+"County": "Mercer", 
+"Municipality":"West Middlesex Borough"
+},
+{
+"County": "Mercer", 
+"Municipality":"West Salem Township"
+},
+{
+"County": "Mercer", 
+"Municipality":"Wheatland Borough"
+},
+{
+"County": "Mercer", 
+"Municipality":"Wilmington Township"
+},
+{
+"County": "Mercer", 
+"Municipality":"Wolf Creek Township"
+},
+{
+"County": "Mercer", 
+"Municipality":"Worth Township"
+},
+{
+"County": "Mifflin", 
+"Municipality":"Armagh Township"
+},
+{
+"County": "Mifflin", 
+"Municipality":"Bratton Township"
+},
+{
+"County": "Mifflin", 
+"Municipality":"Brown Township"
+},
+{
+"County": "Mifflin", 
+"Municipality":"Burnham Borough"
+},
+{
+"County": "Mifflin", 
+"Municipality":"Decatur Township"
+},
+{
+"County": "Mifflin", 
+"Municipality":"Derry Township"
+},
+{
+"County": "Mifflin", 
+"Municipality":"Granville Township"
+},
+{
+"County": "Mifflin", 
+"Municipality":"Juniata Terrace Borough"
+},
+{
+"County": "Mifflin", 
+"Municipality":"Kistler Borough"
+},
+{
+"County": "Mifflin", 
+"Municipality":"Lewistown Borough"
+},
+{
+"County": "Mifflin", 
+"Municipality":"McVeytown Borough"
+},
+{
+"County": "Mifflin", 
+"Municipality":"Menno Township"
+},
+{
+"County": "Mifflin", 
+"Municipality":"Newton Hamilton Borough"
+},
+{
+"County": "Mifflin", 
+"Municipality":"Oliver Township"
+},
+{
+"County": "Mifflin", 
+"Municipality":"Union Township"
+},
+{
+"County": "Mifflin", 
+"Municipality":"Wayne Township"
+},
+{
+"County": "Monroe", 
+"Municipality":"Barrett Township"
+},
+{
+"County": "Monroe", 
+"Municipality":"Chestnuthill Township"
+},
+{
+"County": "Monroe", 
+"Municipality":"Coolbaugh Township"
+},
+{
+"County": "Monroe", 
+"Municipality":"Delaware Water Gap Borough"
+},
+{
+"County": "Monroe", 
+"Municipality":"East Stroudsburg Borough"
+},
+{
+"County": "Monroe", 
+"Municipality":"Eldred Township"
+},
+{
+"County": "Monroe", 
+"Municipality":"Hamilton Township"
+},
+{
+"County": "Monroe", 
+"Municipality":"Jackson Township"
+},
+{
+"County": "Monroe", 
+"Municipality":"Middle Smithfield Township"
+},
+{
+"County": "Monroe", 
+"Municipality":"Mount Pocono Borough"
+},
+{
+"County": "Monroe", 
+"Municipality":"Paradise Township"
+},
+{
+"County": "Monroe", 
+"Municipality":"Pocono Township"
+},
+{
+"County": "Monroe", 
+"Municipality":"Polk Township"
+},
+{
+"County": "Monroe", 
+"Municipality":"Price Township"
+},
+{
+"County": "Monroe", 
+"Municipality":"Ross Township"
+},
+{
+"County": "Monroe", 
+"Municipality":"Smithfield Township"
+},
+{
+"County": "Monroe", 
+"Municipality":"Stroud Township"
+},
+{
+"County": "Monroe", 
+"Municipality":"Stroudsburg Borough"
+},
+{
+"County": "Monroe", 
+"Municipality":"Tobyhanna Township"
+},
+{
+"County": "Monroe", 
+"Municipality":"Tunkhannock Township"
+},
+{
+"County": "Montgomery", 
+"Municipality":"Abington Township"
+},
+{
+"County": "Montgomery", 
+"Municipality":"Ambler Borough"
+},
+{
+"County": "Montgomery", 
+"Municipality":"Bridgeport Borough"
+},
+{
+"County": "Montgomery", 
+"Municipality":"Bryn Athyn Borough"
+},
+{
+"County": "Montgomery", 
+"Municipality":"Cheltenham Township"
+},
+{
+"County": "Montgomery", 
+"Municipality":"Collegeville Borough"
+},
+{
+"County": "Montgomery", 
+"Municipality":"Conshohocken Borough"
+},
+{
+"County": "Montgomery", 
+"Municipality":"Douglass Township"
+},
+{
+"County": "Montgomery", 
+"Municipality":"East Greenville Borough"
+},
+{
+"County": "Montgomery", 
+"Municipality":"East Norriton Township"
+},
+{
+"County": "Montgomery", 
+"Municipality":"Franconia Township"
+},
+{
+"County": "Montgomery", 
+"Municipality":"Green Lane Borough"
+},
+{
+"County": "Montgomery", 
+"Municipality":"Hatboro Borough"
+},
+{
+"County": "Montgomery", 
+"Municipality":"Hatfield Borough"
+},
+{
+"County": "Montgomery", 
+"Municipality":"Hatfield Township"
+},
+{
+"County": "Montgomery", 
+"Municipality":"Horsham Township"
+},
+{
+"County": "Montgomery", 
+"Municipality":"Jenkintown Borough"
+},
+{
+"County": "Montgomery", 
+"Municipality":"Lansdale Borough"
+},
+{
+"County": "Montgomery", 
+"Municipality":"Limerick Township"
+},
+{
+"County": "Montgomery", 
+"Municipality":"Lower Frederick Township"
+},
+{
+"County": "Montgomery", 
+"Municipality":"Lower Gwynedd Township"
+},
+{
+"County": "Montgomery", 
+"Municipality":"Lower Merion Township"
+},
+{
+"County": "Montgomery", 
+"Municipality":"Lower Moreland Township"
+},
+{
+"County": "Montgomery", 
+"Municipality":"Lower Pottsgrove Township"
+},
+{
+"County": "Montgomery", 
+"Municipality":"Lower Providence Township"
+},
+{
+"County": "Montgomery", 
+"Municipality":"Lower Salford Township"
+},
+{
+"County": "Montgomery", 
+"Municipality":"Marlborough Township"
+},
+{
+"County": "Montgomery", 
+"Municipality":"Montgomery Township"
+},
+{
+"County": "Montgomery", 
+"Municipality":"Narberth Borough"
+},
+{
+"County": "Montgomery", 
+"Municipality":"New Hanover Township"
+},
+{
+"County": "Montgomery", 
+"Municipality":"Norristown Borough"
+},
+{
+"County": "Montgomery", 
+"Municipality":"North Wales Borough"
+},
+{
+"County": "Montgomery", 
+"Municipality":"Pennsburg Borough"
+},
+{
+"County": "Montgomery", 
+"Municipality":"Perkiomen Township"
+},
+{
+"County": "Montgomery", 
+"Municipality":"Plymouth Township"
+},
+{
+"County": "Montgomery", 
+"Municipality":"Pottstown Borough"
+},
+{
+"County": "Montgomery", 
+"Municipality":"Red Hill Borough"
+},
+{
+"County": "Montgomery", 
+"Municipality":"Rockledge Borough"
+},
+{
+"County": "Montgomery", 
+"Municipality":"Royersford Borough"
+},
+{
+"County": "Montgomery", 
+"Municipality":"Salford Township"
+},
+{
+"County": "Montgomery", 
+"Municipality":"Schwenksville Borough"
+},
+{
+"County": "Montgomery", 
+"Municipality":"Skippack Township"
+},
+{
+"County": "Montgomery", 
+"Municipality":"Souderton Borough"
+},
+{
+"County": "Montgomery", 
+"Municipality":"Springfield Township"
+},
+{
+"County": "Montgomery", 
+"Municipality":"Telford Borough"
+},
+{
+"County": "Montgomery", 
+"Municipality":"Towamencin Township"
+},
+{
+"County": "Montgomery", 
+"Municipality":"Trappe Borough"
+},
+{
+"County": "Montgomery", 
+"Municipality":"Upper Dublin Township"
+},
+{
+"County": "Montgomery", 
+"Municipality":"Upper Frederick Township"
+},
+{
+"County": "Montgomery", 
+"Municipality":"Upper Gwynedd Township"
+},
+{
+"County": "Montgomery", 
+"Municipality":"Upper Hanover Township"
+},
+{
+"County": "Montgomery", 
+"Municipality":"Upper Merion Township"
+},
+{
+"County": "Montgomery", 
+"Municipality":"Upper Moreland Township"
+},
+{
+"County": "Montgomery", 
+"Municipality":"Upper Pottsgrove Township"
+},
+{
+"County": "Montgomery", 
+"Municipality":"Upper Providence Township"
+},
+{
+"County": "Montgomery", 
+"Municipality":"Upper Salford Township"
+},
+{
+"County": "Montgomery", 
+"Municipality":"West Conshohocken Borough"
+},
+{
+"County": "Montgomery", 
+"Municipality":"West Norriton Township"
+},
+{
+"County": "Montgomery", 
+"Municipality":"West Pottsgrove Township"
+},
+{
+"County": "Montgomery", 
+"Municipality":"Whitemarsh Township"
+},
+{
+"County": "Montgomery", 
+"Municipality":"Whitpain Township"
+},
+{
+"County": "Montgomery", 
+"Municipality":"Worcester Township"
+},
+{
+"County": "Montour", 
+"Municipality":"Anthony Township"
+},
+{
+"County": "Montour", 
+"Municipality":"Cooper Township"
+},
+{
+"County": "Montour", 
+"Municipality":"Danville Borough"
+},
+{
+"County": "Montour", 
+"Municipality":"Derry Township"
+},
+{
+"County": "Montour", 
+"Municipality":"Liberty Township"
+},
+{
+"County": "Montour", 
+"Municipality":"Limestone Township"
+},
+{
+"County": "Montour", 
+"Municipality":"Mahoning Township"
+},
+{
+"County": "Montour", 
+"Municipality":"Mayberry Township"
+},
+{
+"County": "Montour", 
+"Municipality":"Valley Township"
+},
+{
+"County": "Montour", 
+"Municipality":"Washingtonville Borough"
+},
+{
+"County": "Montour", 
+"Municipality":"West Hemlock Township"
+},
+{
+"County": "Northampton", 
+"Municipality":"Allen Township"
+},
+{
+"County": "Northampton", 
+"Municipality":"Bangor Borough"
+},
+{
+"County": "Northampton", 
+"Municipality":"Bath Borough"
+},
+{
+"County": "Northampton", 
+"Municipality":"Bethlehem City"
+},
+{
+"County": "Northampton", 
+"Municipality":"Bethlehem Township"
+},
+{
+"County": "Northampton", 
+"Municipality":"Bushkill Township"
+},
+{
+"County": "Northampton", 
+"Municipality":"Chapman Borough"
+},
+{
+"County": "Northampton", 
+"Municipality":"East Allen Township"
+},
+{
+"County": "Northampton", 
+"Municipality":"East Bangor Borough"
+},
+{
+"County": "Northampton", 
+"Municipality":"Easton City"
+},
+{
+"County": "Northampton", 
+"Municipality":"Forks Township"
+},
+{
+"County": "Northampton", 
+"Municipality":"Freemansburg Borough"
+},
+{
+"County": "Northampton", 
+"Municipality":"Glendon Borough"
+},
+{
+"County": "Northampton", 
+"Municipality":"Hanover Township"
+},
+{
+"County": "Northampton", 
+"Municipality":"Hellertown Borough"
+},
+{
+"County": "Northampton", 
+"Municipality":"Lehigh Township"
+},
+{
+"County": "Northampton", 
+"Municipality":"Lower Mount Bethel Township"
+},
+{
+"County": "Northampton", 
+"Municipality":"Lower Nazareth Township"
+},
+{
+"County": "Northampton", 
+"Municipality":"Lower Saucon Township"
+},
+{
+"County": "Northampton", 
+"Municipality":"Moore Township"
+},
+{
+"County": "Northampton", 
+"Municipality":"Nazareth Borough"
+},
+{
+"County": "Northampton", 
+"Municipality":"North Catasauqua Borough"
+},
+{
+"County": "Northampton", 
+"Municipality":"Northampton Borough"
+},
+{
+"County": "Northampton", 
+"Municipality":"Palmer Township"
+},
+{
+"County": "Northampton", 
+"Municipality":"Pen Argyl Borough"
+},
+{
+"County": "Northampton", 
+"Municipality":"Plainfield Township"
+},
+{
+"County": "Northampton", 
+"Municipality":"Portland Borough"
+},
+{
+"County": "Northampton", 
+"Municipality":"Roseto Borough"
+},
+{
+"County": "Northampton", 
+"Municipality":"Stockertown Borough"
+},
+{
+"County": "Northampton", 
+"Municipality":"Tatamy Borough"
+},
+{
+"County": "Northampton", 
+"Municipality":"Upper Mount Bethel Township"
+},
+{
+"County": "Northampton", 
+"Municipality":"Upper Nazareth Township"
+},
+{
+"County": "Northampton", 
+"Municipality":"Walnutport Borough"
+},
+{
+"County": "Northampton", 
+"Municipality":"Washington Township"
+},
+{
+"County": "Northampton", 
+"Municipality":"West Easton Borough"
+},
+{
+"County": "Northampton", 
+"Municipality":"Williams Township"
+},
+{
+"County": "Northampton", 
+"Municipality":"Wilson Borough"
+},
+{
+"County": "Northampton", 
+"Municipality":"Wind Gap Borough"
+},
+{
+"County": "Northumberland", 
+"Municipality":"Coal Township"
+},
+{
+"County": "Northumberland", 
+"Municipality":"Delaware Township"
+},
+{
+"County": "Northumberland", 
+"Municipality":"East Cameron Township"
+},
+{
+"County": "Northumberland", 
+"Municipality":"East Chillisquaque Township"
+},
+{
+"County": "Northumberland", 
+"Municipality":"Herndon Borough"
+},
+{
+"County": "Northumberland", 
+"Municipality":"Jackson Township"
+},
+{
+"County": "Northumberland", 
+"Municipality":"Jordan Township"
+},
+{
+"County": "Northumberland", 
+"Municipality":"Kulpmont Borough"
+},
+{
+"County": "Northumberland", 
+"Municipality":"Lewis Township"
+},
+{
+"County": "Northumberland", 
+"Municipality":"Little Mahanoy Township"
+},
+{
+"County": "Northumberland", 
+"Municipality":"Lower Augusta Township"
+},
+{
+"County": "Northumberland", 
+"Municipality":"Lower Mahanoy Township"
+},
+{
+"County": "Northumberland", 
+"Municipality":"Marion Heights Borough"
+},
+{
+"County": "Northumberland", 
+"Municipality":"McEwensville Borough"
+},
+{
+"County": "Northumberland", 
+"Municipality":"Milton Borough"
+},
+{
+"County": "Northumberland", 
+"Municipality":"Mount Carmel Borough"
+},
+{
+"County": "Northumberland", 
+"Municipality":"Mount Carmel Township"
+},
+{
+"County": "Northumberland", 
+"Municipality":"Northumberland Borough"
+},
+{
+"County": "Northumberland", 
+"Municipality":"Point Township"
+},
+{
+"County": "Northumberland", 
+"Municipality":"Ralpho Township"
+},
+{
+"County": "Northumberland", 
+"Municipality":"Riverside Borough"
+},
+{
+"County": "Northumberland", 
+"Municipality":"Rockefeller Township"
+},
+{
+"County": "Northumberland", 
+"Municipality":"Rush Township"
+},
+{
+"County": "Northumberland", 
+"Municipality":"Shamokin City"
+},
+{
+"County": "Northumberland", 
+"Municipality":"Shamokin Township"
+},
+{
+"County": "Northumberland", 
+"Municipality":"Snydertown Borough"
+},
+{
+"County": "Northumberland", 
+"Municipality":"Sunbury City"
+},
+{
+"County": "Northumberland", 
+"Municipality":"Turbot Township"
+},
+{
+"County": "Northumberland", 
+"Municipality":"Turbotville Borough"
+},
+{
+"County": "Northumberland", 
+"Municipality":"Upper Augusta Township"
+},
+{
+"County": "Northumberland", 
+"Municipality":"Upper Mahanoy Township"
+},
+{
+"County": "Northumberland", 
+"Municipality":"Washington Township"
+},
+{
+"County": "Northumberland", 
+"Municipality":"Watsontown Borough"
+},
+{
+"County": "Northumberland", 
+"Municipality":"West Cameron Township"
+},
+{
+"County": "Northumberland", 
+"Municipality":"West Chillisquaque Township"
+},
+{
+"County": "Northumberland", 
+"Municipality":"Zerbe Township"
+},
+{
+"County": "Perry", 
+"Municipality":"Blain Borough"
+},
+{
+"County": "Perry", 
+"Municipality":"Bloomfield Borough"
+},
+{
+"County": "Perry", 
+"Municipality":"Buffalo Township"
+},
+{
+"County": "Perry", 
+"Municipality":"Carroll Township"
+},
+{
+"County": "Perry", 
+"Municipality":"Centre Township"
+},
+{
+"County": "Perry", 
+"Municipality":"Duncannon Borough"
+},
+{
+"County": "Perry", 
+"Municipality":"Greenwood Township"
+},
+{
+"County": "Perry", 
+"Municipality":"Howe Township"
+},
+{
+"County": "Perry", 
+"Municipality":"Jackson Township"
+},
+{
+"County": "Perry", 
+"Municipality":"Juniata Township"
+},
+{
+"County": "Perry", 
+"Municipality":"Landisburg Borough"
+},
+{
+"County": "Perry", 
+"Municipality":"Liverpool Borough"
+},
+{
+"County": "Perry", 
+"Municipality":"Liverpool Township"
+},
+{
+"County": "Perry", 
+"Municipality":"Marysville Borough"
+},
+{
+"County": "Perry", 
+"Municipality":"Miller Township"
+},
+{
+"County": "Perry", 
+"Municipality":"Millerstown Borough"
+},
+{
+"County": "Perry", 
+"Municipality":"New Buffalo Borough"
+},
+{
+"County": "Perry", 
+"Municipality":"Newport Borough"
+},
+{
+"County": "Perry", 
+"Municipality":"Northeast Madison Township"
+},
+{
+"County": "Perry", 
+"Municipality":"Oliver Township"
+},
+{
+"County": "Perry", 
+"Municipality":"Penn Township"
+},
+{
+"County": "Perry", 
+"Municipality":"Rye Township"
+},
+{
+"County": "Perry", 
+"Municipality":"Saville Township"
+},
+{
+"County": "Perry", 
+"Municipality":"Southwest Madison Township"
+},
+{
+"County": "Perry", 
+"Municipality":"Spring Township"
+},
+{
+"County": "Perry", 
+"Municipality":"Toboyne Township"
+},
+{
+"County": "Perry", 
+"Municipality":"Tuscarora Township"
+},
+{
+"County": "Perry", 
+"Municipality":"Tyrone Township"
+},
+{
+"County": "Perry", 
+"Municipality":"Watts Township"
+},
+{
+"County": "Perry", 
+"Municipality":"Wheatfield Township"
+},
+{
+"County": "Philadelphia", 
+"Municipality":"Philadelphia City"
+},
+{
+"County": "Pike", 
+"Municipality":"Blooming Grove Township"
+},
+{
+"County": "Pike", 
+"Municipality":"Delaware Township"
+},
+{
+"County": "Pike", 
+"Municipality":"Dingman Township"
+},
+{
+"County": "Pike", 
+"Municipality":"Greene Township"
+},
+{
+"County": "Pike", 
+"Municipality":"Lackawaxen Township"
+},
+{
+"County": "Pike", 
+"Municipality":"Lehman Township"
+},
+{
+"County": "Pike", 
+"Municipality":"Matamoras Borough"
+},
+{
+"County": "Pike", 
+"Municipality":"Milford Borough"
+},
+{
+"County": "Pike", 
+"Municipality":"Milford Township"
+},
+{
+"County": "Pike", 
+"Municipality":"Palmyra Township"
+},
+{
+"County": "Pike", 
+"Municipality":"Porter Township"
+},
+{
+"County": "Pike", 
+"Municipality":"Shohola Township"
+},
+{
+"County": "Pike", 
+"Municipality":"Westfall Township"
+},
+{
+"County": "Potter", 
+"Municipality":"Abbott Township"
+},
+{
+"County": "Potter", 
+"Municipality":"Allegany Township"
+},
+{
+"County": "Potter", 
+"Municipality":"Austin Borough"
+},
+{
+"County": "Potter", 
+"Municipality":"Bingham Township"
+},
+{
+"County": "Potter", 
+"Municipality":"Clara Township"
+},
+{
+"County": "Potter", 
+"Municipality":"Coudersport Borough"
+},
+{
+"County": "Potter", 
+"Municipality":"Eulalia Township"
+},
+{
+"County": "Potter", 
+"Municipality":"Galeton Borough"
+},
+{
+"County": "Potter", 
+"Municipality":"Genesee Township"
+},
+{
+"County": "Potter", 
+"Municipality":"Harrison Township"
+},
+{
+"County": "Potter", 
+"Municipality":"Hebron Township"
+},
+{
+"County": "Potter", 
+"Municipality":"Hector Township"
+},
+{
+"County": "Potter", 
+"Municipality":"Homer Township"
+},
+{
+"County": "Potter", 
+"Municipality":"Keating Township"
+},
+{
+"County": "Potter", 
+"Municipality":"Oswayo Borough"
+},
+{
+"County": "Potter", 
+"Municipality":"Oswayo Township"
+},
+{
+"County": "Potter", 
+"Municipality":"Pike Township"
+},
+{
+"County": "Potter", 
+"Municipality":"Pleasant Valley Township"
+},
+{
+"County": "Potter", 
+"Municipality":"Portage Township"
+},
+{
+"County": "Potter", 
+"Municipality":"Roulette Township"
+},
+{
+"County": "Potter", 
+"Municipality":"Sharon Township"
+},
+{
+"County": "Potter", 
+"Municipality":"Shinglehouse Borough"
+},
+{
+"County": "Potter", 
+"Municipality":"Stewardson Township"
+},
+{
+"County": "Potter", 
+"Municipality":"Summit Township"
+},
+{
+"County": "Potter", 
+"Municipality":"Sweden Township"
+},
+{
+"County": "Potter", 
+"Municipality":"Sylvania Township"
+},
+{
+"County": "Potter", 
+"Municipality":"Ulysses Borough"
+},
+{
+"County": "Potter", 
+"Municipality":"Ulysses Township"
+},
+{
+"County": "Potter", 
+"Municipality":"West Branch Township"
+},
+{
+"County": "Potter", 
+"Municipality":"Wharton Township"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"Ashland Borough"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"Auburn Borough"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"Barry Township"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"Blythe Township"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"Branch Township"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"Butler Township"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"Cass Township"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"Coaldale Borough"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"Cressona Borough"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"Deer Lake Borough"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"Delano Township"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"East Brunswick Township"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"East Norwegian Township"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"East Union Township"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"Eldred Township"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"Foster Township"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"Frackville Borough"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"Frailey Township"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"Gilberton Borough"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"Girardville Borough"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"Gordon Borough"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"Hegins Township"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"Hubley Township"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"Kline Township"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"Landingville Borough"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"Mahanoy City Borough"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"Mahanoy Township"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"McAdoo Borough"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"Mechanicsville Borough"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"Middleport Borough"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"Minersville Borough"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"Mount Carbon Borough"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"New Castle Township"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"New Philadelphia Borough"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"New Ringgold Borough"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"North Manheim Township"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"North Union Township"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"Norwegian Township"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"Orwigsburg Borough"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"Palo Alto Borough"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"Pine Grove Borough"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"Pine Grove Township"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"Port Carbon Borough"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"Port Clinton Borough"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"Porter Township"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"Pottsville City"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"Reilly Township"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"Ringtown Borough"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"Rush Township"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"Ryan Township"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"Schuylkill Haven Borough"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"Schuylkill Township"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"Shenandoah Borough"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"South Manheim Township"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"St. Clair Borough"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"Tamaqua Borough"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"Tower City Borough"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"Tremont Borough"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"Tremont Township"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"Union Township"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"Upper Mahantongo Township"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"Walker Township"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"Washington Township"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"Wayne Township"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"West Brunswick Township"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"West Mahanoy Township"
+},
+{
+"County": "Schuylkill", 
+"Municipality":"West Penn Township"
+},
+{
+"County": "Snyder", 
+"Municipality":"Adams Township"
+},
+{
+"County": "Snyder", 
+"Municipality":"Beaver Township"
+},
+{
+"County": "Snyder", 
+"Municipality":"Beavertown Borough"
+},
+{
+"County": "Snyder", 
+"Municipality":"Center Township"
+},
+{
+"County": "Snyder", 
+"Municipality":"Chapman Township"
+},
+{
+"County": "Snyder", 
+"Municipality":"Franklin Township"
+},
+{
+"County": "Snyder", 
+"Municipality":"Freeburg Borough"
+},
+{
+"County": "Snyder", 
+"Municipality":"Jackson Township"
+},
+{
+"County": "Snyder", 
+"Municipality":"McClure Borough"
+},
+{
+"County": "Snyder", 
+"Municipality":"Middleburg Borough"
+},
+{
+"County": "Snyder", 
+"Municipality":"Middlecreek Township"
+},
+{
+"County": "Snyder", 
+"Municipality":"Monroe Township"
+},
+{
+"County": "Snyder", 
+"Municipality":"Penn Township"
+},
+{
+"County": "Snyder", 
+"Municipality":"Perry Township"
+},
+{
+"County": "Snyder", 
+"Municipality":"Selinsgrove Borough"
+},
+{
+"County": "Snyder", 
+"Municipality":"Shamokin Dam Borough"
+},
+{
+"County": "Snyder", 
+"Municipality":"Spring Township"
+},
+{
+"County": "Snyder", 
+"Municipality":"Union Township"
+},
+{
+"County": "Snyder", 
+"Municipality":"Washington Township"
+},
+{
+"County": "Snyder", 
+"Municipality":"West Beaver Township"
+},
+{
+"County": "Snyder", 
+"Municipality":"West Perry Township"
+},
+{
+"County": "Somerset", 
+"Municipality":"Addison Borough"
+},
+{
+"County": "Somerset", 
+"Municipality":"Addison Township"
+},
+{
+"County": "Somerset", 
+"Municipality":"Allegheny Township"
+},
+{
+"County": "Somerset", 
+"Municipality":"Benson Borough"
+},
+{
+"County": "Somerset", 
+"Municipality":"Berlin Borough"
+},
+{
+"County": "Somerset", 
+"Municipality":"Black Township"
+},
+{
+"County": "Somerset", 
+"Municipality":"Boswell Borough"
+},
+{
+"County": "Somerset", 
+"Municipality":"Brothersvalley Township"
+},
+{
+"County": "Somerset", 
+"Municipality":"Callimont Borough"
+},
+{
+"County": "Somerset", 
+"Municipality":"Casselman Borough"
+},
+{
+"County": "Somerset", 
+"Municipality":"Central City Borough"
+},
+{
+"County": "Somerset", 
+"Municipality":"Conemaugh Township"
+},
+{
+"County": "Somerset", 
+"Municipality":"Confluence Borough"
+},
+{
+"County": "Somerset", 
+"Municipality":"Elk Lick Township"
+},
+{
+"County": "Somerset", 
+"Municipality":"Fairhope Township"
+},
+{
+"County": "Somerset", 
+"Municipality":"Garrett Borough"
+},
+{
+"County": "Somerset", 
+"Municipality":"Greenville Township"
+},
+{
+"County": "Somerset", 
+"Municipality":"Hooversville Borough"
+},
+{
+"County": "Somerset", 
+"Municipality":"Indian Lake Borough"
+},
+{
+"County": "Somerset", 
+"Municipality":"Jefferson Township"
+},
+{
+"County": "Somerset", 
+"Municipality":"Jenner Township"
+},
+{
+"County": "Somerset", 
+"Municipality":"Jennerstown Borough"
+},
+{
+"County": "Somerset", 
+"Municipality":"Larimer Township"
+},
+{
+"County": "Somerset", 
+"Municipality":"Lincoln Township"
+},
+{
+"County": "Somerset", 
+"Municipality":"Lower Turkeyfoot Township"
+},
+{
+"County": "Somerset", 
+"Municipality":"Meyersdale Borough"
+},
+{
+"County": "Somerset", 
+"Municipality":"Middlecreek Township"
+},
+{
+"County": "Somerset", 
+"Municipality":"Milford Township"
+},
+{
+"County": "Somerset", 
+"Municipality":"New Baltimore Borough"
+},
+{
+"County": "Somerset", 
+"Municipality":"New Centerville Borough"
+},
+{
+"County": "Somerset", 
+"Municipality":"Northampton Township"
+},
+{
+"County": "Somerset", 
+"Municipality":"Ogle Township"
+},
+{
+"County": "Somerset", 
+"Municipality":"Paint Borough"
+},
+{
+"County": "Somerset", 
+"Municipality":"Paint Township"
+},
+{
+"County": "Somerset", 
+"Municipality":"Quemahoning Township"
+},
+{
+"County": "Somerset", 
+"Municipality":"Rockwood Borough"
+},
+{
+"County": "Somerset", 
+"Municipality":"Salisbury Borough"
+},
+{
+"County": "Somerset", 
+"Municipality":"Seven Springs Borough"
+},
+{
+"County": "Somerset", 
+"Municipality":"Shade Township"
+},
+{
+"County": "Somerset", 
+"Municipality":"Shanksville Borough"
+},
+{
+"County": "Somerset", 
+"Municipality":"Somerset Borough"
+},
+{
+"County": "Somerset", 
+"Municipality":"Somerset Township"
+},
+{
+"County": "Somerset", 
+"Municipality":"Southampton Township"
+},
+{
+"County": "Somerset", 
+"Municipality":"Stonycreek Township"
+},
+{
+"County": "Somerset", 
+"Municipality":"Stoystown Borough"
+},
+{
+"County": "Somerset", 
+"Municipality":"Summit Township"
+},
+{
+"County": "Somerset", 
+"Municipality":"Upper Turkeyfoot Township"
+},
+{
+"County": "Somerset", 
+"Municipality":"Ursina Borough"
+},
+{
+"County": "Somerset", 
+"Municipality":"Wellersburg Borough"
+},
+{
+"County": "Somerset", 
+"Municipality":"Windber Borough"
+},
+{
+"County": "Sullivan", 
+"Municipality":"Cherry Township"
+},
+{
+"County": "Sullivan", 
+"Municipality":"Colley Township"
+},
+{
+"County": "Sullivan", 
+"Municipality":"Davidson Township"
+},
+{
+"County": "Sullivan", 
+"Municipality":"Dushore Borough"
+},
+{
+"County": "Sullivan", 
+"Municipality":"Eagles Mere Borough"
+},
+{
+"County": "Sullivan", 
+"Municipality":"Elkland Township"
+},
+{
+"County": "Sullivan", 
+"Municipality":"Forks Township"
+},
+{
+"County": "Sullivan", 
+"Municipality":"Forksville Borough"
+},
+{
+"County": "Sullivan", 
+"Municipality":"Fox Township"
+},
+{
+"County": "Sullivan", 
+"Municipality":"Hillsgrove Township"
+},
+{
+"County": "Sullivan", 
+"Municipality":"Laporte Borough"
+},
+{
+"County": "Sullivan", 
+"Municipality":"Laporte Township"
+},
+{
+"County": "Sullivan", 
+"Municipality":"Shrewsbury Township"
+},
+{
+"County": "Susquehanna", 
+"Municipality":"Apolacon Township"
+},
+{
+"County": "Susquehanna", 
+"Municipality":"Ararat Township"
+},
+{
+"County": "Susquehanna", 
+"Municipality":"Auburn Township"
+},
+{
+"County": "Susquehanna", 
+"Municipality":"Bridgewater Township"
+},
+{
+"County": "Susquehanna", 
+"Municipality":"Brooklyn Township"
+},
+{
+"County": "Susquehanna", 
+"Municipality":"Choconut Township"
+},
+{
+"County": "Susquehanna", 
+"Municipality":"Clifford Township"
+},
+{
+"County": "Susquehanna", 
+"Municipality":"Dimock Township"
+},
+{
+"County": "Susquehanna", 
+"Municipality":"Forest City Borough"
+},
+{
+"County": "Susquehanna", 
+"Municipality":"Forest Lake Township"
+},
+{
+"County": "Susquehanna", 
+"Municipality":"Franklin Township"
+},
+{
+"County": "Susquehanna", 
+"Municipality":"Friendsville Borough"
+},
+{
+"County": "Susquehanna", 
+"Municipality":"Gibson Township"
+},
+{
+"County": "Susquehanna", 
+"Municipality":"Great Bend Borough"
+},
+{
+"County": "Susquehanna", 
+"Municipality":"Great Bend Township"
+},
+{
+"County": "Susquehanna", 
+"Municipality":"Hallstead Borough"
+},
+{
+"County": "Susquehanna", 
+"Municipality":"Harford Township"
+},
+{
+"County": "Susquehanna", 
+"Municipality":"Harmony Township"
+},
+{
+"County": "Susquehanna", 
+"Municipality":"Herrick Township"
+},
+{
+"County": "Susquehanna", 
+"Municipality":"Hop Bottom Borough"
+},
+{
+"County": "Susquehanna", 
+"Municipality":"Jackson Township"
+},
+{
+"County": "Susquehanna", 
+"Municipality":"Jessup Township"
+},
+{
+"County": "Susquehanna", 
+"Municipality":"Lanesboro Borough"
+},
+{
+"County": "Susquehanna", 
+"Municipality":"Lathrop Township"
+},
+{
+"County": "Susquehanna", 
+"Municipality":"Lenox Township"
+},
+{
+"County": "Susquehanna", 
+"Municipality":"Liberty Township"
+},
+{
+"County": "Susquehanna", 
+"Municipality":"Little Meadows Borough"
+},
+{
+"County": "Susquehanna", 
+"Municipality":"Middletown Township"
+},
+{
+"County": "Susquehanna", 
+"Municipality":"Montrose Borough"
+},
+{
+"County": "Susquehanna", 
+"Municipality":"New Milford Borough"
+},
+{
+"County": "Susquehanna", 
+"Municipality":"New Milford Township"
+},
+{
+"County": "Susquehanna", 
+"Municipality":"Oakland Borough"
+},
+{
+"County": "Susquehanna", 
+"Municipality":"Oakland Township"
+},
+{
+"County": "Susquehanna", 
+"Municipality":"Rush Township"
+},
+{
+"County": "Susquehanna", 
+"Municipality":"Silver Lake Township"
+},
+{
+"County": "Susquehanna", 
+"Municipality":"Springville Township"
+},
+{
+"County": "Susquehanna", 
+"Municipality":"Susquehanna Depot Borough"
+},
+{
+"County": "Susquehanna", 
+"Municipality":"Thompson Borough"
+},
+{
+"County": "Susquehanna", 
+"Municipality":"Thompson Township"
+},
+{
+"County": "Susquehanna", 
+"Municipality":"Union Dale Borough"
+},
+{
+"County": "Tioga", 
+"Municipality":"Bloss Township"
+},
+{
+"County": "Tioga", 
+"Municipality":"Blossburg Borough"
+},
+{
+"County": "Tioga", 
+"Municipality":"Brookfield Township"
+},
+{
+"County": "Tioga", 
+"Municipality":"Charleston Township"
+},
+{
+"County": "Tioga", 
+"Municipality":"Chatham Township"
+},
+{
+"County": "Tioga", 
+"Municipality":"Clymer Township"
+},
+{
+"County": "Tioga", 
+"Municipality":"Covington Township"
+},
+{
+"County": "Tioga", 
+"Municipality":"Deerfield Township"
+},
+{
+"County": "Tioga", 
+"Municipality":"Delmar Township"
+},
+{
+"County": "Tioga", 
+"Municipality":"Duncan Township"
+},
+{
+"County": "Tioga", 
+"Municipality":"Elk Township"
+},
+{
+"County": "Tioga", 
+"Municipality":"Elkland Borough"
+},
+{
+"County": "Tioga", 
+"Municipality":"Farmington Township"
+},
+{
+"County": "Tioga", 
+"Municipality":"Gaines Township"
+},
+{
+"County": "Tioga", 
+"Municipality":"Hamilton Township"
+},
+{
+"County": "Tioga", 
+"Municipality":"Jackson Township"
+},
+{
+"County": "Tioga", 
+"Municipality":"Knoxville Borough"
+},
+{
+"County": "Tioga", 
+"Municipality":"Lawrence Township"
+},
+{
+"County": "Tioga", 
+"Municipality":"Lawrenceville Borough"
+},
+{
+"County": "Tioga", 
+"Municipality":"Liberty Borough"
+},
+{
+"County": "Tioga", 
+"Municipality":"Liberty Township"
+},
+{
+"County": "Tioga", 
+"Municipality":"Mansfield Borough"
+},
+{
+"County": "Tioga", 
+"Municipality":"Middlebury Township"
+},
+{
+"County": "Tioga", 
+"Municipality":"Morris Township"
+},
+{
+"County": "Tioga", 
+"Municipality":"Nelson Township"
+},
+{
+"County": "Tioga", 
+"Municipality":"Osceola Township"
+},
+{
+"County": "Tioga", 
+"Municipality":"Putnam Township"
+},
+{
+"County": "Tioga", 
+"Municipality":"Richmond Township"
+},
+{
+"County": "Tioga", 
+"Municipality":"Roseville Borough"
+},
+{
+"County": "Tioga", 
+"Municipality":"Rutland Township"
+},
+{
+"County": "Tioga", 
+"Municipality":"Shippen Township"
+},
+{
+"County": "Tioga", 
+"Municipality":"Sullivan Township"
+},
+{
+"County": "Tioga", 
+"Municipality":"Tioga Borough"
+},
+{
+"County": "Tioga", 
+"Municipality":"Tioga Township"
+},
+{
+"County": "Tioga", 
+"Municipality":"Union Township"
+},
+{
+"County": "Tioga", 
+"Municipality":"Ward Township"
+},
+{
+"County": "Tioga", 
+"Municipality":"Wellsboro Borough"
+},
+{
+"County": "Tioga", 
+"Municipality":"Westfield Borough"
+},
+{
+"County": "Tioga", 
+"Municipality":"Westfield Township"
+},
+{
+"County": "Union", 
+"Municipality":"Buffalo Township"
+},
+{
+"County": "Union", 
+"Municipality":"East Buffalo Township"
+},
+{
+"County": "Union", 
+"Municipality":"Gregg Township"
+},
+{
+"County": "Union", 
+"Municipality":"Hartleton Borough"
+},
+{
+"County": "Union", 
+"Municipality":"Hartley Township"
+},
+{
+"County": "Union", 
+"Municipality":"Kelly Township"
+},
+{
+"County": "Union", 
+"Municipality":"Lewis Township"
+},
+{
+"County": "Union", 
+"Municipality":"Lewisburg Borough"
+},
+{
+"County": "Union", 
+"Municipality":"Limestone Township"
+},
+{
+"County": "Union", 
+"Municipality":"Mifflinburg Borough"
+},
+{
+"County": "Union", 
+"Municipality":"New Berlin Borough"
+},
+{
+"County": "Union", 
+"Municipality":"Union Township"
+},
+{
+"County": "Union", 
+"Municipality":"West Buffalo Township"
+},
+{
+"County": "Union", 
+"Municipality":"White Deer Township"
+},
+{
+"County": "Venango", 
+"Municipality":"Allegheny Township"
+},
+{
+"County": "Venango", 
+"Municipality":"Barkeyville Borough"
+},
+{
+"County": "Venango", 
+"Municipality":"Canal Township"
+},
+{
+"County": "Venango", 
+"Municipality":"Cherrytree Township"
+},
+{
+"County": "Venango", 
+"Municipality":"Clinton Township"
+},
+{
+"County": "Venango", 
+"Municipality":"Clintonville Borough"
+},
+{
+"County": "Venango", 
+"Municipality":"Cooperstown Borough"
+},
+{
+"County": "Venango", 
+"Municipality":"Cornplanter Township"
+},
+{
+"County": "Venango", 
+"Municipality":"Cranberry Township"
+},
+{
+"County": "Venango", 
+"Municipality":"Emlenton Borough"
+},
+{
+"County": "Venango", 
+"Municipality":"Franklin City"
+},
+{
+"County": "Venango", 
+"Municipality":"Frenchcreek Township"
+},
+{
+"County": "Venango", 
+"Municipality":"Irwin Township"
+},
+{
+"County": "Venango", 
+"Municipality":"Jackson Township"
+},
+{
+"County": "Venango", 
+"Municipality":"Mineral Township"
+},
+{
+"County": "Venango", 
+"Municipality":"Oakland Township"
+},
+{
+"County": "Venango", 
+"Municipality":"Oil City City"
+},
+{
+"County": "Venango", 
+"Municipality":"Oilcreek Township"
+},
+{
+"County": "Venango", 
+"Municipality":"Pinegrove Township"
+},
+{
+"County": "Venango", 
+"Municipality":"Pleasantville Borough"
+},
+{
+"County": "Venango", 
+"Municipality":"Plum Township"
+},
+{
+"County": "Venango", 
+"Municipality":"Polk Borough"
+},
+{
+"County": "Venango", 
+"Municipality":"President Township"
+},
+{
+"County": "Venango", 
+"Municipality":"Richland Township"
+},
+{
+"County": "Venango", 
+"Municipality":"Rockland Township"
+},
+{
+"County": "Venango", 
+"Municipality":"Rouseville Borough"
+},
+{
+"County": "Venango", 
+"Municipality":"Sandycreek Township"
+},
+{
+"County": "Venango", 
+"Municipality":"Scrubgrass Township"
+},
+{
+"County": "Venango", 
+"Municipality":"Sugarcreek Borough"
+},
+{
+"County": "Venango", 
+"Municipality":"Utica Borough"
+},
+{
+"County": "Venango", 
+"Municipality":"Victory Township"
+},
+{
+"County": "Warren", 
+"Municipality":"Bear Lake Borough"
+},
+{
+"County": "Warren", 
+"Municipality":"Brokenstraw Township"
+},
+{
+"County": "Warren", 
+"Municipality":"Cherry Grove Township"
+},
+{
+"County": "Warren", 
+"Municipality":"Clarendon Borough"
+},
+{
+"County": "Warren", 
+"Municipality":"Columbus Township"
+},
+{
+"County": "Warren", 
+"Municipality":"Conewango Township"
+},
+{
+"County": "Warren", 
+"Municipality":"Deerfield Township"
+},
+{
+"County": "Warren", 
+"Municipality":"Eldred Township"
+},
+{
+"County": "Warren", 
+"Municipality":"Elk Township"
+},
+{
+"County": "Warren", 
+"Municipality":"Farmington Township"
+},
+{
+"County": "Warren", 
+"Municipality":"Freehold Township"
+},
+{
+"County": "Warren", 
+"Municipality":"Glade Township"
+},
+{
+"County": "Warren", 
+"Municipality":"Limestone Township"
+},
+{
+"County": "Warren", 
+"Municipality":"Mead Township"
+},
+{
+"County": "Warren", 
+"Municipality":"Pine Grove Township"
+},
+{
+"County": "Warren", 
+"Municipality":"Pittsfield Township"
+},
+{
+"County": "Warren", 
+"Municipality":"Pleasant Township"
+},
+{
+"County": "Warren", 
+"Municipality":"Sheffield Township"
+},
+{
+"County": "Warren", 
+"Municipality":"Southwest Township"
+},
+{
+"County": "Warren", 
+"Municipality":"Spring Creek Township"
+},
+{
+"County": "Warren", 
+"Municipality":"Sugar Grove Borough"
+},
+{
+"County": "Warren", 
+"Municipality":"Sugar Grove Township"
+},
+{
+"County": "Warren", 
+"Municipality":"Tidioute Borough"
+},
+{
+"County": "Warren", 
+"Municipality":"Triumph Township"
+},
+{
+"County": "Warren", 
+"Municipality":"Warren City"
+},
+{
+"County": "Warren", 
+"Municipality":"Watson Township"
+},
+{
+"County": "Warren", 
+"Municipality":"Youngsville Borough"
+},
+{
+"County": "Washington", 
+"Municipality":"Allenport Borough"
+},
+{
+"County": "Washington", 
+"Municipality":"Amwell Township"
+},
+{
+"County": "Washington", 
+"Municipality":"Beallsville Borough"
+},
+{
+"County": "Washington", 
+"Municipality":"Bentleyville Borough"
+},
+{
+"County": "Washington", 
+"Municipality":"Blaine Township"
+},
+{
+"County": "Washington", 
+"Municipality":"Buffalo Township"
+},
+{
+"County": "Washington", 
+"Municipality":"Burgettstown Borough"
+},
+{
+"County": "Washington", 
+"Municipality":"California Borough"
+},
+{
+"County": "Washington", 
+"Municipality":"Canonsburg Borough"
+},
+{
+"County": "Washington", 
+"Municipality":"Canton Township"
+},
+{
+"County": "Washington", 
+"Municipality":"Carroll Township"
+},
+{
+"County": "Washington", 
+"Municipality":"Cecil Township"
+},
+{
+"County": "Washington", 
+"Municipality":"Centerville Borough"
+},
+{
+"County": "Washington", 
+"Municipality":"Charleroi Borough"
+},
+{
+"County": "Washington", 
+"Municipality":"Chartiers Township"
+},
+{
+"County": "Washington", 
+"Municipality":"Claysville Borough"
+},
+{
+"County": "Washington", 
+"Municipality":"Coal Center Borough"
+},
+{
+"County": "Washington", 
+"Municipality":"Cokeburg Borough"
+},
+{
+"County": "Washington", 
+"Municipality":"Cross Creek Township"
+},
+{
+"County": "Washington", 
+"Municipality":"Deemston Borough"
+},
+{
+"County": "Washington", 
+"Municipality":"Donegal Township"
+},
+{
+"County": "Washington", 
+"Municipality":"Donora Borough"
+},
+{
+"County": "Washington", 
+"Municipality":"Dunlevy Borough"
+},
+{
+"County": "Washington", 
+"Municipality":"East Bethlehem Township"
+},
+{
+"County": "Washington", 
+"Municipality":"East Finley Township"
+},
+{
+"County": "Washington", 
+"Municipality":"East Washington Borough"
+},
+{
+"County": "Washington", 
+"Municipality":"Elco Borough"
+},
+{
+"County": "Washington", 
+"Municipality":"Ellsworth Borough"
+},
+{
+"County": "Washington", 
+"Municipality":"Fallowfield Township"
+},
+{
+"County": "Washington", 
+"Municipality":"Finleyville Borough"
+},
+{
+"County": "Washington", 
+"Municipality":"Green Hills Borough"
+},
+{
+"County": "Washington", 
+"Municipality":"Hanover Township"
+},
+{
+"County": "Washington", 
+"Municipality":"Hopewell Township"
+},
+{
+"County": "Washington", 
+"Municipality":"Houston Borough"
+},
+{
+"County": "Washington", 
+"Municipality":"Independence Township"
+},
+{
+"County": "Washington", 
+"Municipality":"Jefferson Township"
+},
+{
+"County": "Washington", 
+"Municipality":"Long Branch Borough"
+},
+{
+"County": "Washington", 
+"Municipality":"Marianna Borough"
+},
+{
+"County": "Washington", 
+"Municipality":"McDonald Borough"
+},
+{
+"County": "Washington", 
+"Municipality":"Midway Borough"
+},
+{
+"County": "Washington", 
+"Municipality":"Monongahela City"
+},
+{
+"County": "Washington", 
+"Municipality":"Morris Township"
+},
+{
+"County": "Washington", 
+"Municipality":"Mount Pleasant Township"
+},
+{
+"County": "Washington", 
+"Municipality":"New Eagle Borough"
+},
+{
+"County": "Washington", 
+"Municipality":"North Bethlehem Township"
+},
+{
+"County": "Washington", 
+"Municipality":"North Charleroi Borough"
+},
+{
+"County": "Washington", 
+"Municipality":"North Franklin Township"
+},
+{
+"County": "Washington", 
+"Municipality":"North Strabane Township"
+},
+{
+"County": "Washington", 
+"Municipality":"Nottingham Township"
+},
+{
+"County": "Washington", 
+"Municipality":"Peters Township"
+},
+{
+"County": "Washington", 
+"Municipality":"Robinson Township"
+},
+{
+"County": "Washington", 
+"Municipality":"Roscoe Borough"
+},
+{
+"County": "Washington", 
+"Municipality":"Smith Township"
+},
+{
+"County": "Washington", 
+"Municipality":"Somerset Township"
+},
+{
+"County": "Washington", 
+"Municipality":"South Franklin Township"
+},
+{
+"County": "Washington", 
+"Municipality":"South Strabane Township"
+},
+{
+"County": "Washington", 
+"Municipality":"Speers Borough"
+},
+{
+"County": "Washington", 
+"Municipality":"Stockdale Borough"
+},
+{
+"County": "Washington", 
+"Municipality":"Twilight Borough"
+},
+{
+"County": "Washington", 
+"Municipality":"Union Township"
+},
+{
+"County": "Washington", 
+"Municipality":"Washington City"
+},
+{
+"County": "Washington", 
+"Municipality":"West Alexander Borough"
+},
+{
+"County": "Washington", 
+"Municipality":"West Bethlehem Township"
+},
+{
+"County": "Washington", 
+"Municipality":"West Brownsville Borough"
+},
+{
+"County": "Washington", 
+"Municipality":"West Finley Township"
+},
+{
+"County": "Washington", 
+"Municipality":"West Middletown Borough"
+},
+{
+"County": "Washington", 
+"Municipality":"West Pike Run Township"
+},
+{
+"County": "Wayne", 
+"Municipality":"Berlin Township"
+},
+{
+"County": "Wayne", 
+"Municipality":"Bethany Borough"
+},
+{
+"County": "Wayne", 
+"Municipality":"Buckingham Township"
+},
+{
+"County": "Wayne", 
+"Municipality":"Canaan Township"
+},
+{
+"County": "Wayne", 
+"Municipality":"Cherry Ridge Township"
+},
+{
+"County": "Wayne", 
+"Municipality":"Clinton Township"
+},
+{
+"County": "Wayne", 
+"Municipality":"Damascus Township"
+},
+{
+"County": "Wayne", 
+"Municipality":"Dreher Township"
+},
+{
+"County": "Wayne", 
+"Municipality":"Dyberry Township"
+},
+{
+"County": "Wayne", 
+"Municipality":"Hawley Borough"
+},
+{
+"County": "Wayne", 
+"Municipality":"Honesdale Borough"
+},
+{
+"County": "Wayne", 
+"Municipality":"Lake Township"
+},
+{
+"County": "Wayne", 
+"Municipality":"Lebanon Township"
+},
+{
+"County": "Wayne", 
+"Municipality":"Lehigh Township"
+},
+{
+"County": "Wayne", 
+"Municipality":"Manchester Township"
+},
+{
+"County": "Wayne", 
+"Municipality":"Mount Pleasant Township"
+},
+{
+"County": "Wayne", 
+"Municipality":"Oregon Township"
+},
+{
+"County": "Wayne", 
+"Municipality":"Palmyra Township"
+},
+{
+"County": "Wayne", 
+"Municipality":"Paupack Township"
+},
+{
+"County": "Wayne", 
+"Municipality":"Preston Township"
+},
+{
+"County": "Wayne", 
+"Municipality":"Prompton Borough"
+},
+{
+"County": "Wayne", 
+"Municipality":"Salem Township"
+},
+{
+"County": "Wayne", 
+"Municipality":"Scott Township"
+},
+{
+"County": "Wayne", 
+"Municipality":"South Canaan Township"
+},
+{
+"County": "Wayne", 
+"Municipality":"Starrucca Borough"
+},
+{
+"County": "Wayne", 
+"Municipality":"Sterling Township"
+},
+{
+"County": "Wayne", 
+"Municipality":"Texas Township"
+},
+{
+"County": "Wayne", 
+"Municipality":"Waymart Borough"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"Adamsburg Borough"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"Allegheny Township"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"Arnold City"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"Arona Borough"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"Avonmore Borough"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"Bell Township"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"Bolivar Borough"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"Cook Township"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"Delmont Borough"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"Derry Borough"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"Derry Township"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"Donegal Borough"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"Donegal Township"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"East Huntingdon Township"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"East Vandergrift Borough"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"Export Borough"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"Fairfield Township"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"Greensburg City"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"Hempfield Township"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"Hunker Borough"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"Hyde Park Borough"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"Irwin Borough"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"Jeannette City"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"Latrobe City"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"Laurel Mountain Borough"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"Ligonier Borough"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"Ligonier Township"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"Lower Burrell City"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"Loyalhanna Township"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"Madison Borough"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"Manor Borough"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"Monessen City"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"Mount Pleasant Borough"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"Mount Pleasant Township"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"Municipality of Murrysville Borough"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"New Alexandria Borough"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"New Florence Borough"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"New Kensington City"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"New Stanton Borough"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"North Belle Vernon Borough"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"North Huntingdon Township"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"North Irwin Borough"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"Oklahoma Borough"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"Penn Borough"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"Penn Township"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"Rostraver Township"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"Salem Township"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"Scottdale Borough"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"Seward Borough"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"Sewickley Township"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"Smithton Borough"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"South Greensburg Borough"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"South Huntingdon Township"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"Southwest Greensburg Borough"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"St. Clair Township"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"Sutersville Borough"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"Trafford Borough"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"Unity Township"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"Upper Burrell Township"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"Vandergrift Borough"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"Washington Township"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"West Leechburg Borough"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"West Newton Borough"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"Youngstown Borough"
+},
+{
+"County": "Westmoreland", 
+"Municipality":"Youngwood Borough"
+},
+{
+"County": "Wyoming", 
+"Municipality":"Braintrim Township"
+},
+{
+"County": "Wyoming", 
+"Municipality":"Clinton Township"
+},
+{
+"County": "Wyoming", 
+"Municipality":"Eaton Township"
+},
+{
+"County": "Wyoming", 
+"Municipality":"Exeter Township"
+},
+{
+"County": "Wyoming", 
+"Municipality":"Factoryville Borough"
+},
+{
+"County": "Wyoming", 
+"Municipality":"Falls Township"
+},
+{
+"County": "Wyoming", 
+"Municipality":"Forkston Township"
+},
+{
+"County": "Wyoming", 
+"Municipality":"Laceyville Borough"
+},
+{
+"County": "Wyoming", 
+"Municipality":"Lemon Township"
+},
+{
+"County": "Wyoming", 
+"Municipality":"Mehoopany Township"
+},
+{
+"County": "Wyoming", 
+"Municipality":"Meshoppen Borough"
+},
+{
+"County": "Wyoming", 
+"Municipality":"Meshoppen Township"
+},
+{
+"County": "Wyoming", 
+"Municipality":"Monroe Township"
+},
+{
+"County": "Wyoming", 
+"Municipality":"Nicholson Borough"
+},
+{
+"County": "Wyoming", 
+"Municipality":"Nicholson Township"
+},
+{
+"County": "Wyoming", 
+"Municipality":"North Branch Township"
+},
+{
+"County": "Wyoming", 
+"Municipality":"Northmoreland Township"
+},
+{
+"County": "Wyoming", 
+"Municipality":"Noxen Township"
+},
+{
+"County": "Wyoming", 
+"Municipality":"Overfield Township"
+},
+{
+"County": "Wyoming", 
+"Municipality":"Tunkhannock Borough"
+},
+{
+"County": "Wyoming", 
+"Municipality":"Tunkhannock Township"
+},
+{
+"County": "Wyoming", 
+"Municipality":"Washington Township"
+},
+{
+"County": "Wyoming", 
+"Municipality":"Windham Township"
+}
+]
